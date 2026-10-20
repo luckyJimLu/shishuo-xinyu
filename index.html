@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+<meta name="theme-color" content="#eee6d2" />
+<title>世说新语 · 古籍阅读</title>
+<style>
+:root{
+  --paper:#f3ecd8;--paper2:#ece3cc;--ink:#2d241b;--muted:#736451;
+  --line:#d8cbaa;--side:#eee5cf;--accent:#8b3b2f;--accent2:#b6664d;
+  --shadow:0 12px 40px rgba(74,52,30,.12);--fs:20px;--lh:2.05;
+}
+html.dark{--paper:#211c16;--paper2:#19150f;--ink:#ded2bd;--muted:#aa9b82;--line:#3b3226;--side:#1d1913;--accent:#d48668;--accent2:#bb7059;--shadow:0 12px 40px rgba(0,0,0,.38)}
+*{box-sizing:border-box}html,body{height:100%;margin:0}body{overflow:hidden;background:var(--paper);color:var(--ink);font-family:"Songti SC","STSong","Noto Serif CJK SC","Source Han Serif SC","SimSun",serif;-webkit-font-smoothing:antialiased}
+button,input{font:inherit}.top{height:58px;display:flex;align-items:center;gap:10px;padding:0 14px;border-bottom:1px solid var(--line);background:linear-gradient(180deg,var(--side),var(--paper2));position:relative;z-index:30}
+.brand{display:flex;align-items:center;gap:9px;font-weight:700;letter-spacing:2px;white-space:nowrap}.seal{width:32px;height:32px;border-radius:6px;display:grid;place-items:center;background:var(--accent);color:#f8efd8;font-size:17px}.brand small{font-size:12px;color:var(--muted);font-weight:400;letter-spacing:0}
+.search{position:relative;flex:1;max-width:520px}.search input{width:100%;height:38px;border:1px solid var(--line);border-radius:22px;background:var(--paper);color:var(--ink);outline:0;padding:0 36px 0 38px}.search input:focus{border-color:var(--accent2);box-shadow:0 0 0 3px color-mix(in srgb,var(--accent) 12%,transparent)}.search:before{content:"⌕";position:absolute;left:13px;top:7px;color:var(--muted);font-size:20px}
+.tools{margin-left:auto;display:flex;gap:6px}.btn{height:35px;min-width:35px;padding:0 10px;border:1px solid var(--line);border-radius:8px;background:var(--paper);color:var(--muted);cursor:pointer}.btn:hover,.btn.on{border-color:var(--accent2);color:var(--accent)}.menu{display:none}
+.main{height:calc(100% - 58px);display:flex;position:relative}.side{width:286px;flex:0 0 auto;border-right:1px solid var(--line);background:var(--side);display:flex;flex-direction:column;z-index:20}.side-head{height:42px;display:flex;align-items:center;justify-content:space-between;padding:0 14px;border-bottom:1px solid var(--line);font-size:12px;color:var(--muted);letter-spacing:1px}.chapters{overflow:auto;padding:8px}.chapter{border-radius:8px;padding:9px 11px;display:flex;gap:10px;align-items:baseline;cursor:pointer;border-left:3px solid transparent}.chapter:hover{background:var(--paper2);color:var(--accent)}.chapter.active{background:var(--paper2);color:var(--accent);border-left-color:var(--accent);font-weight:700}.num{font-size:11px;color:var(--muted);font-variant-numeric:tabular-nums}.count{margin-left:auto;font-size:11px;color:var(--muted)}
+.reader{flex:1;min-width:0;overflow:auto;position:relative;scroll-behavior:smooth}.progress{height:3px;background:var(--accent);width:0;position:sticky;top:0;z-index:9}.paper{max-width:44em;margin:0 auto;padding:48px 34px 120px}.book-title{text-align:center;font-size:31px;margin:0;letter-spacing:5px}.meta{text-align:center;color:var(--muted);font-size:13px;margin-top:10px}.rule{width:66px;height:2px;background:var(--accent);opacity:.55;margin:20px auto 34px}.chapter-title{text-align:center;font-size:22px;color:var(--accent);letter-spacing:3px;margin:0 0 30px}.chapter-title:before,.chapter-title:after{content:"◆";font-size:9px;vertical-align:middle;margin:0 12px;opacity:.55}.entry{font-size:var(--fs);line-height:var(--lh);letter-spacing:.035em;text-align:justify;text-indent:2em;margin:0 0 1.25em}.entry mark{background:color-mix(in srgb,var(--accent) 22%,transparent);color:inherit;padding:0 2px;border-radius:2px}.empty{text-align:center;color:var(--muted);padding:80px 20px;line-height:2}
+.reader.vertical .paper{writing-mode:vertical-rl;-webkit-writing-mode:vertical-rl;max-width:none;width:max-content;height:100%;padding:42px 58px}.reader.vertical .book-title,.reader.vertical .chapter-title{text-align:start;margin:0 0 0 24px}.reader.vertical .meta,.reader.vertical .rule{display:none}.reader.vertical .entry{height:100%;margin:0 0 0 1.25em;text-indent:2em}
+.scrim{display:none;position:absolute;inset:0;background:rgba(0,0,0,.35);z-index:15}.fab{position:absolute;right:22px;bottom:24px;width:46px;height:46px;border:0;border-radius:50%;background:var(--accent);color:#f7ecd6;box-shadow:var(--shadow);font-size:20px;display:none;cursor:pointer}.fab.show{display:block}
+.welcome{max-width:720px;margin:0 auto;padding:70px 30px;text-align:center}.welcome .big-seal{width:78px;height:78px;border:3px double var(--accent);color:var(--accent);margin:0 auto 24px;display:grid;place-items:center;font-size:28px;font-weight:700;transform:rotate(-2deg)}.welcome h1{font-size:34px;letter-spacing:8px;margin:0 0 12px}.welcome p{color:var(--muted);line-height:1.9}.welcome button{margin-top:18px;background:var(--accent);color:#f8efd8;border:0;border-radius:8px;padding:10px 18px;cursor:pointer}
+@media(max-width:820px){.menu{display:inline-block}.brand .label,.brand small,.tools .txt{display:none}.top{padding:0 9px}.side{position:absolute;inset:0 auto 0 0;transform:translateX(-100%);transition:.22s;box-shadow:var(--shadow)}.side.open{transform:translateX(0)}.scrim.show{display:block}.paper{padding:32px 20px 100px}:root{--fs:18px}.chapter-title{margin-bottom:24px}.btn{padding:0 8px}}
+</style>
+</head>
+<body>
+<header class="top">
+  <button id="menuBtn" class="btn menu" aria-label="篇目目录">☰</button>
+  <div class="brand"><span class="seal">世</span><span class="label">世说新语</span><small>刘义庆 撰</small></div>
+  <div class="search"><input id="search" type="search" placeholder="检索当前篇正文…" autocomplete="off" /></div>
+  <div class="tools">
+    <button id="homeBtn" class="btn" title="首页">⌂</button>
+    <button id="minusBtn" class="btn" title="缩小字号">A−</button>
+    <button id="plusBtn" class="btn" title="放大字号">A＋</button>
+    <button id="dirBtn" class="btn" title="横竖排"><span class="txt">竖排</span>↔</button>
+    <button id="themeBtn" class="btn" title="日夜模式">☾</button>
+  </div>
+</header>
+<div class="main">
+  <div id="scrim" class="scrim"></div>
+  <aside id="side" class="side">
+    <div class="side-head"><span>三十六门</span><span id="total"></span></div>
+    <nav id="chapters" class="chapters"></nav>
+  </aside>
+  <main id="reader" class="reader">
+    <div id="progress" class="progress"></div>
+    <div id="content"></div>
+    <button id="topBtn" class="fab" title="返回顶部">↑</button>
+  </main>
+</div>
+<script>
+"use strict";
+const $=s=>document.querySelector(s);
+const LS={theme:"ssxy_theme",fs:"ssxy_fs",dir:"ssxy_dir",chapter:"ssxy_chapter",pos:"ssxy_pos"};
+let book=[], current=-1, query="";
+const cn=["一","二","三","四","五","六","七","八","九","十","十一","十二","十三","十四","十五","十六","十七","十八","十九","二十","二十一","二十二","二十三","二十四","二十五","二十六","二十七","二十八","二十九","三十","三十一","三十二","三十三","三十四","三十五","三十六"];
+
+init();
+async function init(){
+  restorePrefs(); bind();
+  try{
+    const r=await fetch("./data/shishuo-xinyu.json"); if(!r.ok) throw new Error("HTTP "+r.status);
+    const data=await r.json();
+    book=Array.isArray(data)?data:(data.content||data.data||[]);
+    if(!Array.isArray(book)||!book.length) throw new Error("未识别正文数据结构");
+    renderNav();
+    $("#total").textContent=book.length+" 篇";
+    const hash=decodeURIComponent(location.hash.replace(/^#\/chapter\//,""));
+    const saved=parseInt(localStorage.getItem(LS.chapter)||"-1",10);
+    const idx=hash?book.findIndex(x=>x.title===hash):(saved>=0&&saved<book.length?saved:-1);
+    if(idx>=0) openChapter(idx,true); else showHome();
+  }catch(e){$("#content").innerHTML='<div class="empty">正文加载失败：'+esc(e.message)+'<br>请通过 HTTP 服务或 GitHub Pages 访问。</div>'}
+}
+function bind(){
+  $("#menuBtn").onclick=()=>toggleSide(true); $("#scrim").onclick=()=>toggleSide(false);
+  $("#homeBtn").onclick=()=>{history.replaceState(null,"",location.pathname);showHome();toggleSide(false)};
+  $("#minusBtn").onclick=()=>setFs(curFs()-1); $("#plusBtn").onclick=()=>setFs(curFs()+1);
+  $("#themeBtn").onclick=()=>{document.documentElement.classList.toggle("dark");localStorage.setItem(LS.theme,document.documentElement.classList.contains("dark")?"dark":"light");syncBtns()};
+  $("#dirBtn").onclick=()=>{const on=!$("#reader").classList.contains("vertical");$("#reader").classList.toggle("vertical",on);localStorage.setItem(LS.dir,on?"v":"h");$("#reader").scrollTop=0;$("#reader").scrollLeft=0;syncBtns()};
+  $("#search").addEventListener("input",e=>{query=e.target.value.trim();if(current>=0) renderChapter()});
+  $("#reader").addEventListener("scroll",onScroll,{passive:true}); $("#topBtn").onclick=()=>$("#reader").scrollTo({top:0,left:0,behavior:"smooth"});
+  window.addEventListener("hashchange",()=>{const t=decodeURIComponent(location.hash.replace(/^#\/chapter\//,""));const i=book.findIndex(x=>x.title===t);if(i>=0&&i!==current)openChapter(i,true)});
+  document.addEventListener("keydown",e=>{if(e.target.tagName==="INPUT")return;if(e.key==="ArrowRight"&&current<book.length-1)openChapter(current+1);if(e.key==="ArrowLeft"&&current>0)openChapter(current-1)});
+}
+function restorePrefs(){if(localStorage.getItem(LS.theme)==="dark")document.documentElement.classList.add("dark");setFs(parseInt(localStorage.getItem(LS.fs)||"20",10),true);if(localStorage.getItem(LS.dir)==="v")$("#reader")?.classList.add("vertical");syncBtns()}
+function setFs(v,silent=false){v=Math.max(15,Math.min(30,v||20));document.documentElement.style.setProperty("--fs",v+"px");document.documentElement.style.setProperty("--lh",(1.72+(v-15)*.026).toFixed(2));if(!silent)localStorage.setItem(LS.fs,String(v))}
+function curFs(){return parseInt(getComputedStyle(document.documentElement).getPropertyValue("--fs"),10)||20}
+function syncBtns(){const t=$("#themeBtn"),d=$("#dirBtn");if(t)t.textContent=document.documentElement.classList.contains("dark")?"☀":"☾";if(d)d.classList.toggle("on",$("#reader")?.classList.contains("vertical"))}
+function renderNav(){const n=$("#chapters");n.innerHTML="";book.forEach((ch,i)=>{const b=document.createElement("div");b.className="chapter";b.dataset.i=i;b.innerHTML='<span class="num">'+String(i+1).padStart(2,"0")+'</span><span>'+esc(ch.title)+'</span><span class="count">'+(ch.content?.length||0)+'</span>';b.onclick=()=>openChapter(i);n.appendChild(b)})}
+function showHome(){current=-1;document.title="世说新语 · 古籍阅读";$("#search").value="";query="";$("#content").innerHTML='<section class="welcome"><div class="big-seal">世说</div><h1>世说新语</h1><p>南朝宋 · 刘义庆 撰</p><p>一部记录汉末至东晋士人言谈逸事的志人小说集。全书依德行、言语、政事、文学等三十六门分类。</p><button id="startBtn">开始阅读 · 德行第一</button></section>';$("#startBtn").onclick=()=>openChapter(0);document.querySelectorAll(".chapter").forEach(x=>x.classList.remove("active"));$("#reader").scrollTop=0}
+function openChapter(i,fromRoute=false){if(i<0||i>=book.length)return;current=i;query="";$("#search").value="";localStorage.setItem(LS.chapter,String(i));if(!fromRoute)location.hash="#/chapter/"+encodeURIComponent(book[i].title);renderChapter();document.querySelectorAll(".chapter").forEach((x,j)=>x.classList.toggle("active",j===i));document.querySelector(".chapter.active")?.scrollIntoView({block:"nearest"});toggleSide(false);document.title=book[i].title+" · 世说新语";requestAnimationFrame(()=>{const saved=JSON.parse(localStorage.getItem(LS.pos)||"{}");const ratio=saved[i]||0;const r=$("#reader");r.scrollTop=(r.scrollHeight-r.clientHeight)*ratio})}
+function renderChapter(){const ch=book[current];const q=query.toLowerCase();let entries=(ch.content||[]).map((p,i)=>{let html=esc(String(p));if(q){const raw=String(p);const at=raw.toLowerCase().indexOf(q);if(at<0)return "";html=esc(raw.slice(0,at))+"<mark>"+esc(raw.slice(at,at+query.length))+"</mark>"+esc(raw.slice(at+query.length))}return '<p class="entry" data-n="'+(i+1)+'">'+html+"</p>"}).filter(Boolean).join("");if(!entries)entries='<div class="empty">当前篇未找到 “'+esc(query)+'”</div>';$("#content").innerHTML='<article class="paper"><h1 class="book-title">世说新语</h1><div class="meta">刘宋 · 刘义庆 撰</div><div class="rule"></div><h2 class="chapter-title">'+esc(ch.title)+'第'+cn[current]+'</h2>'+entries+"</article>";$("#reader").scrollTop=0;$("#reader").scrollLeft=0;onScroll()}
+function onScroll(){const r=$("#reader");const max=r.scrollHeight-r.clientHeight;const ratio=max>0?r.scrollTop/max:0;$("#progress").style.width=(ratio*100).toFixed(1)+"%";$("#topBtn").classList.toggle("show",r.scrollTop>500);if(current>=0){let pos={};try{pos=JSON.parse(localStorage.getItem(LS.pos)||"{}")}catch{}pos[current]=ratio;localStorage.setItem(LS.pos,JSON.stringify(pos))}}
+function toggleSide(on){$("#side").classList.toggle("open",on);$("#scrim").classList.toggle("show",on)}
+function esc(s){return String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]))}
+</script>
+</body>
+</html>
