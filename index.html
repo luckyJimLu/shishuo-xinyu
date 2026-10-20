@@ -103,7 +103,32 @@ function syncBtns(){const t=$("#themeBtn"),d=$("#dirBtn"),n=$("#notesBtn"),tr=$(
 function renderNav(){const n=$("#chapters");n.innerHTML="";book.forEach((ch,i)=>{const b=document.createElement("div");b.className="chapter";b.dataset.i=i;b.innerHTML='<span class="num">'+String(i+1).padStart(2,"0")+'</span><span>'+esc(ch.title)+'</span><span class="count">'+(ch.content?.length||0)+'</span>';b.onclick=()=>openChapter(i);n.appendChild(b)})}
 function showHome(){current=-1;document.title="世说新语 · 古籍阅读";$("#search").value="";query="";$("#content").innerHTML='<section class="welcome"><div class="big-seal">世说</div><h1>世说新语</h1><p>南朝宋 · 刘义庆 撰</p><p>一部记录汉末至东晋士人言谈逸事的志人小说集。全书依德行、言语、政事、文学等三十六门分类。</p><button id="startBtn">开始阅读 · 德行第一</button></section>';$("#startBtn").onclick=()=>openChapter(0);document.querySelectorAll(".chapter").forEach(x=>x.classList.remove("active"));$("#reader").scrollTop=0}
 function openChapter(i,fromRoute=false){if(i<0||i>=book.length)return;current=i;query="";$("#search").value="";localStorage.setItem(LS.chapter,String(i));if(!fromRoute)location.hash="#/chapter/"+encodeURIComponent(book[i].title);renderChapter();document.querySelectorAll(".chapter").forEach((x,j)=>x.classList.toggle("active",j===i));document.querySelector(".chapter.active")?.scrollIntoView({block:"nearest"});toggleSide(false);document.title=book[i].title+" · 世说新语";requestAnimationFrame(()=>{const saved=JSON.parse(localStorage.getItem(LS.pos)||"{}");const ratio=saved[i]||0;const r=$("#reader");r.scrollTop=(r.scrollHeight-r.clientHeight)*ratio})}
-function renderChapter(){const ch=book[current];const q=query.toLowerCase();let entries=(ch.content||[]).map((p,i)=>{let html=esc(String(p));if(q){const raw=String(p);const at=raw.toLowerCase().indexOf(q);if(at<0)return "";html=esc(raw.slice(0,at))+"<mark>"+esc(raw.slice(at,at+query.length))+"</mark>"+esc(raw.slice(at+query.length))}return '<p class="entry" data-n="'+(i+1)+'">'+html+"</p>"}).filter(Boolean).join("");if(!entries)entries='<div class="empty">当前篇未找到 “'+esc(query)+'”</div>';$("#content").innerHTML='<article class="paper"><h1 class="book-title">世说新语</h1><div class="meta">刘宋 · 刘义庆 撰</div><div class="rule"></div><h2 class="chapter-title">'+esc(ch.title)+'第'+cn[current]+'</h2>'+entries+"</article>";$("#reader").scrollTop=0;$("#reader").scrollLeft=0;onScroll()}
+function renderChapter(){
+  const ch=book[current], q=query.toLowerCase();
+  const showNotes=localStorage.getItem(LS.notes)==="on";
+  const showTrans=localStorage.getItem(LS.trans)==="on";
+  let entries=(ch.content||[]).map((p,i)=>{
+    const raw=String(p);
+    if(q&&!raw.toLowerCase().includes(q)) return "";
+    const key=ch.title+":"+(i+1);
+    let html=esc(raw);
+    if(showNotes&&Array.isArray(notesData[key])){
+      for(const n of notesData[key]){
+        const word=esc(n.word), note=esc(n.note);
+        html=html.replace(word,'<span class="annotated" tabindex="0" data-note="'+note+'">'+word+'<sup>注</sup></span>');
+      }
+    }
+    if(q&&!showNotes){
+      const at=raw.toLowerCase().indexOf(q);
+      if(at>=0) html=esc(raw.slice(0,at))+"<mark>"+esc(raw.slice(at,at+query.length))+"</mark>"+esc(raw.slice(at+query.length));
+    }
+    const trans=translationsData[key];
+    return '<section class="entry-wrap"><p class="entry" data-n="'+(i+1)+'">'+html+'</p>'+(showTrans&&trans?'<p class="translation"><span>译</span>'+esc(trans)+'</p>':'')+'</section>';
+  }).filter(Boolean).join("");
+  if(!entries) entries='<div class="empty">当前篇未找到 “'+esc(query)+'”</div>';
+  $("#content").innerHTML='<article class="paper"><h1 class="book-title">世说新语</h1><div class="meta">刘宋 · 刘义庆 撰</div><div class="rule"></div><h2 class="chapter-title">'+esc(ch.title)+'第'+cn[current]+'</h2>'+entries+"</article>";
+  $("#reader").scrollTop=0;$("#reader").scrollLeft=0;onScroll();
+}
 function onScroll(){const r=$("#reader");const max=r.scrollHeight-r.clientHeight;const ratio=max>0?r.scrollTop/max:0;$("#progress").style.width=(ratio*100).toFixed(1)+"%";$("#topBtn").classList.toggle("show",r.scrollTop>500);if(current>=0){let pos={};try{pos=JSON.parse(localStorage.getItem(LS.pos)||"{}")}catch{}pos[current]=ratio;localStorage.setItem(LS.pos,JSON.stringify(pos))}}
 function toggleSide(on){$("#side").classList.toggle("open",on);$("#scrim").classList.toggle("show",on)}
 function esc(s){return String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]))}
