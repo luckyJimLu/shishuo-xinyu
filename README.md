@@ -1,6 +1,13 @@
-# 世说新语 · Shishuo Xinyu Reader
+# 中国古典文学 · Chinese Classics Reader
 
-一个专注《世说新语》的古籍阅读器，可直接构建并部署到 GitHub Pages。
+一个以中国古典诗文为中心的静态阅读站，现收录《唐诗选读》和《世说新语》，可直接构建并部署到 GitHub Pages。
+
+## 书库与阅读
+
+- **唐诗选读**：366 篇、86 位作者；诗题、作者、诗句检索，诗体筛选，保留分行，支持上一篇 / 下一篇。
+- **世说新语**：36 门、1128 则，保留词义注、刘孝标注与已有译文。
+- 藏书首页统一入口，各书独立保存最近篇目与条目内阅读位置。
+- 书目与阅读器分离：`data/catalog.json` 描述书目，`assets/library.mjs` 负责校验、内容适配和路由，`assets/reader.js` 负责共用交互。
 
 ## 功能
 
@@ -37,7 +44,29 @@ npm run build
 
 仓库内置 `.github/workflows/pages.yml`。首次使用时，在 GitHub 仓库的 **Settings → Pages → Build and deployment → Source** 选择 **GitHub Actions**。之后每次 push 到 `main` 都会自动构建并发布。
 
-## 正文来源与校勘说明
+## 唐诗来源与再生成
+
+唐诗正文来自 [chinese-poetry/chinese-poetry](https://github.com/chinese-poetry/chinese-poetry)，固定版本为 `b8594f81a89752241442f2ce267d6f66f96704ee`。源文件虽名为“唐诗三百首”，实际标签集包含 366 篇，因此站内称“唐诗选读”，不宣称是标准三百首定本。
+
+原始文件、来源摘要和 MIT 许可证位于 `sources/tang-poems/`，站点构建也保留数据许可证。OpenCC 仅在导入时转换简体，浏览器没有额外运行时依赖。正文保留该来源的异文，例如《静夜思》为“床前看月光”“举头望山月”，未擅自改写为通行教材版本；本批不附生成式注释或译文。
+
+```bash
+npm run import:tang-poems  # 从固定本地数据确定性生成，不联网
+npm run check             # 同时校验书目、唐诗数据、许可及原有刘注
+```
+
+## 多书目路由与兼容
+
+- `#/`：藏书首页，始终可选择两类作品。
+- `#/book/tang-poems`：唐诗目录；同一目录支持诗题、作者、诗体及诗句筛选。
+- `#/book/<book-id>/read/<work-id>`：稳定的篇目地址；诗题重名不会发生碰撞。
+- 原有 `#/chapter/德行` 等链接会自动转入《世说新语》的新地址。
+
+主题、字号、排版沿用原有偏好键；阅读进度改按书目保存为 `classics:<book-id>:positions`，首次打开《世说新语》时兼容旧 `ssxy_pos` 数据。首页提供继续阅读入口，不自动跳过书库。检索结果不覆盖正常阅读位置；跨书切换会忽略过期的正文或辅助加载结果。
+
+新增书目时，添加正文 JSON 和 catalog 条目即可复用通用阅读器；`kind` 为 `prose` 或 `poetry`。诗歌条目必须有稳定 `id`、`title`、`author` 和分行 `content`；散文章节由原始顺序生成 `chapter-01` 等编号。所有内容需记录来源与许可，再运行数据校验。仓库名和 Pages 路径保留为 `shishuo-xinyu`，避免破坏既有部署地址。
+
+## 世说新语正文来源与校勘说明
 
 《世说新语》为公版古籍。本仓当前结构化正文初始化自公开古籍 JSON 语料，并以中国哲学书电子化计划（CTP）《世说新语》相关版本作为后续校勘参考。
 

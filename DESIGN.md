@@ -1,7 +1,7 @@
 ---
 version: alpha
-name: 世说新语阅读器
-description: 以正文为中心、注译按需展开的中文古籍阅读工具。
+name: 中国古典文学
+description: 共用书库与阅读器的中国古典文学阅读站，以唐诗和世说新语为首批藏书。
 colors:
   paper: "#f3ecd8"
   paper2: "#ece3cc"
@@ -33,7 +33,7 @@ components:
     backgroundColor: "{colors.line}"
 ---
 
-# 世说新语 Design System
+# 中国古典文学 Design System
 
 ## Overview
 
@@ -43,12 +43,12 @@ components:
 
 ### Product context and register
 
-- Audience: 阅读《世说新语》的中文读者；主要任务是逐则阅读和查注。
+- Audience: 阅读中国古典文学的中文读者；从书库选择唐诗或散文，逐篇阅读和查注。
 - Evidence: README.md 和既有 index.html。市场地域未限定；界面为简体中文，底本注文保留原字形。
 - Register: product；桌面长时阅读与移动端查阅。
 - Signature: 横排/从右向左竖排共用正文，注译保持次要层级。
 - Anti-references: 营销落地页、卡片信息流；它们会分散正文阅读。
-- Token ownership: index.html 的 :root/html.dark 是唯一运行时颜色来源；本文件记录现有映射，不生成第二套令牌。paper/ink/muted/line 分别映射同名 CSS 变量，primary 映射 --accent。
+- Token ownership: assets/styles.css 的 :root/html.dark 是唯一运行时颜色来源；本文件记录现有映射，不生成第二套令牌。paper/ink/muted/line 分别映射同名 CSS 变量，primary 映射 --accent。
 
 ## Colors
 
@@ -56,9 +56,11 @@ components:
 
 ## Typography
 
-宋体字体栈覆盖中文正文和控件；默认正文 20px，可调 15–30px，行高 2.05。正文最大行宽 44em；不使用外部字体请求。
+宋体字体栈覆盖书名与中文正文，system-ui/微软雅黑用于目录辅助信息、筛选与工具控件；默认正文 20px，可调 15–30px，行高 2.05。正文最大行宽 44em；不使用外部字体请求。
 
 ## Layout
+
+藏书首页最大宽 1080px，以竖排题签书封区分诗文；书目目录最大宽 880px，篇目列表初始显示 40 篇，可继续加载。正文与首页使用同一套纸面颜色，诗歌居中分行、无首行缩进，散文保持两字缩进。首页和目录始终横排，竖排偏好仅应用于正文。
 
 顶部工具区按实际高度预留空间，窄屏允许检索独占一行。820px 以下目录改为可关闭抽屉。reader 拥有正文滚动，横排纵向滚动，竖排横向滚动；全局滚动条使用 muted/paper2，进度条不占文流。
 
@@ -82,15 +84,15 @@ components:
 
 ### Navigation and data display
 
-当前篇目用 aria-current 标记；返回首页清除标记。目录顺序与正文数据一致。阅读锚点由条目编号和条目内偏移组成，不保存过滤结果的位置。
+当前篇目用 aria-current 标记；返回藏书首页清除标记。稳定书目 ID 和篇目 ID 组成路由，同名诗作不共用地址。目录顺序与正文数据一致。阅读锚点由条目编号和条目内偏移组成，不保存过滤结果的位置。
 
 ### Forms and overlays
 
-检索仅针对当前篇，使用中文可访问名称及独立清除按钮，支持输入法组合输入。目录为非模态导航抽屉，不宣称 modal，不限制焦点；关闭时不可聚焦，Escape 关闭并返回菜单按钮。
+首页检索藏书，唐诗检索整个诗集的题目、作者及诗句，世说正文仍检索当前门；使用中文可访问名称及独立清除按钮，支持输入法组合输入。目录为非模态导航抽屉，不宣称 modal，不限制焦点；关闭时不可聚焦，Escape 关闭并返回菜单按钮。
 
 ### Iconography
 
-沿用单字符图标，每个图标操作提供中文可访问名称；不新增图标依赖。
+沿用单字符图标，每个图标操作提供中文可访问名称；不新增图标依赖。诗文藏书的竖排书名题签是首页的唯一视觉重点，不引入背景贴图或营销插画。
 
 ### Motion
 

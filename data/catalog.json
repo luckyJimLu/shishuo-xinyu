@@ -1,0 +1,54 @@
+{
+  "title": "中国古典文学",
+  "books": [
+    {
+      "id": "tang-poems",
+      "title": "唐诗选读",
+      "kind": "poetry",
+      "era": "唐代",
+      "genre": "诗歌",
+      "byline": "李白、杜甫、王维等",
+      "description": "从山水田园到边塞风月，在一首诗里，读见大唐。",
+      "path": "tang-poems.json",
+      "count": 366,
+      "unit": "首",
+      "sourceNote": "据 chinese-poetry《唐诗三百首》标签集整理，实际收录 366 篇，非标准三百首定本。简体转换仅用于阅读，未附注译。",
+      "sourceUrl": "https://github.com/chinese-poetry/chinese-poetry/tree/b8594f81a89752241442f2ce267d6f66f96704ee/全唐诗",
+      "licensePath": "tang-poems.LICENSE",
+      "sectionUnit": "首"
+    },
+    {
+      "id": "shishuo-xinyu",
+      "title": "世说新语",
+      "kind": "prose",
+      "era": "南朝·宋",
+      "genre": "志人笔记",
+      "byline": "刘义庆 撰 · 刘孝标 注",
+      "description": "三十六门，一千余则。循着言谈与风度，走近魏晋人物。",
+      "path": "shishuo-xinyu.json",
+      "count": 1128,
+      "unit": "则",
+      "sourceNote": "正文保留原有底本；刘注经自动对齐，待复核条目不显示。词义注与译文仅部分条目具备。",
+      "sourceUrl": "https://ctext.org/shi-shuo-xin-yu/zhs",
+      "resources": [
+        {
+          "path": "annotations.json",
+          "label": "词义注",
+          "type": "annotations"
+        },
+        {
+          "path": "translations.json",
+          "label": "译文",
+          "type": "translations"
+        },
+        {
+          "path": "liuxiaobiao-notes.json",
+          "label": "刘孝标注",
+          "type": "liu"
+        }
+      ],
+      "sectionUnit": "门",
+      "startLabel": "德行第一"
+    }
+  ]
+}

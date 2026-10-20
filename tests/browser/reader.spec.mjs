@@ -1,6 +1,6 @@
 import { test, expect } from "@playwright/test";
 async function open(page) {
-  await page.goto("");
+  await page.goto("#/book/shishuo-xinyu");
   await page.getByRole("button", { name: "开始阅读 · 德行第一" }).click();
   await expect(page.locator('[data-entry="1"]')).toBeVisible();
   await expect(page.locator("#loadStatus")).toBeEmpty();
@@ -95,7 +95,7 @@ test("auxiliary failure leaves book readable and retry works", async ({
   await page.route("**/data/liuxiaobiao-notes.json", (route) =>
     fail ? route.abort() : route.continue(),
   );
-  await page.goto("");
+  await page.goto("#/book/shishuo-xinyu");
   await page.locator("#startBtn").click();
   await expect(page.locator("#loadStatus")).toContainText("刘孝标注加载失败");
   await expect(page.locator(".entry").first()).toContainText("陈仲举");
@@ -109,17 +109,19 @@ test("book error has retry, navigation and home agree", async ({ page }) => {
   await page.route("**/data/shishuo-xinyu.json", (route) =>
     route.fulfill({ status: 500, body: "" }),
   );
-  await page.goto("");
+  await page.goto("#/book/shishuo-xinyu");
   await expect(page.locator("#retryBook")).toBeVisible();
   await page.unroute("**/data/shishuo-xinyu.json");
   await page.locator("#retryBook").click();
   await page.locator("#startBtn").click();
+  await page.locator("#notesBtn").click();
+  await expect(page.locator(".liu-note").first()).toBeVisible();
   await page.locator("#homeBtn").click();
   await expect(page.locator('[aria-current="page"]')).toHaveCount(0);
   await page.goBack();
   await expect(page.locator(".chapter-title")).toContainText("德行");
   await page.goForward();
-  await expect(page.locator("#startBtn")).toBeVisible();
+  await expect(page.locator(".library-intro")).toBeVisible();
 });
 test("narrow drawer keyboard and responsive layout", async ({
   page,
@@ -166,7 +168,7 @@ test("slow auxiliary load and unavailable storage do not block reading", async (
     await pending;
     await route.continue();
   });
-  await page.goto("");
+  await page.goto("#/book/shishuo-xinyu");
   await page.locator("#startBtn").click();
   await expect(page.locator(".entry").first()).toContainText("陈仲举");
   await page.locator("#notesBtn").click();
@@ -192,7 +194,7 @@ test("chapter anchors stay independent and unknown routes recover", async ({
   await page.locator("#clearSearch").click();
   expect(await anchor(page)).toBe("20");
   await page.goto("#/chapter/%invalid");
-  await expect(page.locator("#content")).toContainText("未找到此篇");
+  await expect(page.locator("#content")).toContainText("未找到此书或此篇");
   await page.locator("#homeBtn").click();
-  await expect(page.locator("#startBtn")).toBeVisible();
+  await expect(page.locator(".library-intro")).toBeVisible();
 });
