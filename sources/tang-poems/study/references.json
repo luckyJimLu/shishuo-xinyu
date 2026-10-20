@@ -1,0 +1,9 @@
+{
+  "common": [{"title":"异文与题署对读：蘅塘退士编《唐诗三百首》（维基文库；非本集逐条同一底本）","url":"https://zh.wikisource.org/wiki/唐詩三百首"}],
+  "works": {
+    "64": [{"title":"词义核查：汉典“藁砧”（夫的隐语）","url":"https://www.zdic.net/hans/藁砧"}],
+    "198": [{"title":"断代参考：故宫博物院《秦石鼓》","url":"https://www.dpm.org.cn/collection/impres/234438.html"}],
+    "50": [{"title":"词义核查：教育部辞典“砧”","url":"https://dict.revised.moe.edu.tw/dictView.jsp?ID=7844&la=0&powerMode=0"}],
+    "355": [{"title":"词义核查：教育部辞典“砧”","url":"https://dict.revised.moe.edu.tw/dictView.jsp?ID=7844&la=0&powerMode=0"}]
+  }
+}

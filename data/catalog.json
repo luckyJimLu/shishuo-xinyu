@@ -12,10 +12,17 @@
       "path": "tang-poems.json",
       "count": 366,
       "unit": "首",
-      "sourceNote": "据 chinese-poetry《唐诗三百首》标签集整理，实际收录 366 篇，非标准三百首定本。简体转换仅用于阅读，未附注译。",
+      "sourceNote": "据 chinese-poetry《唐诗三百首》标签集整理，实际收录366篇，非标准三百首定本。正文保留底本题署与异文；附模型辅助原创词注、逐行译文，未经独立专家审校。部分题署年代存在疑点，见各篇注译说明。",
       "sourceUrl": "https://github.com/chinese-poetry/chinese-poetry/tree/b8594f81a89752241442f2ce267d6f66f96704ee/全唐诗",
       "licensePath": "tang-poems.LICENSE",
-      "sectionUnit": "首"
+      "sectionUnit": "首",
+      "resources": [
+        {
+          "type": "poetry-study",
+          "path": "tang-poems-study.json",
+          "label": "唐诗注译"
+        }
+      ]
     },
     {
       "id": "shishuo-xinyu",

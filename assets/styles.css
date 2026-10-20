@@ -1741,3 +1741,40 @@ html.dark {
     min-height: 320px;
   }
 }
+
+.study-sources {
+  margin-block: 2em;
+  padding-block: 1em;
+  border-block-start: 1px solid var(--line);
+  font-size: 0.82em;
+  line-height: 1.9;
+  color: var(--muted);
+}
+.study-sources summary {
+  cursor: pointer;
+  color: var(--accent);
+}
+.study-sources summary:hover,
+.study-sources a:hover {
+  text-decoration: underline;
+}
+.study-sources a {
+  color: var(--accent);
+  overflow-wrap: anywhere;
+}
+.poem-paper .translation {
+  max-inline-size: 38em;
+  line-height: 1.9;
+}
+
+.reader.vertical .study-sources {
+  writing-mode: horizontal-tb;
+  direction: ltr;
+  min-width: min(300px, 80vw);
+  width: min(300px, 80vw);
+  overflow-y: auto;
+  margin: 0 0 0 24px;
+  padding: 1em;
+  border-block-start: 0;
+  border-inline-start: 1px solid var(--line);
+}

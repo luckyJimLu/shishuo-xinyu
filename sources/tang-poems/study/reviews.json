@@ -1,0 +1,4760 @@
+{
+  "c65539db-4e2b-4ce4-a22b-563b6ef3f4f1": {
+    "status": "reviewed",
+    "sourceHash": "9ab4c204a89f4f9e329dc24491c7263c27e79df706361fe2ae6f83c96924fba5",
+    "draftHash": "dc66c858ed1468e00d29d76472d73502e02cd858192d8519cbd235c91d4b633e",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "c244a5b4-0ed0-48fe-8694-95309acac184": {
+    "status": "reviewed",
+    "sourceHash": "206152fc19e6074d9dbd9c4cf55481c8724693309fc0ff8b7b9f1ca81027f6f5",
+    "draftHash": "13677e63ec79aa607c22fbf2fdca083f76c4b9b1cca00dedf7e972b6668c4ccd",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "a1824eb8-4e2e-4d53-9a33-e1dcfe7d1c73": {
+    "status": "reviewed",
+    "sourceHash": "947ffc841496bf3bc81f4eabafbc0f41cf9a3c2c3ead0763526a249344a83f1b",
+    "draftHash": "cde67e7ffc9be74bc9f7c84413aa8ab5268b6be309934950c516e7a79fd5c0d6",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "0f7504df-cda2-4fe2-bc63-867ec2e418e7": {
+    "status": "reviewed",
+    "sourceHash": "ac4a08ce52ced2439b39f53e04a2df2f538b0fa17da15178a2cb7bf2146262cc",
+    "draftHash": "a5e863601835b39739954d5b69b273236cf450f59076e2e506f346636ec555e0",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "2d0385e7-0c72-423f-a538-f66acc9d4c46": {
+    "status": "reviewed",
+    "sourceHash": "6fdbb558b444b9872b52ac13a41233f566ed83403ef16f3e50f7d5f293dbe76e",
+    "draftHash": "d800b894564b7cc4d4749c208d8d82356dd81f019e6987e8f27efdda0aba32ef",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "bcdf6f13-4cb9-418f-9279-c690522e0a27": {
+    "status": "reviewed",
+    "sourceHash": "ce175a83aafdcd0e8b1f6ffc7b5e1711357f316e3579b015c5b122af5b533714",
+    "draftHash": "70a0d5ea9e745213d80c3dd4d770e1be7a79643d376b34ed1d86270660645264",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "0167687e-8325-48bf-8da4-3749c9ce0a74": {
+    "status": "reviewed",
+    "sourceHash": "bf424278c329a4971b2efd021b85073eed4698323512e115752c5037cd954af0",
+    "draftHash": "79e6714ad9ffd738b7ba17ea6f6f112d676c46a11db38c955c79c6809ff4a334",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "efaaa86e-5628-40d3-a137-1ae8fcbe41b8": {
+    "status": "reviewed",
+    "sourceHash": "6abb63882ecc84828844e285961e21943163e59bf553d0ff3568553dab263be1",
+    "draftHash": "1845ecba0c4e2be445a19cdd0f814c051b6123ba15fc50adfff3b434773f8872",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "a6c85d29-ad02-4f54-a347-63800213a7b4": {
+    "status": "reviewed",
+    "sourceHash": "c5969d33f03138216ed7453a988081cfa4e25b666b2d23f8a8452d899496c539",
+    "draftHash": "6ba20e7443d9d1fa4d38cbbc4df91e09c93121cba5e184b0e75d6b4b94156408",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "e0eb3016-9288-4dc0-9257-3de36e5ad73c": {
+    "status": "reviewed",
+    "sourceHash": "c2a877d14b58eead8fa4016d2aa1723d59bc01ff465de6f31297258508521038",
+    "draftHash": "01542cfdecc383e5f08ee5aedf79ac488c23beb4b1528385add09ce23884fe9b",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "b3de619f-cc8b-457d-942b-49f06651aba4": {
+    "status": "reviewed",
+    "sourceHash": "a6334e5e1f2d0d13cccd15eb322671c2f587e48866512342dbcba3cd3543f401",
+    "draftHash": "7188f16a9d25562d15d88c9b2436a7923d18a1edbfd472163e6fe7d0c2a79867",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "d7c6d072-6e84-482e-856a-5a4c21226a3c": {
+    "status": "reviewed",
+    "sourceHash": "fc40dc7b407a22315a57c976f926d2fefaed0f5670a47d44a1b92ffcd7f4b028",
+    "draftHash": "3246b185700b1eeff28572dc43c6b86d84b0d405161082e9a25816dd2106c2a3",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "75db753d-e7da-48a1-a6c0-6ed9147e58db": {
+    "status": "reviewed",
+    "sourceHash": "a1fc35845154d7dd3accf96f3a8362220f2f55599c2d20f38935873de41b1b3b",
+    "draftHash": "c5db90e266ad6c8bbf30b767efe8e6f28a190904780567eef4dd25b72e68be93",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "0d2c5fba-d350-4c3f-b55e-72a491a84df6": {
+    "status": "reviewed",
+    "sourceHash": "ce5ce18c0326ad224bf935308f8d3b59991bdea067b494e61e6271fb2c482e0a",
+    "draftHash": "3566b7ca467c27fe626b7e17944a7dbe8241c52c78e4ae5c39c3fa44ff0d4f26",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "d32a2610-09d7-49ad-8cdf-dd9c649144c7": {
+    "status": "reviewed",
+    "sourceHash": "f728c2e529095045480746ea7e80c6d5f93edd13e2db63ce81b96bb106f241ff",
+    "draftHash": "6659a2598389a0dedcd95817ea75116b893f6ec60beed93380b554b43a81efbd",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "fb376b71-91c6-44ee-b2e4-40f5b3f71b8f": {
+    "status": "reviewed",
+    "sourceHash": "d1bc14068b73cabc68d1d93aaa072e45c90bae83c05c8cabd7992fb25c8230c8",
+    "draftHash": "6b1689d5212a0397f12a893f852e61f5368fcdf4a179c7f7a1c3102ca8a6d0b2",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "670009c2-a701-4140-aa31-b4973f76d632": {
+    "status": "reviewed",
+    "sourceHash": "bbd82f2607fdffa776013e6dd19bea874e47f47f8d510db18dc3c2b4fe848fee",
+    "draftHash": "2eaa150a31b4731403cc616ef913f75e57cede6f0952a9941fea5199a56ccae3",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "131c9f87-273f-4684-9b67-bd7b58ad4008": {
+    "status": "reviewed",
+    "sourceHash": "970ac9f25f82cc066c6e6e9128b8b86b1f4e9f6564d8a1b844d2eed010894794",
+    "draftHash": "b64e46c882ab5945350bca8a7d33113ed37a67134ad632f3a84a8c92c7fde437",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "3410e7ce-df3a-4ab8-bea3-7f681661b240": {
+    "status": "reviewed",
+    "sourceHash": "bc27285e7485387190d062b2c00d93a8f372929a204f12807454eaa994cd56df",
+    "draftHash": "63d2e32aa88da94d831eaa2682c85c8150d7e8f3790528d317054aebbbc391e8",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "7377e34a-1aab-47e3-a6dd-376c98a5d6b7": {
+    "status": "reviewed",
+    "sourceHash": "fac219cec6cec2c59fbf35c59e8a5a11f34c839158f6800411b07f6dfb8035df",
+    "draftHash": "6c53648bd6ae041a369f739ec45cf999bafb3944782db6fdfa1753b9fe559c08",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "811a5f9e-0df5-46f1-a587-0d4df7bca5a0": {
+    "status": "reviewed",
+    "sourceHash": "b8b6ebffe36d182055adc28895ec2c1619cbe86c4a275b69585169b8d6f826c8",
+    "draftHash": "4eedd4166ba0ccf549ba384a9ada1633b36837f67aeb87de7835a8dc1d2e39bf",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "91f95b30-c42f-470a-9df8-dd6284fca474": {
+    "status": "reviewed",
+    "sourceHash": "ccc9d8a179cc99e774a3658fe05c12b0b3324482c47201544f971e554b101d57",
+    "draftHash": "c99d718f94030069cf5239e6b4eb44fbd23843f00d5801a364cbe87af7c56eda",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "da157c27-d317-4205-9cdc-a254445659fc": {
+    "status": "reviewed",
+    "sourceHash": "f9e1a5d05ca1b1151c3cc25a61cd9971e39e4f5bc7d8df708357ba4594f962b2",
+    "draftHash": "bc49f64b07ce117f5ac8404e6a232de7e85ab443dfd816e7d51790a1655cf143",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "974914ee-1fc0-4952-a863-820bad2e4065": {
+    "status": "reviewed",
+    "sourceHash": "0c6e7f7ec1f2b463115bc84037c242dcb159120a068df6ba3853d7ce4cd2e400",
+    "draftHash": "cdbea68f30fda6ee90d21dea480910cdef87353195a06b34481ad921ef6e069e",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "ed79f9bc-d5d1-4251-b22d-d091e0758a3f": {
+    "status": "reviewed",
+    "sourceHash": "8cc0df72df5fae193317e25ebb2b824efee51b74d02baf6fe7bff61f4f8cd71b",
+    "draftHash": "ad09f2d21854fd7a06b2c8f9f506efe02a21cebec3d70af02d6b703148a7787d",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "2161a569-6250-4886-9500-2168821b62be": {
+    "status": "reviewed",
+    "sourceHash": "ec0eff973404826b787db18b355f06f78b5f3ee6c1010ab38d9d4ee3fc7c411b",
+    "draftHash": "da94f022a328f4de9c18ff977ac8d1a6fbdb57f2f0bd207168fb3142db288550",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "8331c76b-a250-4d07-9c28-b8a456e0974c": {
+    "status": "reviewed",
+    "sourceHash": "72576acf21f0d91e0e0384c93e0af0583183039fe179d4cf3e05267cb6c27eb3",
+    "draftHash": "886f1e869e8a169cf8dd3670365261ad21e387a99e10e5af0efa89f5fd203f7e",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "f7c9c409-9571-4eb8-abd9-91ec6c1ff564": {
+    "status": "reviewed",
+    "sourceHash": "d6513048a09e5148ad5954a0d04c318bd2f70866cd69c507ec12a8818713f754",
+    "draftHash": "5d1e756fa75171cf0a85a2e98b92ee4bbde9365627fab1e69e2957c8d251e8ab",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "e006dfd3-40be-40ef-ba3b-552428931ae3": {
+    "status": "reviewed",
+    "sourceHash": "109bc5b8448a4245e2e5dd2a6ccfa6d9adad0f6c94780705965f772251cd56f6",
+    "draftHash": "cb83cffd0a90ef180deab0a37f656111c2817825867212a44bec4975aeb3f6f5",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "b6475dea-1d69-4f0d-b98a-39393f47741e": {
+    "status": "reviewed",
+    "sourceHash": "4a267c6fc23767a458029f20af27abeeeab1dfad69fd8e3c1b99d01d7b5a0677",
+    "draftHash": "924ba095f337c532614a8da333292ffa7cc034d140edfbfe06faa49316ce199e",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "02456f60-6ab5-4de8-b9ed-f7519818f0ca": {
+    "status": "reviewed",
+    "sourceHash": "f1f8f0b5c9fdfa42fee07520fd25c846caf62b4cb8b9145b5ab3bd7934b35d59",
+    "draftHash": "0fdc2830ff5be4a00f32702bec78b9ad7da4fa3a07b9f1e9cd621536caf610a0",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "15c6cbc9-753a-4f09-86bf-4fe2d8bb1fee": {
+    "status": "reviewed",
+    "sourceHash": "fc6ee3a65cb299831a3344654b7c61d63d55f1ff9f95d4fe088908d402fd43d8",
+    "draftHash": "9175af57883b401913792bba46af9333884d667f0e70dc07248858c22d27e029",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "9380d4f6-e19d-4ff1-8309-07f4ede69f7c": {
+    "status": "reviewed",
+    "sourceHash": "45806cabc8eac9af2827701198f87bb0a4b017a80b7be1a070af2f3f82739398",
+    "draftHash": "e8a3c6de1f2fc4cd81f9c12f01679d709241510951b466aefa036479def8b0a9",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "ae660471-84bc-4a58-a438-005b8a99c3c1": {
+    "status": "reviewed",
+    "sourceHash": "a84bd8ab7f9eb08bc3dc976e789dcb5dcb7f64dd09ada423b350137801d55d1f",
+    "draftHash": "adf5b1dffabab05ae569225ef953bf59a5ccffb141178f99b549e8e38cf81c3d",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "19796737-ec7b-4c33-8df4-a81a7ca2cc10": {
+    "status": "reviewed",
+    "sourceHash": "0704515afde91c42dd5e1e68012daa58d41acffaaed29090c991f7be0e7253e6",
+    "draftHash": "65352a1e87e000771148f4663b896dce5c4a50297ca8c6f74f7f3093f4f0cd5a",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "4c5b328d-2ab8-4f4d-a0c2-627b6cb0c92b": {
+    "status": "reviewed",
+    "sourceHash": "fd34b8e56ba644929b21705ef19f33eb81a44dd467ad3e7d7c125f96f2b62d68",
+    "draftHash": "b733a64f81c5ef6a47148aabc781c5627c4f80cad4f6382841ef04ba7abdc1e0",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "9154fc22-5e19-45b7-a506-435298bb26fc": {
+    "status": "reviewed",
+    "sourceHash": "67ab4ec73ac80b94de63c17c03848d21112d345c5a58e12d16bb817b9bf11cda",
+    "draftHash": "127d28c15a3bd64dfe6a35daffe90fe835da1e209fc73390e4e935fde59da28a",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "f8d102c4-b25b-412f-afce-35db35c339d9": {
+    "status": "reviewed",
+    "sourceHash": "e5acf4ee4a5b2da72eb08c1f33c8afd82ae2b07c92b40e61127be5a858cb46db",
+    "draftHash": "97d08a963f12b8b2ff0b05e5b2b9f614ca54ba7ece04df2f3671c03ab694ebb6",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "7456691c-636e-46d7-9093-edc778b0a7ea": {
+    "status": "reviewed",
+    "sourceHash": "e0e8224ae7aecd981ec2ad117ebccd210de37d04efc4e0b03cfe388972e3a2f4",
+    "draftHash": "afa1a749f08dfe2fba37bafca50746db5366a07033b46f89804582699b63f044",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "f2f04c30-149d-4b2b-bce1-1334adf84739": {
+    "status": "reviewed",
+    "sourceHash": "5fa1c79e7f78fcdb62045fe4897dbdd36346d1893d7e6088f7ec044e91640a76",
+    "draftHash": "b790dbcd5506cf4d0fb40bfbbf31c70cb2a905f7aa837ccb1fa29baee9d4d84d",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "7e75853a-bf7a-4d8d-b3e9-0537f4ed913a": {
+    "status": "reviewed",
+    "sourceHash": "d6cb78742bef93a3c0d7ab176a7d97063357ea64cff80180cc5e83c860cc615e",
+    "draftHash": "1e6b951ce0cbf39902bed0c347a4015c9659ab30e4e86bcf0ee4b555100264fb",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "5ccd5188-0e5d-450e-8ec5-d6e661fac4f7": {
+    "status": "reviewed",
+    "sourceHash": "1e65aa4ce58e1aa831b8b04826034a5517598074f13f373ed7046aff1c1eed60",
+    "draftHash": "3b72c160c2bb160d2189b29f46929cb0222b16803bf4a16c00df4af0f5b7b504",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "b41e25f5-5a57-497f-a3a2-84bdfb9331f5": {
+    "status": "reviewed",
+    "sourceHash": "e458904794d9426dbcea33b6b8507e2651cb68bf84d9bf318bd3a7046a9704ee",
+    "draftHash": "1d0af1429eab9f57b6f472627dfa17351abb9a95ffa9442a9d64299dd3cc6bf2",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "8b57e03d-6d1f-4a4a-ba34-1f58e2551ca1": {
+    "status": "reviewed",
+    "sourceHash": "4ded7551bfed0035c03662150094fa9a9b44b15c7814b722113e8506a737c717",
+    "draftHash": "3ac3c8bde457b7c31c6e63a41558ad8cafba1dd6dc5b15bbfae7b6414e6cf790",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "ea3f91f0-487e-4df7-826a-3692ef82e64d": {
+    "status": "reviewed",
+    "sourceHash": "2e0cf4eaf7a6859417ecdc007050b05b8d0f474f17adb73af5a0111792130cb3",
+    "draftHash": "76031c175b41d48e31b67d61da936fa8e055c6b5a7a5ce7d61dcd9aaa4ff05c4",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "82f57261-b608-4ee9-8d88-7fde20c49a7a": {
+    "status": "reviewed",
+    "sourceHash": "9adeb0375ccf44446bff370b9dc644c2e61a867395bd4fb52254a496d5d24bdb",
+    "draftHash": "12f2f048a564ce1e6a543efb68750b1ef310267a3b503421a7e756a64c3d8ca2",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "02943f6d-2c91-4d9c-9690-247eab9ae3ec": {
+    "status": "reviewed",
+    "sourceHash": "bd5106ae33980b0f6497891dadbf378d54ceddf6b5c21b4c18ec15b54ddf0ae2",
+    "draftHash": "c9b0538f939a1b0fcc557d877e56e5bbcbc5d9107ecdb336985541a48f0dce7e",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "ac2ec0ba-10b1-4ae3-8859-1e7752625331": {
+    "status": "reviewed",
+    "sourceHash": "4587c4ecc9d30a5e2add422e83aedf7e8d103020018f98059f6fcf09f4884b2e",
+    "draftHash": "0ab73ce65ef49fc4b84a99e7476494e0a7c865345192af132b8804352f3ed039",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "31e9a6b0-5035-4b1b-a9d3-ff1c279f53b6": {
+    "status": "reviewed",
+    "sourceHash": "24e980ce82b5cc337d7778ca44729626331d531679c333a31b426d2aa5c7000e",
+    "draftHash": "8d9bfaf868db429295a093fd03e8cb288832680059c1c651f43830258ad13de2",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "1fb10ea4-f46c-4c08-bd06-f039f1907be6": {
+    "status": "reviewed",
+    "sourceHash": "ca6a1254c7c620ae389d37866ee2051d6f70f07098022f1d0c81a311a7a57a53",
+    "draftHash": "42d155e9704cf745eac54e83f902937dfe6bc1145bf2f23a3c46ebb5ef0a3e8e",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "b9521e2b-963e-4d90-acf3-d87c2a135071": {
+    "status": "reviewed",
+    "sourceHash": "f20ed34817151cea1dbce9b77ea79d60f796e8c9a915f4ed771ced14962003f5",
+    "draftHash": "e297da5108b8a007edb5edb52f5208257fc9cdd6d54d92b6dd615e689daf0501",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "5bb5c590-5de8-4bfb-aee6-30bc4bcdf99a": {
+    "status": "reviewed",
+    "sourceHash": "f30558b5a126b6eef6189fdc4ef9bf01c7806aa13a5f52b5e9fcfd5f93bbe4f1",
+    "draftHash": "01e4479bc4486d43eb35713003a4971fe41e6b6a922860eb187873117e311ede",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "1f28ab03-8388-4a2f-8c4f-3ce47789e221": {
+    "status": "reviewed",
+    "sourceHash": "8f00518ee852c750c9c83c124e1b07f01e01c1efa3a698b6fce6c4d93665e124",
+    "draftHash": "082a1a2fd3c7e19f7c4e270d74acd503109b16a975ca532f06bcf9428a2e197b",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "31cc87f3-da0f-421d-8674-8753530077e2": {
+    "status": "reviewed",
+    "sourceHash": "98a5d80b5692fd11db8980115c109aae030f2258e2a9d2f7b42ce40f937f90b8",
+    "draftHash": "8d27397f741039edf50d46e3c280021fa05a6a48e75a6728cbf6890b869d205e",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "56bec3c2-9c0c-4d40-9750-2e28bdc9a20e": {
+    "status": "reviewed",
+    "sourceHash": "bdadd75a1b5d2ad99eec2e979c34b8ade7758d98b1464944b2579be5adfb9971",
+    "draftHash": "6dfb486bec07dc24c46783bd44afbf3f13439684b6319b1819076b2ceea680c4",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "a0576d39-c4ac-4608-a4e2-249b6c31fd1d": {
+    "status": "reviewed",
+    "sourceHash": "ee394a382021792fe6e7190d5f497581d812b3264b485389f7149e83d023630f",
+    "draftHash": "6458078ea34efe9533b3e02a6ec3f1eb19eca6a373617d74a8962af8c8fa8499",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "204e287b-8194-4c2d-808b-11cc260412ae": {
+    "status": "reviewed",
+    "sourceHash": "9b89267cb2e57cdbc305b78ef85b2d40aecd6c3d9d1e9c3c0fe1cc11906f3383",
+    "draftHash": "20bbc2728aa4d2186369c1101b6629940fbbad038d0e987a8770f7467d04ecec",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "4d6f83e9-8232-4db1-903e-f9e619df5ecb": {
+    "status": "reviewed",
+    "sourceHash": "9be42ebef07e4d414a76a260326d38a5fc4b0fef1633fcf1efccf33d4b5cbe12",
+    "draftHash": "3ffb992696304bd623fed4e8cdda83697b1240e215ec4fb67e34313630d90019",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "d5d66aff-b6ae-48cc-9160-16b096d4ea49": {
+    "status": "reviewed",
+    "sourceHash": "9d826de78ccf5ba195f330ebb2b0f25a6e74536a7c1d805a2673fc840f089174",
+    "draftHash": "7df33ce0b845c5500a5e3e3372c712902a9f82c8943e1a01a0a162cb5590fc60",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "3b847cf5-16b1-449d-a436-e5995c6433c4": {
+    "status": "reviewed",
+    "sourceHash": "526d2ba41d5f5a40275c426d5d0efe0706efe5abe09c0f288bf3d2ea0b13e09f",
+    "draftHash": "c844b3a39a3a8c87dfd9e9236020a5ccf2cd259000390dd0d3b6c4d6a5965824",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "4925c861-b0f8-4b2f-923e-9cba2df1323e": {
+    "status": "reviewed",
+    "sourceHash": "9ec29712d796ec32c8a8ff9595a46a8fefa14dd00e66bd5110fa23b335a906d3",
+    "draftHash": "61247e4b3136ed69b0325102a78fbfcf1bb98aa3d5c80522d48d37339c8637d5",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "a2b4e8ca-92e3-4101-8a54-739b8f1d8184": {
+    "status": "reviewed",
+    "sourceHash": "3b5ba580d20e875d54d49c739fcdd33df6b3904287d611dc672a68bd26ab53c8",
+    "draftHash": "0387693bd49889b7b891ef327fa26bc53530f21fde98f52885b2a9529471d420",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "65e9c24b-bdbd-4ef9-9e14-012c8fde79b8": {
+    "status": "reviewed",
+    "sourceHash": "33a1a024b04a00ed212735d6e367e7e47307d740b2f6bce8995a3377f2097af9",
+    "draftHash": "1f66741564702a244a94490db80dedc1cbb3028424cd8be51f1bf4685a0a818a",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "263b4a33-fd51-47e1-b49a-d84dd99a2e0f": {
+    "status": "reviewed",
+    "sourceHash": "8639015eee40c8fd7f03185ec5931cf9813b6c213d10949405efcd483141cca9",
+    "draftHash": "23c018fb20b50a886d37112843cdfbb81ca1ad77d9a7230a20daa45d61bc33ee",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "9a5070c8-8b6a-46d3-a976-ce942baf42e7": {
+    "status": "reviewed",
+    "sourceHash": "45d4d8e58b0f96b62b5c55ffe7c239e617cec27ecb1d58ccfb5fe11a2b549340",
+    "draftHash": "4c35fb48d0ac56c2b47cec739e5490489d86aa1dfcc5e80d428b4118bf16a3fa",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "e73e2743-3752-4ba3-938a-fb59cd3965ee": {
+    "status": "reviewed",
+    "sourceHash": "542728de39f80f96d6a0c33185f580193bcbff7c35fb5a2bd58978960c33e637",
+    "draftHash": "c4b84358fd9a4bfc345b14ce793ca043c5cbf9daea31e7ff3ba91d7f98b43bd4",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "88e98bed-27fa-4dbe-8d6e-e7cb8c3e4d97": {
+    "status": "reviewed",
+    "sourceHash": "53fe143d7c30dc84cdc976d58b087277b11698a4275c7a10af0174569af82f26",
+    "draftHash": "2e4843aa5af13ff79ae926a155b6bf64b0871b429cbb6080abcfffa9963a1419",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "14ae27a0-2641-41e6-8c0a-60a9185f8b6d": {
+    "status": "reviewed",
+    "sourceHash": "a35cc708b5d76664a0129d384778dfff96e05cd8177fbea7d1d681596a7e6793",
+    "draftHash": "ab5e12a38e65627a9cf999b580e7c08cdc215db0f07b06147f1ef4b3dce7beab",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "1deac6d5-6da0-4d9f-a182-2f0697cbb932": {
+    "status": "reviewed",
+    "sourceHash": "2fb7f7cac34dbd6a90c8d79d250078bbd8310934c06e2b3e0e826ea223a6da7d",
+    "draftHash": "d756f21fefad3e4fd26a75348b0aebe04e83387bc65f40a1a7f2b60f47d71502",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "8eaf97fd-82bb-4651-9dde-9a5a6f78182c": {
+    "status": "reviewed",
+    "sourceHash": "22fed65add051b753f78784a9bc7b46bc4ca4e1baac0ffbef05ce27db7cc92f8",
+    "draftHash": "65467ab5cc1e5085a6c47753849929dffad9332459e8b68078609462f9c7c117",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "27ff54ab-4861-43d8-b3c1-69113d2e4e10": {
+    "status": "reviewed",
+    "sourceHash": "1d479459ec7fc1957d30c6c089ae595580fcda5695cd8574e0fa3d53d22e68f8",
+    "draftHash": "675c739cf08f86128b6b14c641c14ae769548057142057c80cdb7f26efc12471",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "24ca9268-9cbd-423b-b423-12e1a9aa9041": {
+    "status": "reviewed",
+    "sourceHash": "316ace035e49f0494dbff8f95de8bf4aa2f94fbeb5419e6d391e7323b4a90b1c",
+    "draftHash": "1792a0aa52a8f4e7f3eea7ef58a997634e7c101eee8c9ed0892bfe4b1a6dcbbf",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "7c93c162-d424-4d91-b71b-7c9b81713b8c": {
+    "status": "reviewed",
+    "sourceHash": "333fd6a5ff53a4f7f3fab0a015c1d35a41d06d11cb95f7ff9d353041e30630bd",
+    "draftHash": "fe28ce7d1c6051fe61336ec276b2f0617746fb7ce22711b4688e437d7d0c20e0",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "8de30193-fba7-4aef-9ff9-c3726a22104d": {
+    "status": "reviewed",
+    "sourceHash": "a4e58e354aca99585fc7e2ed94c010130c86eb25588f0ee3031bf1e603a9cd12",
+    "draftHash": "38114041c3fd5be54814e2ac50535100e0bd5d681d38016bac76802031d445fa",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "54008cd0-f9bf-424f-bc55-f15c1e9025f3": {
+    "status": "reviewed",
+    "sourceHash": "3fda1431d821ceb6e2e83ed30b2f35dd818c3bbe6420350507f1d52663dc0f25",
+    "draftHash": "936b09e63124d17cfdcbadd96776a81294118f0862f1982e54e2fa94f9f64ae1",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "a7f425de-143b-493d-bb51-13e27c68e871": {
+    "status": "reviewed",
+    "sourceHash": "bcd5f56ef364cf2af933312e09d761d4a302390ffa45b23689c5ca8397ccd23a",
+    "draftHash": "e10c97f2fd67e279192ac157b616f500b5d3e2bbc885edcce89d61dcebd97a4a",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "92ae04dc-89af-45d6-9e31-204a01df801d": {
+    "status": "reviewed",
+    "sourceHash": "4b5e4be05af65c056fbf8f814cc63e01b07c5db75bd43de23c3d6cfdd9934c90",
+    "draftHash": "90866960d1a87396af149952e9ef847c360f202357f5b1f544523f1584d6f925",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "d12edd29-d467-4b19-b3f5-533fa5c8d56a": {
+    "status": "reviewed",
+    "sourceHash": "a1d1602aac1c9806abe99595eb1fe33415c19ea855505629b7fde2ab28abe5c7",
+    "draftHash": "ba8fc976dad3a40a0fba94ee0020a1358d19f17a2eb4f8aeecd824e3de71dbfa",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "80159919-0b66-4956-a563-ef9bcf6a05c0": {
+    "status": "reviewed",
+    "sourceHash": "dfa4eb3e39286b1ac50da4df594bc0eed910c92273d65009bf478c279d44a3e4",
+    "draftHash": "21a7a514f8364fe3da9a21d3b5bc908f347cdfff72155f6389d0092873e82d8a",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "200fe9fa-0221-4123-86de-4d63ce9d3daf": {
+    "status": "reviewed",
+    "sourceHash": "5c98933fe41ed47a896a71d9078534806a8a3b5b021ae1c79031c61ca6758e25",
+    "draftHash": "558094e0b051d62e46e21b6570120be284fa5a5f2d49105e07f1a212d84ea122",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "fedb06cc-37da-4aaf-8f39-85ebcb08b947": {
+    "status": "reviewed",
+    "sourceHash": "a3f5d85022031b85cbd8f84b14c7f10a39dad53253b6204a0548f21aecb0fe00",
+    "draftHash": "7f77839c31bb75f1fd74f9abc1aa07a0c32b944b2e05a24f3d59bfbbea4b3204",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "292c14cd-151f-4321-a94c-46fc86693eb3": {
+    "status": "reviewed",
+    "sourceHash": "8e4d7ef9dd08438989711e3839f4214bfbd77476106164d6d9ed005c357f546a",
+    "draftHash": "ed9159a7700518447aac9ca14cc5d6bd0835d08d2a9e24fdd5c626020b93c535",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "afc2e6d6-e67f-4513-a6ab-82841d2f97cc": {
+    "status": "reviewed",
+    "sourceHash": "050a3d1f4c257070e000e2088fa0b629c4f5169f2e9eaa83b74b6d9e41326a53",
+    "draftHash": "e16efa292d9d87012d6d7104f545d3dd26f2416aa9fdff17efdd22889b72a2a8",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "fde30eaa-9b2c-47ce-ba49-c1356353ac9a": {
+    "status": "reviewed",
+    "sourceHash": "5594ec423c7f75233ba467a0cea4e97526a337399fe91ddc664be90714edef5b",
+    "draftHash": "7c152994c86d2a74d5ef91fa83fbadc76039257f3a0ec56fe78badf05542b4f6",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "228c87f2-092b-411b-9029-c5454cc2cb1c": {
+    "status": "reviewed",
+    "sourceHash": "ae89da170e7c213f18e8709f2ee5d398bc1def80bcd81d216ffab58fc4ca4d81",
+    "draftHash": "f8b485b07f60768e54e26fc43af08abd6604690030fa88dec1384cee6674368c",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "549a5a94-a8f5-436e-bc9c-1253d01c1940": {
+    "status": "reviewed",
+    "sourceHash": "b11c5788c53e52f674c4a90205ca825e6b8512a297dd1bcfd8fb85e085381311",
+    "draftHash": "8be8709c1f86c660009506400e5dc44d06ed58bd9db56d66d02d62fa9d36ea4f",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "d755f74b-18fd-44d1-a6e1-43e77490bb09": {
+    "status": "reviewed",
+    "sourceHash": "79c0e43d9ecac71c189ff384939d125da03bdf18bb23d43a553b5b04dfed4e45",
+    "draftHash": "c72fbe1557d994339d42c41d2d4f0396272f251554c098e30f82e90c8d882bd5",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "9bd49546-5289-4351-97f4-d69296720dfc": {
+    "status": "reviewed",
+    "sourceHash": "b7a390e8023b263e8127ff72640b1b780c18b4e1f43bc7011506ab55d179fe9e",
+    "draftHash": "5b7bc63def08b538b06c9389b191d39f5e0ce2941fd72e29a6a2b5bb31366f88",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "992df222-c445-4925-a656-0caa4447d5bb": {
+    "status": "reviewed",
+    "sourceHash": "51a187eb9aad5ca56e6d26fe0386495d529c83d45e23517b2a65dd367468e9ae",
+    "draftHash": "681272a809662261b70b7e94187fad0c44efe282b6cc3b02186d5cfa1fecec8c",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "7f3799de-78b4-49bc-b6d8-a5fa3ecacd33": {
+    "status": "reviewed",
+    "sourceHash": "ace150d7f8122b2d62051372c3470470c4d4bda795471215c983f8c68850afd1",
+    "draftHash": "2715ee0504329e73ff9a041e98a47ba7bf2c45bd861d220d48ef6aee519e31dd",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "4c745990-657a-41fe-ba2c-d9cf371ca563": {
+    "status": "reviewed",
+    "sourceHash": "ff7235c9666a7c8e55668fcf211e8d49f05288da61339f806b8c8eed65ee06d9",
+    "draftHash": "d53b6b76033b12461b94d709ef0ee298232a1bf441ad70d582741764a96ad68f",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "3138fe30-6cf6-45b0-a441-2d5398107a9a": {
+    "status": "reviewed",
+    "sourceHash": "7020f2f089c71e9ffdc58b3cf711f8c3640dd73f29628f2e0d90f22da8250428",
+    "draftHash": "52384ceb2a3c8fd3699017f026469bc5c0b925d0fdb27aaf4c7823f208670a0d",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "f0cd6afd-c89d-4fc3-b214-bcbf63042e8e": {
+    "status": "reviewed",
+    "sourceHash": "43f8c6495680eb5a9c124f7d9af44bb6a89e039265faa2d97f735fcacc20787a",
+    "draftHash": "8939bc9af1574e483234a3fcf2ee0e417c56cba93dc7634291b9818fa2aa0226",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "72aab9ef-65a9-4a8a-b36b-61932c09ce85": {
+    "status": "reviewed",
+    "sourceHash": "5588ad177418b3e6d7723bc99290a6ade406f0d1424088cb881bf5b873fb50d1",
+    "draftHash": "4fdf24440130839ca461e810afc327c2dfe0bc873e2edbd984921ad1f03a7cf9",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "c26445b5-a433-4cd7-9020-435866b845f9": {
+    "status": "reviewed",
+    "sourceHash": "4ec5b5ee1b31d95234b001e1f9da3a714bb0c7d33c75d0f1ee8b03c368a5f7bd",
+    "draftHash": "19a57d12c315eaa3dcfc9e98a504de6de36d57f6693c77d905bb28ad41c9e11d",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "a746d1f0-a72c-44d2-8b1c-c5c990749257": {
+    "status": "reviewed",
+    "sourceHash": "b8da0fc5ca9e9109b14fa4830a2ad8e591e5376fbb1e452537b45d2e911d4af2",
+    "draftHash": "1e2101cf00835c627724dd8be4ccd30b6297dbf1f8ea2bcae70dfdc36dae9579",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "6556f501-f5b9-4353-bde2-75ec0e1bb616": {
+    "status": "reviewed",
+    "sourceHash": "018292b06ded4fc288dfa38b3fdddf27a0b32af11c0e22fd4c755460d14af7d8",
+    "draftHash": "72b3934fccb21f0d1ce5977e403d511ef0a05913ccf986e3a2e71b049e4c1a9e",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "fdc07d9f-95b8-45f7-b1b3-9d272b3416a4": {
+    "status": "reviewed",
+    "sourceHash": "5df989d97b12b78ba530088d1fa5d9bfad4dfb9c8b0770c4a6b89f703325e4c6",
+    "draftHash": "fa898d99c02d60637a29dfca65a499ccf4ac4f59c7310a539109ea0838539010",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "04af557e-bac8-4fbf-92e7-d8a87fa11038": {
+    "status": "reviewed",
+    "sourceHash": "2673bb36d976db75f5bd89d4300b2ad4dcc61e048b22192c523e3b0034145dc6",
+    "draftHash": "c71429056c63d9fa37aa2331f496fd58aebd6217c6115c7023ef57a822b32212",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "1487452b-5f49-4f4f-9913-1f3ec1cddf95": {
+    "status": "reviewed",
+    "sourceHash": "9fcc1b88acc4a4b68209955177241976b518ace8866424023265cabe7ae07883",
+    "draftHash": "c7c5129be3286652c0b96fe6acd86126839f3e4431ab7c49e2de9b13d7a5eee6",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "d9dd3520-9aab-4b1b-bd57-810f29391667": {
+    "status": "reviewed",
+    "sourceHash": "f79388c90a95bf4a5301a06efdf90557a9726717a64300fd0542acce4073ffe2",
+    "draftHash": "45944a7b1b9f5852d4f24f343bb022f4b9037b1e2bf96cc4ec0b56ef0c4b25a4",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "8cefa67f-2b9a-4e13-8158-4d38cbfb331b": {
+    "status": "reviewed",
+    "sourceHash": "7467573f1b378435c09e0e3059708ddcf3807b4183ff203c182545e93046e86d",
+    "draftHash": "618afc90c34449f146e5c0a610618489bc19026a9a9f2523c177977332c2ccb1",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "3f049d66-1513-407f-bb4e-cf25a7b5069a": {
+    "status": "reviewed",
+    "sourceHash": "9c1da10f9de5d38cb395836d35657c66f27fc8c0697667c94a6933b7e7984f9b",
+    "draftHash": "8bd401b58a7ef73d4921722c46e8a588b80be994e475056f15b48ba95c01ba3a",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "41d292d2-b752-4c30-8b6b-7b7380f2f9bd": {
+    "status": "reviewed",
+    "sourceHash": "19f63ef16a267daed0ab853d559e409f55cb9a0bcb88e8607e49325a4913dc8d",
+    "draftHash": "1f49293ac718f9fbc9e16922823ded08d21fc0c4821b72d31e02057ec8f09b47",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "1c1d545e-07a1-46a9-bb76-b7473c1fde43": {
+    "status": "reviewed",
+    "sourceHash": "25d043dfa8862cd43f89ae72ff11e23a7f370d747c306b43b1d9d8305e7539c5",
+    "draftHash": "560224b7c9004f6c44506a6ca5feb2da0ad721b24797822525296d4061844b2c",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "0445f296-5816-4ab9-a617-7d8ed29088ea": {
+    "status": "reviewed",
+    "sourceHash": "97ade2755b3a484644dc0f0be3cad4f143bbd53c4f7814863479a7ef6de9356b",
+    "draftHash": "7b9169010c251e16a72bb627df03795a1560a43156e8a1dad725d76b57a3d72a",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "56ca5b29-4bb9-4f12-9200-6bc7c72e4e47": {
+    "status": "reviewed",
+    "sourceHash": "d533f75758ac586c18d64feac93da3ae61e1a950e0c28bbaf086702ae47bddbc",
+    "draftHash": "f3c9eae646499e30ce3f50c36e4c3cd75ca52ae04c9553afcc930abb06a8ef54",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "f8afed4e-e8cd-467f-afae-51dc149921f7": {
+    "status": "reviewed",
+    "sourceHash": "3f6ba0ade9d2542420ae8bbc5629c9daec46b1372c644b1b3e9ff90dad0bd217",
+    "draftHash": "7647ee490bb40b735e39d91d002b51768743b0c7f1aadc791b6db154accec544",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "3e504df9-b22d-480e-9e7c-9f8ab8591b91": {
+    "status": "reviewed",
+    "sourceHash": "1489929c2c02d4e902910ba487e126ed63af56940ec8102c8aa96133d437b314",
+    "draftHash": "31f74265ad62653c088aa5306f268905fa6286304cc7603ff6bcb1efb4b2dfba",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "cc0e7ac3-bde4-4491-8ae5-027106709e72": {
+    "status": "reviewed",
+    "sourceHash": "6d22db2107b3f1da1cb307a6b8a065d96baab9f139a17ba0ef123adb8e92c31f",
+    "draftHash": "a60748343c3ff5259137d388da97798044b6c9abf28679edd2f2b18442534aa9",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "6975adab-25d0-40c6-af3a-3a05847e7717": {
+    "status": "reviewed",
+    "sourceHash": "8f866c95a25e6b2535b8c1039aed1cb0bcfe499f12a3d81227bc399350b05789",
+    "draftHash": "8aeb3e0cd71517471741595d0dea12f3105d3093dbdacd52c447c18dc654780b",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "0613f575-4f07-4326-8591-603fb3d1da45": {
+    "status": "reviewed",
+    "sourceHash": "2a7103cdfc1399e9cdbd8b3f1be07b664494b15b745d754901faa5a0c87856a5",
+    "draftHash": "bcb37640f96ba3530db4e14a861facd51ffeb1cd23ff4bf8e4d58a203e7e248d",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "b1dad78c-4dd8-4b99-b37b-741ed761f26a": {
+    "status": "reviewed",
+    "sourceHash": "d75570dad038d5dd4864c311f415e436b81d17f20985ada25735af2035871722",
+    "draftHash": "788086411f63027c056ff30afe6a96c67ce620860ed2d04af16a2e29d71a29e8",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "8e18183e-5a58-4805-b672-1726969d6526": {
+    "status": "reviewed",
+    "sourceHash": "5ecb64245200b08db1e4a577e061d1ddf1f7a1089cb6d98573f2d08a128e0fd3",
+    "draftHash": "0f8807bc044ec091ea1ec36677680ff8b67a87b9ba1708688bda99290d521285",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "7f4cacb5-cde8-40de-9b14-e223879cc2f4": {
+    "status": "reviewed",
+    "sourceHash": "38fe1409d7aed8b9758f0c6e2ff502dcc8f03392e9fc9e7bf2bfb47e6228db2d",
+    "draftHash": "ef09f2bf3ca65c4eb1da689e3b6a0a3a28b815b48bbfab011afdea7413cc852b",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "d2b5090e-e6fe-4d4f-9dd6-fe94ff6d4b5c": {
+    "status": "reviewed",
+    "sourceHash": "ea0c8a3d6e5dbe04b23656909906b7c9cbbf082af0864c18138b072694faf846",
+    "draftHash": "19affa9d76c3bebca4ef971be1046f72a8cb519a9e9b038f382df78c92803cf3",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "b71d7c9c-7e92-4797-b2c9-8715dd0c2881": {
+    "status": "reviewed",
+    "sourceHash": "2699b992ecffdb4fa7e639ec27698f45aa1584b368da1fdc06ac3e9f79050a89",
+    "draftHash": "927c60925d058c56639f72f516b87d33946a8a75f2d3358f8e18800e97542eff",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "9309205e-1d08-4a7b-99ef-4a05a9ee4370": {
+    "status": "reviewed",
+    "sourceHash": "41c3a55ffe1456b079962fec17237fdd5fc82af0dd3fc42a8c090d21048400d3",
+    "draftHash": "a496476179d6c724ba1d9d07adb6cfab01aa93fa0a272991a7724b0a7d18ca95",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "542cb326-1037-4bd9-b0f6-6479d165dc4c": {
+    "status": "reviewed",
+    "sourceHash": "aad643176b6c594d98ce1dd79ed7074415728eb534b655658d3431aa45079006",
+    "draftHash": "9fb47218426fdc061ea59afcc86131436fcbdba3a4ffb7c6989d8286f72a7983",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "0f5af383-765a-4d56-b00b-79ee2ccd5111": {
+    "status": "reviewed",
+    "sourceHash": "03393cd3199342a7facaffe8c54657fdccaddf6041254386fd6e38cd6e9a130e",
+    "draftHash": "6a3253f71d5f45b5cddaac1bfc7f3216fbafb22daaa5b70f0e6553caf131c371",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "cb168b3b-d104-4df7-9868-1e1225ddb941": {
+    "status": "reviewed",
+    "sourceHash": "f9716204948380778ae46817a089e704961dc7b04e40e72d381c610422173bf5",
+    "draftHash": "c1ef7e4a68c078f98d01e9091c9f11a19eeed5438c5eb798cf03a15ff155d1a3",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "0bed9b02-991e-4e28-b631-86640147a712": {
+    "status": "reviewed",
+    "sourceHash": "319a64bde7cadf0b6450eff5407a620b7dfec7c3a3436a252f30f79adf124e18",
+    "draftHash": "fdb5c1f520ecc5a556dfbd3bfa71f50ab017402a7020e06c7a0610fa32b54dde",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "f15c4b50-ee89-4927-8cf3-15e3a6a6ab95": {
+    "status": "reviewed",
+    "sourceHash": "cf3e1e0142481027294c4bb882f580f26d0850cccd1e76989120a76e9f890f36",
+    "draftHash": "91d65c9887729fc6a334ef88caf56dfc6c85e56e275f81b132286d69f655dd4c",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "e5e5f969-ddac-4491-9cfe-d77742e1416d": {
+    "status": "reviewed",
+    "sourceHash": "cd58787e646eeccd6e34b360fc85875f9f33e72cab922cbf39fea1101c2df477",
+    "draftHash": "dc1d23f9fefc74ee3ca8424503f527d16fba1509d46662bb27f3dd43eed5149d",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "d3357800-9021-4647-a0a0-98499a0ee3c5": {
+    "status": "reviewed",
+    "sourceHash": "4675b879c86277abdd5376d2eaa6574d30d9224192163404afbc0db7238f93be",
+    "draftHash": "00698b8723d7c1531e1c686e6a2d4cdb5845048d90650f9313320dcc5b89943c",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "94ae3e7e-eb5d-414c-bfd6-124f50687ce5": {
+    "status": "reviewed",
+    "sourceHash": "54bdd9abe1f1a7a42873e3f1272271ce0f549a268d96f558cf400461c6d8f277",
+    "draftHash": "4132812a994250ee9da84ce0c9270c9586d121ee46caa329a29c8d864e8dcdc8",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "ce491725-b96b-46a7-b83c-463d2094ef3f": {
+    "status": "reviewed",
+    "sourceHash": "ed7fbdcb60b9be55a2912237dc4be9a1ec987b005b22c116759e7c6d2a7b379f",
+    "draftHash": "14e475122074b92a4635d07bf7d629ca3f720948c4ab2c1e6829f073ccc4f507",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "6d2e12c0-c1b8-4242-888c-9dba1a8f93ce": {
+    "status": "reviewed",
+    "sourceHash": "28a13a26c362868653e400767998c4ae37a7b615e323968dc59b366af2fc5fa8",
+    "draftHash": "44947322a8bb17a1bf54e980c1d6f0c15cbb8a6ba58320142d0304c8620548d5",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "ee2a3000-9127-43fa-8618-89a1937322cb": {
+    "status": "reviewed",
+    "sourceHash": "245be720b765a3e746decdfb4a1e3a78f5d24afbe32cc6f66e7d1335316abaa4",
+    "draftHash": "0b778f0a72a736b24bd04d30618d9278081699c8621397b46fc2c9a651cc68bd",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "9a4d3eae-fe01-46c7-a28b-8b518614a508": {
+    "status": "reviewed",
+    "sourceHash": "a93612da3fd1d7806c9364cf663e45c4217aa60b729a32be2ce368b548f4edc1",
+    "draftHash": "9d904a4b1e85ab864c179d0049d55af48c7c163509d8b8676874749af8066923",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "fae577a5-da28-4672-83ff-94c97ae2a4a4": {
+    "status": "reviewed",
+    "sourceHash": "b09f5faa172e9d7e630f3896316403e10216edabfb064ae1a4e4ed54c61343d8",
+    "draftHash": "165d840156a04f2a07245dac8876d43e838f2d77f9fe5ef8357dd8676b70ba37",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "f4301f96-e872-4eae-aa51-0d12328059d1": {
+    "status": "reviewed",
+    "sourceHash": "3f6fd7d31966836362165dbbb89a3e396cebe8bd9dca43949b0aa6e3ee25571a",
+    "draftHash": "44033d66254cb53a4495aac6a1cbd83642b37a2cd84cc44adb2db13ade22b683",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "e4354c00-c83e-43da-9341-7007889dd625": {
+    "status": "reviewed",
+    "sourceHash": "d6782ec261c24b2e62c8f2b0150377afc6b404878d2b3b57f3d101dd19269043",
+    "draftHash": "10a0a3a4243e642516e4ffa07dc27b1dd35185684c20c1a5de48cd78172927de",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "00f12a19-bb96-4980-a4f5-11a1b9d604dd": {
+    "status": "reviewed",
+    "sourceHash": "370af9e361bada35b83ea0172d71c9113f7c711c20469f7585198ab7375c6f0c",
+    "draftHash": "97744f588c539741739231d47b43ed79941ec92e983d97d25605b070cb7ed724",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "6d098c75-038d-45f4-8f86-73976c355e44": {
+    "status": "reviewed",
+    "sourceHash": "2919d5e42f60b2fb11173ed7787120880568b47bbd99ebe2f56239d95adb444c",
+    "draftHash": "ac9a0c0da8467bddb63204e98f52c9523881e3930847ff0ef9c2e6e934bea9c8",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "40cd6eec-c6ce-4659-a225-61063cd210e9": {
+    "status": "reviewed",
+    "sourceHash": "8289cdef8af4fd794ee7a6287cb1c2696c80c8d9003a7330b74761de7f35c194",
+    "draftHash": "0c9d4751f374c0b79a47f657ee64213f9782f0266ae6dae39b3cda160eb50044",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "a5b1f5c9-1ba7-4533-b497-55b1d4af1bbb": {
+    "status": "reviewed",
+    "sourceHash": "011787af3877cf427ecb4bd571a1f4a74ffa419de24b28a24015b00963104dd0",
+    "draftHash": "d2131baa4fc207d85c824ebe41941c03d28a92a7375dbdfba266ba4c27012da1",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "9080a103-2750-4b9b-a4fa-1167cd670a0c": {
+    "status": "reviewed",
+    "sourceHash": "e8194f6eda6dab06d7e80e17a0e1a1898deb3e92faa7092ca5bba70600d3e412",
+    "draftHash": "465e31b88f70eeeff1db2012917fe9b6d716580292224b00dbdd84422a479c85",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "ce71032a-c075-492c-9554-51eb080348a5": {
+    "status": "reviewed",
+    "sourceHash": "4c64200e302bbbd81a7bdeabae2d47c09ed8db28cd1333494436e8db27919983",
+    "draftHash": "a23681e65c8195245c6e5ba1fb4ef2745acf1efe49f851dd38beb1cb6456231b",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "a364504e-3cfc-44c6-9203-173856452cdd": {
+    "status": "reviewed",
+    "sourceHash": "f1282ef2e8f0b341336549a41bc7ed938bcf47ef5d13f43fbdbc0d304c0da070",
+    "draftHash": "025b9e55241ab800308a6a7701ba27b43a779316da6949c9801fd51329233d03",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "7950a49f-f51d-4926-9d1e-e5f76b153829": {
+    "status": "reviewed",
+    "sourceHash": "dc3f62bc8d2d94eaaafd89a196334561dd3d8d82be80c61821043b4598070c6a",
+    "draftHash": "0291cb8ba7339ab29dbd0cd38e76aa83d12c4f27f36dbaff0bd739a35fb6846a",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "0949fe2a-aadf-4cd4-b1c3-25fcdaecdb96": {
+    "status": "reviewed",
+    "sourceHash": "bbc1a78417546049004a02aa929f66634cbda3e302a48cbb84ad54fceb6e51d5",
+    "draftHash": "ae0ef94eeea260d6aed8e84c00a0096e0657886775c767942df4bb582d88a50f",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "2e8999a9-9df8-4483-ab1e-0231c3e46320": {
+    "status": "reviewed",
+    "sourceHash": "b6376612c29a8f0f4fa27e21dbc206891babf3c097410588672b115a53771ed1",
+    "draftHash": "74e610afe9afbf63248013d90ebd11202ae5d56d86ede0f2629bafd0f7099f45",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "36e09cb4-4fb7-48be-b6c6-c9bd906d9331": {
+    "status": "reviewed",
+    "sourceHash": "8530c10ea207a7103f66ca00cb707235a3f0f2cf7a1c33547f05e2e199c6b5ce",
+    "draftHash": "f1dfd825777bc37319497e8c6a4a9a8e9fda8a541a13911c5b022a058d0bceaf",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "c8a4faa6-8666-44f9-b4c9-df78d7af844d": {
+    "status": "reviewed",
+    "sourceHash": "f022d99db41be29fdf3ec0afc05b28b70b9cd6cf54c1966a076cd514e00a7d19",
+    "draftHash": "e5835fc52087edee8df2b4cd84a785223a12478e37a5267f7626f752967a0e3e",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "4c7205af-d1e8-48ed-8220-fe095418b95a": {
+    "status": "reviewed",
+    "sourceHash": "a18464308301aeeabcd1aa79d4144f59d36f5bd68a26cc6fb44782545deab891",
+    "draftHash": "cdcb82a022b3a0c92a581369ce3e76a19433062f4b4a510b147b7ffc8fe4b7ec",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "8baa7c35-9afb-40bf-b5e4-41d9895e2710": {
+    "status": "reviewed",
+    "sourceHash": "105f99b08b42c8880b1ba7ef0fde532050242e0b7d791e76857ca33a00f17d0e",
+    "draftHash": "236eada0127b941f66c071d068a9ac906994e8d25cbdb213763bd95180b8b251",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "6bbd1c2c-8c43-4ffb-b7b3-506d74266cee": {
+    "status": "reviewed",
+    "sourceHash": "2ab0a1c285415a9f1ca39b3fa5375aaa315c93ec2550337c8dc0ddd4cebaaede",
+    "draftHash": "ba509e0516fbaff24dcb417ab74aa80715953e4bc0d01a23dab40f1eff746f2a",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "1575c835-1241-4d7b-99dc-6d700549ac65": {
+    "status": "reviewed",
+    "sourceHash": "fdf98e95f348bfda14a88753f42584fac412d7c55f0600947d0e068a595bd394",
+    "draftHash": "5e63ce5b2a404909c86030b88399b54589840519f8b4b89e19043b3622d8d1a5",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "80fe70cd-6e63-48eb-9c1e-ab26330d45d9": {
+    "status": "reviewed",
+    "sourceHash": "37af72b66352b4f60bd95869c67425ae3cf408df2f36784c77d15446fad11617",
+    "draftHash": "6dce568b83a6fd939f30dd9c2dd9d38cab878c6470a7bd69b4ccc69e500160bd",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "10a0aedc-4b39-494b-a36c-28c6df28a668": {
+    "status": "reviewed",
+    "sourceHash": "2dd90b22394ba99b663c9f2d40eebb8072de965c3a6b4983237194a91c55b98a",
+    "draftHash": "5f60a07ff9febcde3dd24058cae94ce864bc0b57a6107e65e14cc614f6d25a2a",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "2188f98e-d5f0-4740-b94b-e1497a3619ee": {
+    "status": "reviewed",
+    "sourceHash": "16a89367cd7a90b082057d74fdc912cf25e9d1fa701f8fca8e633a7aad11fed6",
+    "draftHash": "297ef6cfd737dd7f06fee369ee11344b75e1d4df134f36e9b61889ec33d666c4",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "39b2954c-04df-4561-ad6e-f4ddbae0db1e": {
+    "status": "reviewed",
+    "sourceHash": "a59b25a87f35008566fc7679dac44564437005b178fa4042c0a2eab544452a78",
+    "draftHash": "88a8bec4327242f5c8256ad26ba5656870bc27c3369dd5155703536573117c06",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "c39225f9-16b2-4713-a11c-d7030ec3b1c9": {
+    "status": "reviewed",
+    "sourceHash": "efdf2f870967b45ee37702f724572f280934f7ce4d5a2bd0d0095781974b1580",
+    "draftHash": "ac17886457b495ca48dd6e7ac20893cacd1d4311fb9e62fb3ac6a2f0c0d7f73b",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "4a732464-35a5-4ffc-94d0-37d653eef2a1": {
+    "status": "reviewed",
+    "sourceHash": "4010984f655bef3c923724af7d4195ad7af606891825059c992bd0a8e616317f",
+    "draftHash": "7405e63f3d43afa1af45e5fd3eea0f9743090bda641fbf88d5dffd4fb57ac022",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "6beb5cc2-ae49-4e23-952a-1cb92fa11512": {
+    "status": "reviewed",
+    "sourceHash": "183c2d1b8978d784a3af31b65e49bc8c1e4df87bd224ab13f52368c5e655ee9d",
+    "draftHash": "f9ea049bf162f0b558e87bcfaff0ad88a0217cb91e67f08bdb72df9a94abb5a6",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "b4780bd1-1703-4bce-a801-d5ed566826b5": {
+    "status": "reviewed",
+    "sourceHash": "33eb7315b18b1982a27911a707a961bec9ded5c7a3aac493e5dc55fd9bf09ba7",
+    "draftHash": "a752d44bdd9af219eb6d9d121a4be7bb00e8fc20a4fc94da15265b368f9dcdc4",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "bea6f283-8f90-49b5-8842-1cb906816548": {
+    "status": "reviewed",
+    "sourceHash": "3d4f35c15b0c1efa3855dba51e25293f682fa7a828ed1db15c98965780e20454",
+    "draftHash": "e9d642baf1b82880228db57c979ce04e68ba353952f2944afb183f6e7ff42655",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "7d906794-b4d1-4922-9c59-eee5b19602ad": {
+    "status": "reviewed",
+    "sourceHash": "0879ac128da40df374d3d4fb9c3ecaaae9692a6604e548b0aabec50e79ef5cc1",
+    "draftHash": "982ddc02bf7793544902881ca0e4456b2e22310948fac43a27c412988113d4d2",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "9e6cbc1b-95ed-406b-8c9d-d05876a1342c": {
+    "status": "reviewed",
+    "sourceHash": "58a40c146312d3c0a36da8b84b17fcb5dfa58872bb6b03835421822fa8d9fcb0",
+    "draftHash": "082695e426bb00223ec1a0e32324612a6a31064346cd6549a2286c0a56c1704e",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "2d66a9e4-7b4d-4be4-91fd-6a4b2cd8817b": {
+    "status": "reviewed",
+    "sourceHash": "e4387d4ba20b0affa4281bcb3c94c17fe86827d21c1531d417e65fd8869f32fc",
+    "draftHash": "a350062a0e5713229c08d5e012ce49ac426d1ce27054976768cc188cc53e6516",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "f1496cf4-4f85-4f9e-9e0e-dd05370641d3": {
+    "status": "reviewed",
+    "sourceHash": "b1d1eca92d4200190d62d243bd9e89931ee6c0ecb4ac16133ba304c6fd225f47",
+    "draftHash": "0a22c67caf3680d6043361dd7f5c94fd13c0b644e1a477d3ad6b1876c0762e4f",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "361a3e5e-ef71-4749-b39a-aa2f5d9180e4": {
+    "status": "reviewed",
+    "sourceHash": "934f63346598bc8e0e05cdc744f0c5ac12eb834659cb990aa8b13652304df8d7",
+    "draftHash": "69911bc5ce65e979a1b7cfb84bc80385694446a11a3a51028594cb0931b8548f",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "6340ef19-35e2-4194-96a9-3ee0a667905b": {
+    "status": "reviewed",
+    "sourceHash": "4538f374e6fd89b03a73e79ebf7c8f90ae76743326a10a0ada0c7cefb77edac7",
+    "draftHash": "a13d1031ba6606be868c49d0fba9752b22455209377f856932a2c3bbefa6588b",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "6290b8f0-48de-407f-be2c-629140d91f83": {
+    "status": "reviewed",
+    "sourceHash": "c3a70b42f6286f6ec4b7ced9d7a433b3be7ac72be5984b48de2876b6c3f846d4",
+    "draftHash": "edb682f69b7aab792e3821554a53fb3b64368d921037df763513ea17f6c949b1",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "8d58a158-1a9b-4085-8ef7-b7b4e6adb66d": {
+    "status": "reviewed",
+    "sourceHash": "d88a9b61f944ab162969a0f217555af60a547e174cbc44aba1f982c2b891e62d",
+    "draftHash": "dd3418b89d48e824e3d15fe87b03452235ecb9f0dc96ca1d21c437bcddad9e02",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "59fb3f01-65b2-416a-aefb-c13e502bfba1": {
+    "status": "reviewed",
+    "sourceHash": "7846fd556b4f82684da6671e23780a94bf832e0c64e45e5a6267b975b1dd4606",
+    "draftHash": "27272c2ada376b72abbc70d609a656253940c05e7b3c8377e160f568d859bc70",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "e2fec465-cea1-4829-b12d-3ba37a267562": {
+    "status": "reviewed",
+    "sourceHash": "920f9f71ccfbc2e201fdbcb9d1237fb7c7290ef3a0c2e2b2eec60d28b6b3f53c",
+    "draftHash": "3af75b41d364b539bb05cc41f032951fdc15aa0532e7bea3c15dda081cccab79",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "de6b7e3d-03cd-4daa-bdc2-7fb820fda441": {
+    "status": "reviewed",
+    "sourceHash": "7919cc2ef1320e70aff7b87b7742a1244c373df5e3de06d84867dee89c6360fa",
+    "draftHash": "c498a236de05d1ca0ab8cafb6fdd663afd6cee4b8f4e4c065bd9ecce232e8d13",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "d0fa1454-f337-4343-ab4a-2a42dfdf4e8f": {
+    "status": "reviewed",
+    "sourceHash": "ed920dcdaba13d6be118931348ede4a465fa8088c9ce0a889a7eab5b0b1391a0",
+    "draftHash": "896f3ac9f0fd63a7679879e32d8a59a77ce9e147631c2009f33963862c328c09",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "4ac3f099-73da-43e8-a4e5-1dbbd9427491": {
+    "status": "reviewed",
+    "sourceHash": "219792b761a3ae898dc0fc0f6ab3032e222fa743f6564628081c1b60a45985ce",
+    "draftHash": "ab7393fff5b4453086d87725bdbf911bd878dd3a7fe9b085ce70505df0940cf2",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "090b7792-2942-4f3c-a34d-caccd066c76f": {
+    "status": "reviewed",
+    "sourceHash": "aff53b298313f782d1c5aebc721c8baa17bea2969d16e66bca0a039757935381",
+    "draftHash": "4b8389c674ab56594b38eaffdbe591101fbd21c4ffa262b230daeb0bcc060098",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "c854a853-b015-4848-823b-a786659d33b3": {
+    "status": "reviewed",
+    "sourceHash": "26880f6f0b55278ad12d9a06f5774c74d5f24e21f6822ab6eff8f861dfb8a872",
+    "draftHash": "f474bc13f32fcf2dbae676849f74e2a9ba05116f272634775ddcd7930cf7efde",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "d5da9d7d-1e52-4992-8be5-73e556b07e0b": {
+    "status": "reviewed",
+    "sourceHash": "720af71593d2b526d9610ab235c15544ec167b1fdd60f6a84aa22bd5f2dec04c",
+    "draftHash": "d80b1ca1e5ccd236f28a8d511c5f284a428f3dd8ebb45019a9725fe754322ca1",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "59063901-7dbc-4f22-974f-ddccab675cbc": {
+    "status": "reviewed",
+    "sourceHash": "fa24abce74abfd1e48d1dd431b28112e9f06a7271b1e8044bed9da7badd66df0",
+    "draftHash": "6f8bc9ecc551bef97fc0be51fd8eee1a71d38c201728032926d4e75a1c7149eb",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "f91f3117-2bf2-4d12-999a-aca174124715": {
+    "status": "reviewed",
+    "sourceHash": "73b98560e23a384d677ac2309e6f2bfb0acd8c7ef20d611de650e85fd2be20ab",
+    "draftHash": "b7006eabf7d6299bec805969cdec8f23d37314b6e044b10070c3814277e2f81a",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "569ef0e1-887d-4d98-b869-9634f099c8e9": {
+    "status": "reviewed",
+    "sourceHash": "7e745fb0f33f2944eb586816c642491af35fcb803867ec1017037ee48b05a189",
+    "draftHash": "88b8fb9ac8db20e81eb74f3c8e6a2bf9a03d9ccc9d9f903139a94d7bd348d6ad",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "0a0f9231-d88c-4f81-b941-83b67a736194": {
+    "status": "reviewed",
+    "sourceHash": "0e5273b7809a32afc9c6ee8fdd6ba25aea8add3fb9c44fa21e300dabcfa602c7",
+    "draftHash": "0f26c5039aec891597833eb011e8026b3862beb0af7a08ee99117e54467548b4",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "0fb0189c-8ff3-4106-af94-f6d26d528a1d": {
+    "status": "reviewed",
+    "sourceHash": "e39aed7fe130096e59d8d7fde81533f27df5f4c553075ed2a73d2d1a798e3e51",
+    "draftHash": "12182db647363ccff59e1871847879dc88d9ecb3ccd2ecead1882724e1a975a3",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "0174cbbc-31fa-4daf-b1cf-7f91c6a646a9": {
+    "status": "reviewed",
+    "sourceHash": "957a48c4e44c27a88b1983ce3f4114bb489653d3a8d464097c10b79bf7249659",
+    "draftHash": "88297547a727bd58cc3e7f730b83e0133774d571dae251acd783cf2c2a6a1d8a",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "a2aed629-465d-412c-a68d-780068488725": {
+    "status": "reviewed",
+    "sourceHash": "d56fc9a289a2145196e1ff8d085db8ecc41187f596c040075a84ee2b3dc947fc",
+    "draftHash": "99cc694a6ad057dde8169dbbd4b1f26c82b672f755db9d1550a99cea0e4d7b17",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "9972f7bb-ae5b-49e4-87df-381386af66b6": {
+    "status": "reviewed",
+    "sourceHash": "97edda59d0ff67f331b3ee7ba7ca92cf755b8624b698dec56e983368cc7e024f",
+    "draftHash": "a555465e3395c95a2513c36d2a3ccc5a4eadf4b777266f48dcef27f6ccb003ad",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "4f6575cc-12cc-4986-8bfc-5cedac7bb68f": {
+    "status": "reviewed",
+    "sourceHash": "9d2b406e773829cb43e8304de4c14360aff78073f448c02563e4349ebe1ec188",
+    "draftHash": "408f45fe506c1d878059b12dd54822272bd1921b72fbfee5f8d3fc971cc91333",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "ac97d42b-8fef-42c9-829f-baafe89b4cdc": {
+    "status": "reviewed",
+    "sourceHash": "2f0014def880108bc4e7e071c8cb9bf3b1c6762280768e78b57e6d649eb22ac0",
+    "draftHash": "f2a01c79a857f7a3827071f82a2550fd797986ff323421ff94f26d1a9db8fb1f",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "b7d50789-e0d5-4291-8014-eddf65a124df": {
+    "status": "reviewed",
+    "sourceHash": "40685cdbbfbcf05d8f728a548b8708bad7d2970dae8de371cd2b005997794716",
+    "draftHash": "4904a37aef70517933f49eb22314bf96842219d0f7953bc0260fb62e75c1828e",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "315bc0e1-f76c-49d5-9940-b212e5f9c2ae": {
+    "status": "reviewed",
+    "sourceHash": "074cb880938e045b57e31f42ac7aed1fb0beec559b542c8f6a4775b2ff1c2e7d",
+    "draftHash": "e64b97bb5e773427e26c997399b2d751ac9fea7efb4e9ad5c9673eb9eee87f3f",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "cae8a893-7ae6-4824-b4c5-eada730b075f": {
+    "status": "reviewed",
+    "sourceHash": "c5dbd8be5709c264c536cee81293cc6764e3680c5acc71d6389a9857922c8c56",
+    "draftHash": "412dd6c1a1a5f56f13f0cc7df8ba26a3e3729d4dd289b7f1b6683aa8c52e5d2f",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "a6144ae0-3bcf-4503-b58d-9abf24d6608c": {
+    "status": "reviewed",
+    "sourceHash": "0c78c6e0b4f7fafa595dfc3af325fdcb2928a18fbebf4bdf74bbd0d3bab00776",
+    "draftHash": "0749f653dc69acde1e88f9536e9c5ca3311e7ef753c68bdecdc57ff4d0ac2c81",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "16ddf43c-ac3a-47bc-95a5-36a49bceb30b": {
+    "status": "reviewed",
+    "sourceHash": "930c4ab915918502fe1f41e62ced1736fbff03069e4e63eef4fa925f3f4edd94",
+    "draftHash": "66ff58145e4c95a276583f950cf4d4e06dc83aecd820d1a7e4d5eb6849a9c884",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "1d6885a4-d11e-4428-80a8-fcf75d7a41aa": {
+    "status": "reviewed",
+    "sourceHash": "e8e0b33e45c44d5cac897b70fce3a6fbd5d3eeca881122c3142def76e6f86aa0",
+    "draftHash": "00698b8723d7c1531e1c686e6a2d4cdb5845048d90650f9313320dcc5b89943c",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "c836e52f-2346-4a3e-84bb-97514b17faf6": {
+    "status": "reviewed",
+    "sourceHash": "fc4eb5af04827ed962922838483aa06588f42eff739bc757667c9e0249db3706",
+    "draftHash": "c207e4fc0b7e416bd3807b34550be16a2b4ffaacd1115f26a5e1f244a3efb8da",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "9d33c118-cde9-49af-b572-c43427a10b48": {
+    "status": "reviewed",
+    "sourceHash": "6a42b2c375e5d07eb41b6ac86f7778c5b6277dae58d4f3bcb022d871b57880ad",
+    "draftHash": "609c32217f6b5522ac5b5ed325adea93e2d82247afcaf361d3f6351dccbec94d",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "d850db6a-e07b-4fee-b642-57a70bdbbed2": {
+    "status": "reviewed",
+    "sourceHash": "b391059bbe61919886019e5ef8f38a995d9fb0f910eb649077e7245df5c6e719",
+    "draftHash": "b68111bbf91f33ed4ef5845d5381f78c0015266950d504f46500a8cc23407419",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "84bd91bd-11f7-4218-b9e2-b05b06ce8b99": {
+    "status": "reviewed",
+    "sourceHash": "e592aef28983907bec3d703aaf8ccab8049daaeaea99243c0b4b11c71d7eaad8",
+    "draftHash": "2bb69bf35d149e5114367fe8eecf7bd184a8113fd64b96ec14964dbb1e557ad8",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "19867a30-1b67-4123-b367-44565bab6516": {
+    "status": "reviewed",
+    "sourceHash": "bdd11ece9c1abbb7c2ab0624e8e7eb9a76844af8fceecb4ada6d1a68e7b81816",
+    "draftHash": "a14262b7ad9770ece2f2daff831ef6f88763465f37abd508aa9d4900a85e5ddb",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "51262a8c-de53-41ee-958a-de08d5f5a446": {
+    "status": "reviewed",
+    "sourceHash": "e10cf0bafa8f1bd48bad4d564228d3d2334633d5bc07f7a5b0dd6ba737c1a543",
+    "draftHash": "207bbf1375e8810658cb667729faea4fdafe2c8fb2f7b6451995665b518b18bd",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "bce40ff4-816c-490c-be30-04de15f7c25e": {
+    "status": "reviewed",
+    "sourceHash": "9a2c233531bccbc6856fe75cb698582a6b2a83cb30233c96fed0b0f614e9c944",
+    "draftHash": "124f1f17882a8e1239e056f9f94d0866683423f6f2f44ff1f9f182442a5e65d1",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "ab4b1a7f-4fbe-438b-817f-9e1ed2d39f4f": {
+    "status": "reviewed",
+    "sourceHash": "48f35975e9bcd9c17adfdf8344f2223f3854d58de1ab8a9f5008793f5ad5462a",
+    "draftHash": "a7a4443c582413de36a27d79e4ac5848f2f08022777e29254e69e449a0000823",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "1b9b8047-2410-47ae-a24c-aad7342b338f": {
+    "status": "reviewed",
+    "sourceHash": "59f663348c256399015d1ceda76c5e99ac88733a150079c88d6bb45816adea30",
+    "draftHash": "1c8c2116be15d336fad4946eab9c72b6391407b6a39504886865109160fd4c65",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "0055db4e-e8d3-41a0-b201-0e3b970e27b6": {
+    "status": "reviewed",
+    "sourceHash": "c8690f381f29f82950a85b5cfa038b25511e8314d4f17279e74de319258becdb",
+    "draftHash": "b2eae443e73b5624cd0a4a2d5c256a20107d238b1446472ee5828bec509e6d74",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "2954ddd2-f1c7-41b1-8c9e-42058398cde0": {
+    "status": "reviewed",
+    "sourceHash": "f4fdc2052fc1e9e50df8dae0b93972846ad172e562d99a41eebb106004225c42",
+    "draftHash": "6ef0d5af9140597ca08943133a293e2d090c5bf593ea3b1b7a87a23f11226d0c",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "3d26433c-a673-4094-8c83-cadb1b08412a": {
+    "status": "reviewed",
+    "sourceHash": "0f2b4576895b6ccbf5cec15106672ed5bf16b47e542ef7be103093c39013f37b",
+    "draftHash": "eaa8c0ef16970d00536a8093a4561f64a2d4aef09144c6f949bfa05922a0062d",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "469dec8b-ba5e-4faf-b52f-2ad203e38d81": {
+    "status": "reviewed",
+    "sourceHash": "dbad71a513a256b104369d25f6dc1ecf66eaa529f0600cf0330fc9a724da74b7",
+    "draftHash": "932b053544d3e6dc2125da544a9143fe71f35409e52fa634deeaed77b24edabc",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "1f92134b-bca9-46eb-b2fe-87b30413041a": {
+    "status": "reviewed",
+    "sourceHash": "52494037f05f687f8a31e6483632d16a02deba809abab45a7328c5cdac86d78f",
+    "draftHash": "f99c9876f3a987a29ba8ecb17de9f80f7dd7e9d7ca84b0e94ee012b41f485b4f",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "51b1aeeb-9a66-412d-b15c-4afaa6c6b1d7": {
+    "status": "reviewed",
+    "sourceHash": "26059da0084fb9f7780e35a7e027d1402e09648115d99535c95d781c43de5276",
+    "draftHash": "8a34f319a0cc39c1101807ab82517d92e15b41099ba32b734ac18bed09fd6086",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "2f37297b-77d5-412b-bc73-105bfa4d011d": {
+    "status": "reviewed",
+    "sourceHash": "03f45508e794335f490e7debf36ca80448551ba69743ef9ccb4a5a41faa35dcf",
+    "draftHash": "6b0791fbc29bdd4f245bd788d458c033f015ecf365854499251eaa20861fd158",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "59c7eaa9-3c05-4857-8cff-10376706ccb9": {
+    "status": "reviewed",
+    "sourceHash": "5cb47fbc5aaab5d03faedd994a368f061bb68da712887e216673c06a3bec57a0",
+    "draftHash": "74182e8ccedb25af6ce5b7b88d82d241b7227749f70dbc7eec22c825e02400df",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "e9e6425c-6c14-4f69-8694-87a8b96a43de": {
+    "status": "reviewed",
+    "sourceHash": "7af3f84bcd5ecfa4a09cfc611333a06f6599f62805b56527b67a04429a25c75d",
+    "draftHash": "c7205638a184a94db405dc87d73826d5073c7577b87d5ffdbc672b3440284047",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "2769113d-0cac-4e67-83cb-0c10685f8381": {
+    "status": "reviewed",
+    "sourceHash": "7fa9179ddf9532877d7c5a0294151a9e6a1b10d64b775b4769ca74024a2b051a",
+    "draftHash": "7e3921ae1e6fcb28b3185c65401d02493e12856291ba4c5e226b938229a2f5d0",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "f88a6dbd-bf83-458c-b5e2-85fdd1ed98b2": {
+    "status": "reviewed",
+    "sourceHash": "56d17cd8022ca78698b5e3d8390732c10bf8fc717226c4f4616623f71677e84e",
+    "draftHash": "f57c78c6fc798cc3bd422661242ae5b273837143e4c9379f6908a012904df293",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "c1280e87-ac81-4f9b-9de5-377d6af38ae8": {
+    "status": "reviewed",
+    "sourceHash": "1a2f0d8d87fa98be5bebcfe40334d980efbe7c2a40c410cb57d6f015c9f108bd",
+    "draftHash": "6b48ec22865eebe193f08096e949fc9c00911a6332689641e55e27049dd24f7d",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "2c036362-9f1d-434c-854f-b97a2a4bb19b": {
+    "status": "reviewed",
+    "sourceHash": "72daa80b21c24303ef28e50e1c2d98d877ce832ef5e2bf06f36212872870436b",
+    "draftHash": "e31e1745086564f83fda667d9b3598c20afc0a89a57d0e029725ae2b33d99bc0",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "a353dcb1-12cc-4ca8-af1e-55d1d62445f8": {
+    "status": "reviewed",
+    "sourceHash": "dd07a4f54604f63ec0981718709e979af540a3f39487a32e54b4ee3ccf935761",
+    "draftHash": "7f0f552dc0ffe17750e33bb3ffebc06025cefb40c10021f46b8bc1dbb941802f",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "9da0cbe5-52d4-4efc-8be2-2f78f1a8f097": {
+    "status": "reviewed",
+    "sourceHash": "5fe22527d7b525b93f2019204a653866ea1109fc9f2b54365c1b48054b521111",
+    "draftHash": "08b4399c2f7212b38a2e9901e2b896a35f071a9bc17e0b71319650cda854e9d6",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "d77f340f-1a04-4c5b-9704-2536e4249c6b": {
+    "status": "reviewed",
+    "sourceHash": "f18606c80092b936b80d19d755be5c574c1aad1f0cb79593ad640f92402108d4",
+    "draftHash": "8cfeab05c4bf19d7b067ecd9e886a7b71a706c428dd0788769a695c285019b82",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "c2c83ee2-940f-4ae3-9ab3-4f509d2991f3": {
+    "status": "reviewed",
+    "sourceHash": "3af20188d30de90d9a589713d0000ef20b16a30d47a9a9374aff0283d0ceba57",
+    "draftHash": "83f5d8b5f034713db85337b931b1a384eeb66a2154b5e5237e4da341b70c821e",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "22e90c0d-2b59-4500-8e5d-80d38ec4692c": {
+    "status": "reviewed",
+    "sourceHash": "edf92d666795044c52fc4f01e6836360f9f6b39be85175abdf1a513dc4f5258e",
+    "draftHash": "df45da0adfbea48fe61df3ceee9078dc798e512f25add9a9fc462008692ebf8f",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "a4d718ee-c020-42b4-97df-499cd0076f7b": {
+    "status": "reviewed",
+    "sourceHash": "3737349b7e5317c0584ac8b08f1a91cd2745ab662bfed653ed036ea889902d87",
+    "draftHash": "5e7bd5bd504beb0d807eb7d861e05c484dcb0283358ffd42f3824332532aee56",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "c19e64b1-604b-40b7-9e41-6ef57b9c6f7b": {
+    "status": "reviewed",
+    "sourceHash": "424d5c126d3cfadf3c2df7dc8dc02d145f81c24be89b3d9daa34a74103e8eb43",
+    "draftHash": "b653fb3a7c5387c4e8fb1e62b4fa8c13af21b8736393f83e3d5346b37423b213",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "12919986-2d09-4d2e-b5ad-f2485e40ada5": {
+    "status": "reviewed",
+    "sourceHash": "b0feceb035e5d07658fdfb1a62982062946ce0ebe882da50050d4d27d0a3dc49",
+    "draftHash": "9ced36a5526bd0985acc978647353ecead4ed564dae4aebdf5112de688db82ac",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "f540f519-e3c4-41c2-b299-f1d255977705": {
+    "status": "reviewed",
+    "sourceHash": "983f09de4b8206a4d76826391eaf77174c9c35b99cbcb8ef6fe06077f526b330",
+    "draftHash": "50ac986ad1d2451baf0177a7e863ead5f7403e2d489c59d1bfac5ad84d959151",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "f96506ea-e8ac-47e0-a0a6-ccd306e56645": {
+    "status": "reviewed",
+    "sourceHash": "238e90768fd3ecb9b6acc8d553e5919816026ece55b7c1ef07402c7000ed99d0",
+    "draftHash": "0682a6d1828c3e3b3ea9c3f80f644871ebca54de69699f50d5d06354b110bccf",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "0f5874bf-3748-44c9-bc3a-be4a8c3eb2f6": {
+    "status": "reviewed",
+    "sourceHash": "9db1a1ceffe6fabf9b1bab8b5ed3237e19909a3ef45d256f7aed8c9d6c7358d6",
+    "draftHash": "7e12dbf3a9136794888e44ff41c946244dcf125fe202127253a6ce99a192fc0f",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "927908c0-999f-4d3f-8192-d67d28f93576": {
+    "status": "reviewed",
+    "sourceHash": "4a3b3b072bbf4e5fb36271f9f5dc2e80ff619e1af67aab648e8eb0de0eac1354",
+    "draftHash": "f53bffc3618db7a313490215ab6729a6404d1a467af375fe7ad12a5fe111c5ed",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "03eb4001-023a-4920-bbc7-a0fc52b2836d": {
+    "status": "reviewed",
+    "sourceHash": "d3307e4e1d9bdd94a7f5adf0882593c225f618ec557b3116191bb875434d9d89",
+    "draftHash": "61ec32ea3efc09c4560c5eb3eccc0af381513194c508560ec864d71a2bffb763",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "acbe1729-cefd-4678-9719-09c5c9c27db0": {
+    "status": "reviewed",
+    "sourceHash": "8ee2101e07f37137d30e53b07734469e89c7065aa33bfa08f99e5e6859099e04",
+    "draftHash": "cc820b696c8f01f2ed5131696ec40b8bec144117dd5a5de0704c61b9670f4614",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "3b5db620-1964-4674-a01d-ad70ba3ebd2a": {
+    "status": "reviewed",
+    "sourceHash": "7d16d639ba60e3c1940afa7b6cf48b0c154b198184c6006da900f9670eb9c947",
+    "draftHash": "734ac52443c7fcdd3548742398e8c06ca4a99159655e8f519dfe8c66356c9ca5",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "733afc7b-e370-4724-b755-e9342c574d22": {
+    "status": "reviewed",
+    "sourceHash": "bf6366bf93d235daac755bf62a7bf606f585e2f7ddb6637b0637420cbdb26f81",
+    "draftHash": "0a1c87b55d13511f3b15fd1e800eed65d48e50523431cb2372a3c8fa1cc7c771",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "87f5949b-bdad-4b5e-b488-7015bd45cc4f": {
+    "status": "reviewed",
+    "sourceHash": "9aaa47900d9e77751980f2dd8d090a98b74ceab723eaeec54624921efe68e1db",
+    "draftHash": "4809d8ead91146d80844e05fd56c827a701799b2d7336b4e42fad00c10d6bc81",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "ae5b1a15-0b5c-4578-8f31-1b60030633a4": {
+    "status": "reviewed",
+    "sourceHash": "1f6b17670c1b8ea63c2fd3f90f7bcd55ea4278d9d2c745f0892a2adc19714ee2",
+    "draftHash": "312cd9425bf762593024dc23e2b939c8243bf0ccce55f0072933d982a55e424d",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "5d05fef6-e4aa-48e5-917d-c29d0e6d6b33": {
+    "status": "reviewed",
+    "sourceHash": "c364766cd7bbc2957fa3bc1ce4446bdd6aa29ccd3c0a223a67dafab7d1d3204a",
+    "draftHash": "0645323f867f4b6858fb85607e7683ceea33a53b504f5a46d01b7e0f470ff3aa",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "15180235-db35-499b-8fd5-b8d9fa92f5f2": {
+    "status": "reviewed",
+    "sourceHash": "c5df0ab910cb1499a41d6ebf54bf103bed4c2959142f8590b894e7f186055922",
+    "draftHash": "47e310435608a09048f5b8f5b93f119899e19483b41a342ad96a6a27cae03cb9",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "2c152693-c25f-45ce-8ef2-cbedce1a62bc": {
+    "status": "reviewed",
+    "sourceHash": "ff0d04d7559a0838a9aeffe76ced8a42a6564345434b2fccd25fd6cd014b3f12",
+    "draftHash": "0c695edde36160539944d076f280a6407a9485462bd3508c6235b20001eb0a33",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "058db0d1-0656-4e8f-ac49-87622e16b19b": {
+    "status": "reviewed",
+    "sourceHash": "351f6e7e952c7b40a19e9a6fdae5e1870f6d9dab11f81f183c00a4f10b3528a5",
+    "draftHash": "9084fd049af29012ea1f92fc33a00c1b3330e46ccb40fdaf2c927dc1a0c43c49",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "eb9530d2-e4c7-4c34-9214-06c28ca586bf": {
+    "status": "reviewed",
+    "sourceHash": "1860a22acb141e443934a366ba75b0789c8540395176ab0ab72acf786ddbf737",
+    "draftHash": "c752d89538319642d3b120f996281e2968c7630aa8ef1ea763641b2ba3e37409",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "368fc6bb-1636-419e-8ddb-cdc1dd07a1ca": {
+    "status": "reviewed",
+    "sourceHash": "b9766f51aa48934cddfa7509b07dbdd0f95b73239566acc0f19c2ace36f8040b",
+    "draftHash": "b86a1a537e2e464b5e54eb01b92cf34b5c61e4e02ae705150b86ee4d450f0574",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "fe6f4b72-855c-43b9-8883-8b3fe3cd8bd4": {
+    "status": "reviewed",
+    "sourceHash": "dc7f71a278a952c97088a1a5d24bd2a0f2f599e0e848440863ae6a09cf23247b",
+    "draftHash": "7fc10b1166889f208f6c41a2807fe1fe9fe582089e6111403804c4b2815933e0",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "b881b056-6d92-45e8-9620-4710a375776f": {
+    "status": "reviewed",
+    "sourceHash": "fc69dbb8b13d353aca8ba937fc14451f15fcd772e027ca838f2270ec696ce8c9",
+    "draftHash": "9d7cf96e078cb441f38ecb6042c04077916c81ef011397713a2f6a2f5c06bad4",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "19340af6-e25d-41c8-90fc-b465d9be1134": {
+    "status": "reviewed",
+    "sourceHash": "34dcb59f52c7b9e790baf7d2c01c5780f2feb952b8336c6d71c84248395d8873",
+    "draftHash": "7aa08ce480ea5fa2f61bf5e88cf8d007ca4429e7d290f25ed68dbc72508a99bf",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "2c24cec1-4105-4511-bf8b-bc6d5d8d48c7": {
+    "status": "reviewed",
+    "sourceHash": "bbb5c046b9170c8d4a191c71254d22aa5592055fc239d4b9198e1b8ced54d570",
+    "draftHash": "259f2e2c920d1e2fc221421c049bd6c0f1c8b99f43c1b7ff7737a135248e0f6e",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "12fdaad8-b197-4526-b56d-c7c713267248": {
+    "status": "reviewed",
+    "sourceHash": "6ce527dbab8ce5ee2bcdbca876ec8b20d531b9921d25d7a2056fba7f1d26fda7",
+    "draftHash": "c76556241611f87e5620019e525ea7cb38df3647d4d2d62a465725f6d134bdbf",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "bd57a0b0-28a1-4d53-bc09-51899d2dac38": {
+    "status": "reviewed",
+    "sourceHash": "2a0f8357d29028770fe235877ca8a23221b76ca8cc1170ef20584db1ae12e281",
+    "draftHash": "0589b364d8d9faf18cd29d2dbee2950e7e771472b44e07d3181893d102977882",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "6c7c45a6-c944-4ff3-aa99-f5cb0440436f": {
+    "status": "reviewed",
+    "sourceHash": "01e5b43730e79065bd1674740746985ebd6e6e68940beb33eb2cc83bf60f4b32",
+    "draftHash": "4cbda6d2c7cb271284b8756eadfd1a79aa0cf8204c3b62b32347f83f960d55f9",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "370b53ae-949e-45cf-92b0-3aca072c1b86": {
+    "status": "reviewed",
+    "sourceHash": "635d9a3b8ddad250c007711f52d6c6f493941cab0d04599b636cd098e383d6e4",
+    "draftHash": "90609a065577d5e01a44ca190564a2b73aa8c53a116b1086636bd3d12f8c5d8d",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "8474f5c4-d18e-4b42-9702-19ad909b9ea2": {
+    "status": "reviewed",
+    "sourceHash": "325eab126f37124311d915b09767620f8662f9243bc281e713ab6c8b5d6da5a3",
+    "draftHash": "0b066f9b9378d500e9373f42ad4fa4ad447e76de40d8b9918d0ba1d970ada509",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "bd7949f8-c961-4bfd-a307-1fe9e621028c": {
+    "status": "reviewed",
+    "sourceHash": "51b0446732bac921aca57ec7523b3aefa52a2b7495b6f0b939d2df768eaf11d9",
+    "draftHash": "52077076e9455da590e03e51d6ad7c42199b9885e5b3a50140e903851cc34f09",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "f2db30a1-f125-44b9-a8d8-287ccb69238a": {
+    "status": "reviewed",
+    "sourceHash": "b6c42606edec0728973f45d6a0465bb75683fcac2f8d2903798c199da5971a34",
+    "draftHash": "e4502901ce49dffa959911ebd67caf5ce843014b84d93f578518af411fc2930f",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "c9362aba-fb50-481b-a4cd-08ddd65cdd2a": {
+    "status": "reviewed",
+    "sourceHash": "e78832582d80a809b77da7a50f4dbf692ebce7ff1586ad888044b941a6178cc4",
+    "draftHash": "1bdc0a6b53c2531ca25a752ba488ac275ece0ee32e4ae3178b99945d87256c4f",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "0710a746-8660-4bc1-b073-8ce51ac9f4d9": {
+    "status": "reviewed",
+    "sourceHash": "948d34ea5148123dc11c3fecc61a9873e88d2ff43322e07f5371e3822ffbf32f",
+    "draftHash": "b3e2900ed42a7cc1720562cf6625707979bfc862de97c8bdb2f40c8ebcc055bd",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "827e44b1-7064-4ff7-9a9c-192eece94e2d": {
+    "status": "reviewed",
+    "sourceHash": "4f71c7a90cb8c6c07c55d939f85372dc3aa8412b1413850e9fa35f9237e3eb7a",
+    "draftHash": "68982c212b6b488355b4d241a8525b61c96cce1272bf37272641db7d02cd7204",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "13b12259-3750-4c6d-87ee-35283ad63dab": {
+    "status": "reviewed",
+    "sourceHash": "1efb3adceb4a16183ee1a5f8f950e2f22a752b355a0ce9eab3a8b1d142cfa083",
+    "draftHash": "23509bba78f0326cf836e0eb85fb1a9060a8edf1bb3c01661ae0bf900b67eaa2",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "6d303931-f900-4f29-a8b9-caea611a521f": {
+    "status": "reviewed",
+    "sourceHash": "39a6568dd9090d6ea47d73803834a0c97e927f4b4be1260c5ac2ca21d92b862a",
+    "draftHash": "fa883c0e00b76b2ab4609d093adc79c70037abc7819b0118b85519b618eae9ec",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "383d41a8-5155-4fff-b91f-87d5585ff03e": {
+    "status": "reviewed",
+    "sourceHash": "9b4959c9c74a91292b546c2332fbb254923cae0f3d4227ba15aaa4ceeb2bc458",
+    "draftHash": "57a3b6152c7a8cca5228e048962b673c6d9495a1677e4d6a7ec79e61f8e4b83c",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "61304178-6b16-4f98-87b2-4ad6bc98da98": {
+    "status": "reviewed",
+    "sourceHash": "fc2ef33c34e823ffe617e94693eec5955d9c96a3d97ec11e74633ae099b6bf64",
+    "draftHash": "354ded3b64ec18414226e9b30dc7983685eaf59bfb058004649d08d8edf027ea",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "4ddb6dda-68be-4bb2-8874-8508c6c6e3ad": {
+    "status": "reviewed",
+    "sourceHash": "481a4940d5fb60870e1325d9f0c759e11733744f4c7a9c05b9d7ab7b7ede8b1f",
+    "draftHash": "7bac419670481731aacc06d642fcda718f0926c4146ebc4ceeb5f03879bfc561",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "7066e611-faa5-427c-8fce-e0bf10c55416": {
+    "status": "reviewed",
+    "sourceHash": "ef346e1be6d4147047541f23d0f825d20eef9bfc1d68f7858efb890e802e83fb",
+    "draftHash": "bf80e7e3f4060efc051ff48e01d86ad3d78356e81b42c8fd54e8ff904c9d3daf",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "f1320c1f-949a-4cbe-ad23-4806878632c5": {
+    "status": "reviewed",
+    "sourceHash": "ea809a1f0e33f82189ca38fbcad9d535674b16001b3fb678a2f4789d84a684be",
+    "draftHash": "5d1d7079d3a299c0891ba5b4401f0ff82b5f1fee8a0af6e888a808174faf74b0",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "b5f1094b-b9be-43cf-8e04-9b984642a630": {
+    "status": "reviewed",
+    "sourceHash": "1deda99ab9cd6cd8287c3c7296068f9f01253daf0330719471214a4a3cefa7e0",
+    "draftHash": "e890e680482d47f15be8555e40e8b485ff20e2f8df90b39c3e07e47a2cc1404c",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "73dadc56-88ff-4f11-9ff5-da0e0adf533c": {
+    "status": "reviewed",
+    "sourceHash": "a13b6ea476b009703f0ab715bf0f8fc19e2c463625741493a34c1b1b077aee31",
+    "draftHash": "23449ce7d5e9b696f1788e8ff75dbc1b52c9ccc8b04d047469ad1d47aa801b95",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "0db5450e-f1e0-4d53-8106-529def535537": {
+    "status": "reviewed",
+    "sourceHash": "f9bdb6f64a5f97b78aba73151f53aeeb0dbad424a32e1d79c43daac54efb9a5c",
+    "draftHash": "cb992c86135e4b6570b1d1fe3e1fc11ad40d7fce1567c5b85fcd38d2e7f93dc5",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "e4a87504-f9a3-4599-b770-aba4afd3cb04": {
+    "status": "reviewed",
+    "sourceHash": "860c3c55e63c8617043f895a98fd81c2789316e8829d97efa16fb315038c62df",
+    "draftHash": "458bd1ab2a40c276ca1638a3d6466b13d093469493c5f40595324569a4af2649",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "a8617715-ad59-4da8-8071-e9aeb1760e6a": {
+    "status": "reviewed",
+    "sourceHash": "01e2a605318b98dc498bcbaf6eb44c685df57feb9a9c92c9137f4fe869dfa0d9",
+    "draftHash": "c5d7d2d3b3b84c62e2ea36b93eb905d4338d9108f1cd93ade0dedc4b93d43d65",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "9b4f2d56-6df4-4999-a82c-11283529dd51": {
+    "status": "reviewed",
+    "sourceHash": "06f844f7809f51a4653f03fef7899d15390be4b705ae7e7c165bf535aec7640c",
+    "draftHash": "f92172ac297170576d2f482f1648b3e2eba0cb4b8c19556dc54ac51178fc98aa",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "6df38a77-6e5d-43ae-a115-7de36475f53e": {
+    "status": "reviewed",
+    "sourceHash": "b24d0eb877a8ab7d4dc1dc4ff70f162c53447e5d56db0ee0955f3a1bbd2c5a8e",
+    "draftHash": "c7a4e6783828114df840affce126d05c66c57659a724c35a2a3302ed43481b15",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "f9798830-48c1-45e3-be90-4028d93954dc": {
+    "status": "reviewed",
+    "sourceHash": "64089c8abf7ee5351cc7ca3a7e19e92925a49d58ae634ccac363c0e83ba11162",
+    "draftHash": "19615adb0d3c5a5a775d33a1c09e1e30a5187717593875a53bd2dfd323fd28c0",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "11b013f9-aa6a-4e55-8e68-195dc62f161f": {
+    "status": "reviewed",
+    "sourceHash": "261443d9b1cf2dd3dc7f786469b39b5047959474a9757d54ab3812e1ceda6127",
+    "draftHash": "d2b026cd4d4c8650fbb4300bc4cda6fce5d9ba64773085c167dba5329f99a947",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "565d931a-ff49-4f37-b633-524b48c2f4f0": {
+    "status": "reviewed",
+    "sourceHash": "20dc90770a4fc9f0e3dadb3e0722d127fa27e633f4be8a4beff1f5564ed17a89",
+    "draftHash": "cf243fdf54c8eda16463c4a596f796004363fa22900cc52cd5e9efcb2f82e71c",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "80beb8cc-8338-44d4-8b96-7f9d32133c97": {
+    "status": "reviewed",
+    "sourceHash": "71513c5d87df0eea87957bc5b74760c7b629aebc572d041ee57d463a3f423274",
+    "draftHash": "74ccf7571a7512c04b78b16240eee21efe6957118d16126fac168e767e42b992",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "4fa92777-9bd6-45ca-9272-bac30459cf5e": {
+    "status": "reviewed",
+    "sourceHash": "daec26d20d5f668cb2dfa30ef3a4e5f2950276e2de991cf30ea8c06a5755a4b5",
+    "draftHash": "3ef6678376a405bab45990733428745943f38fb713e55696a690d13903dca775",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "297dd100-6aab-4685-a52d-983fb0999c7a": {
+    "status": "reviewed",
+    "sourceHash": "7559b3bb8921c9a60eac7060e24f409bceb8654fb842381080255e63ad28c481",
+    "draftHash": "96b1c2c52c7e93a923e605e0a9f883d385d1bd4c8da208cead70baabcc7140bb",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "a9d3bfca-8402-4946-ad02-53db1964a3b2": {
+    "status": "reviewed",
+    "sourceHash": "2fcb14ee399cb570b9cf891547eabc8de47c375a699c27749466ee52a14eedc8",
+    "draftHash": "f6aeedaab0353d46bf77287a928ffdb0fe77156ea1904dc569453b8c560d9cb6",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "4cf19354-4c0a-4e55-980b-69fa7f81ed0f": {
+    "status": "reviewed",
+    "sourceHash": "b57510959489a806fde35ef4cfd02534c58e535b91706d547936a85ab518ddb2",
+    "draftHash": "2a3ccde20cec27ac5fb89130cce54f190e8030997d8b50a297bfaf3b73b1877f",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "e72db286-3b6a-425b-ad02-75248ea5a790": {
+    "status": "reviewed",
+    "sourceHash": "42337ffed9fefba40ded58dc90af7086bcc2f0971cbbd640459c16aadb8206e9",
+    "draftHash": "2902915be3912a7f3504b48abf1c4c93df24d4e44f9eb8f23f3d7da69790b782",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "b700208d-d859-4e36-96bf-883c81d4df0f": {
+    "status": "reviewed",
+    "sourceHash": "67f43a0262dc3267be1c351b9bb8531d38fe547a91b4030b8337255bb26378f3",
+    "draftHash": "af78557060422b714bbd36741bfaadda41d09c07f1d863b44419d0821b7e9f00",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "15274300-bd45-4898-ab14-9a3dead4b620": {
+    "status": "reviewed",
+    "sourceHash": "813000fdd41dbe874fec5c1b66dba95b0aa3ab4577194aa87da3a7a4165d952b",
+    "draftHash": "916f767a7ff20b8b3e1f5d8c2fc39e97027026b5ade95dba94d61f6290e8cb0f",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "42f17f00-bbc1-4b5b-82c1-3e9e012725ba": {
+    "status": "reviewed",
+    "sourceHash": "d3f05e5244e9d5d0325f8e8856a1b55367811142ab02471608e9680beda0a1b9",
+    "draftHash": "ad93333890746c3fa56b727e5af7fff4fa47fd392b110b0adf4fb38f41062e9c",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "c8210485-a1f4-4c76-a1f6-2f5e57d39d29": {
+    "status": "reviewed",
+    "sourceHash": "76279b022f52130e7577d60ebd40e886c5655be712da6d88663b504f1b6efce4",
+    "draftHash": "0b778f0a72a736b24bd04d30618d9278081699c8621397b46fc2c9a651cc68bd",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "1ce94bde-41ec-42b8-abef-e1e1be55be7c": {
+    "status": "reviewed",
+    "sourceHash": "422f47edaaf5c1dec77d7c5750701f06006fa29e8bbd17dbdf1ad8c6c02efbcb",
+    "draftHash": "4f1fad80726477231caffe6f21ebf2844d1b75584ea4317ff519e4ff7cc8da60",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "8af643c9-a8b0-49b7-b8e9-88920ab0bbd8": {
+    "status": "reviewed",
+    "sourceHash": "1800ea7bd6fdd6b025d3f2ddf5d00c728f609da014280ece5b67dbabd1d4ac46",
+    "draftHash": "f368fb1513e0768b6e41efbf000365631befb488cffbe8b28b05426e8ef91b96",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "3cda5a92-ffa2-4af0-9217-97ce36113705": {
+    "status": "reviewed",
+    "sourceHash": "b1828dee5fcafd58933e029aad3f01268659e4f5be3a0568ddb151102714924f",
+    "draftHash": "c4528fe05a870db08d4b88e681541467b682a6553ce08acf5d610b0dd1f806d5",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "ce493923-7c4b-41a9-94e9-cf95741c018c": {
+    "status": "reviewed",
+    "sourceHash": "64209378dcc1fcf142669226b1bfd37ddad88348a732fb4d070d5ccb77160068",
+    "draftHash": "711a1509fce8b922f5185e3c64de338530fe59fc19f20a8f388df76f7747fd88",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "b411ce1e-ac09-4427-ab32-f8dc7a57e566": {
+    "status": "reviewed",
+    "sourceHash": "ad6e9b06d6d711f84618865edae1be1101551f8f4260ec326d9b672e9c70a98a",
+    "draftHash": "84c13adc02216d05adfaea845f41a4ad2de8bbc620f023e2aacf105b65e17f2d",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "77ac62ee-6396-4ac0-a3ab-cb84ba2e5cd0": {
+    "status": "reviewed",
+    "sourceHash": "33a73fd62238db33a755cbc76158bff20b9dabd60edba0585d118f0896ec3fdb",
+    "draftHash": "c0868531a31b52977b82d5de90b55ec5c827dd1ef89613308332fd19f2081762",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "8435b46d-bbf1-49e5-af66-6f2d5681f1bf": {
+    "status": "reviewed",
+    "sourceHash": "8c359d38cfaf660f5175a831bbe0d6124d3d8fc98faa5d0528c9d4518b7b22a8",
+    "draftHash": "aecc5b515e5aca574df95a286503bc52c1f7781552b0fb84e36fb758a147ad99",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "46503396-3bb3-449c-9c84-f2ff232f7949": {
+    "status": "reviewed",
+    "sourceHash": "44bb96dd9dc7c0b890a9b1d086f80be9acd0547999ddd83ac1b176f2761ffb8e",
+    "draftHash": "649cee62ac0d0540bc60040fe5c00fca6fd308e5a30e3dc5f1a42da7d625ee13",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "96455db1-a0c6-402c-8892-05c6b9a3d029": {
+    "status": "reviewed",
+    "sourceHash": "d543b45a9c90266da70bbde271c2fd4ee14f4681e092ef9f8ee2f69f4d7da9cf",
+    "draftHash": "d375e6d9711af82ec3ec72622a5d9a50e38a2d798b3bf4e4e555936ea3f47d7a",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "83dcb67c-ccbc-4592-b232-368a6b5275ce": {
+    "status": "reviewed",
+    "sourceHash": "be215435ff71be9aa13a682e97c8b45bd62f4270ef7ab1e8d26bd50ca9d1e82e",
+    "draftHash": "575735e762558acc9e0551227ae4571c2708b229cd5f7e4bdc4b230f253d6f82",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "f800050a-d7a0-4f12-a614-17fe23df8f41": {
+    "status": "reviewed",
+    "sourceHash": "67ae8f6a48c7e10e16008917fc9ac04046cd75ba07492973c376481cecc2d3e9",
+    "draftHash": "e31c38b662927bf80e88169a6fe43ef4081285da1c2d94c1b403c466589ba1e3",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "b8ae44b3-ba8d-42d3-85a7-a70aa8608379": {
+    "status": "reviewed",
+    "sourceHash": "295b5819b992d6de1219917f97e2b46c55807b6fcbca3f748082ef232b54eff3",
+    "draftHash": "84e3e551d4d85e162a34cf5b909109f8c98dec00dd82455a81ed37af8b8dd47e",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "11424603-9a22-4564-89a4-95e1766f9685": {
+    "status": "reviewed",
+    "sourceHash": "cfbe524223272387c526fa2a9388505be0d36baaa689a64399d36fcdd9b8892b",
+    "draftHash": "885d0e34e3a586370d14689043ccd2e2c5ed9baede55d192defd56181c18ca4e",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "3e0e1d96-c249-47c4-b16d-4d91dd6e7cce": {
+    "status": "reviewed",
+    "sourceHash": "72e49d85ead5c0a2fcfb521fb75199155ca155635d7e6fd2ee094ff3b12c5b7a",
+    "draftHash": "eef4b372a24ba872fc82051d2363b6ba0cf644b478a899b017d2902e2b35fb4d",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "0ae0e3bd-a32e-481f-9719-b283da2da964": {
+    "status": "reviewed",
+    "sourceHash": "bc61c1f6a034d1edf0933c0e6c05992fc21b791e9cc2f80896716985f42e3c99",
+    "draftHash": "6704350bbf48e67c8e4b9da9212241388d7b8b184bf89884c68c8f3eff47c4b8",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "b67ddf05-43fb-4859-a1a9-34f95d45aabf": {
+    "status": "reviewed",
+    "sourceHash": "0b8046bfa7bb4a391b0c0c5463c8c98c46272a375494aa426c56f346ebe84a68",
+    "draftHash": "c6b888ea4606869675c1df1c1e7ce86560c2e8f0b9d1ac815bb478cc8a5793ab",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "93d82a12-5e4d-45c2-b837-d0c54447fba3": {
+    "status": "reviewed",
+    "sourceHash": "cb392291fde3c11772dbe296536307e96e3a2bea25a95de6a678086387dd8a4f",
+    "draftHash": "b85b19deca9a5ba58ada5b94934074e5d06467a39647a1f9d95ed984dd2c32c8",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "294bc7b2-b4f8-4a53-be17-a40ded4afd1a": {
+    "status": "reviewed",
+    "sourceHash": "2bcbdfe086b6e649a43841858f1c08b4ed056c5adbbb7e49932f2c7a9d921089",
+    "draftHash": "bebcf352bab12ca34d8659a039b3f5926a06f0970c0f68a9e5686d123e77de90",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "d129dc0f-cec9-4073-bb89-cb9312564d9d": {
+    "status": "reviewed",
+    "sourceHash": "a6c9b21e9d6251c61f0b38ef988658d3dacdfb01b54bdec9909f0d6effaedd6c",
+    "draftHash": "361d788f4261c7ef6cb53f0b02765cfdd64674c3a5deaf872536d558d2c0272d",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "f5e021d7-ea56-4341-947c-8fd024018e1c": {
+    "status": "reviewed",
+    "sourceHash": "eb48094124e6d5f57921c50f6ef22b9aef85527adc08c6a9264cb0b1e958f55c",
+    "draftHash": "8cdc1da8355450ca701ead6c60627d2f059b352bc967ddf2ecb61df5456b7e5c",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "2779f710-4ab4-46cb-a2b6-1889752f26c2": {
+    "status": "reviewed",
+    "sourceHash": "0bfce625559d21b4aae4d61fdc0f05f15a7626008340859be2b42c0206dbc9c3",
+    "draftHash": "4cf00dc5ec27f8d62914bfb8da6680e831a2d36f82f1a91edd4fc23d5f49788b",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "8df8e94b-ffe4-4930-af4c-491d7cb04651": {
+    "status": "reviewed",
+    "sourceHash": "f38076d0d15261fe6427dba6c8185f6a73dbdf1d3b75a4bf1db1eb6bf15d4c7a",
+    "draftHash": "68f400af4ebf09cf53a9a5146c27e3c26d82393d08d34d56fe8e14d6f30514d8",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "07238ad9-c348-43d4-b1d7-25d89369286d": {
+    "status": "reviewed",
+    "sourceHash": "98f3282e2e62a5f7a8288ab747d33f4515d7e81815511b3ea24366ebdc8a436f",
+    "draftHash": "37b6519c491725f0349bccd9f392313fdc8671845a8b425a285435fdc07192dd",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "162eb552-a496-4979-87e2-e441847d4e6f": {
+    "status": "reviewed",
+    "sourceHash": "490d12caf759a3175a4bba1942dc7ea59c872f1b2a6a4a756fdbfd64d8ab3521",
+    "draftHash": "37711af64a7c2752a7098dd185a9857da1a3328f273fab2afb9630b241b039fe",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "8324db66-b75a-40ff-9469-cba276d2f88f": {
+    "status": "reviewed",
+    "sourceHash": "a3909dfd7fc5a9bf4e111aeff2edd74cd91de15a7acef3d87e00abef242e0dd8",
+    "draftHash": "b5fe8ff162186722bb5004ffa498ccfc4cf7ee95db10a275d1ed1745d297e92c",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "c348bc2e-f50d-436b-88b7-c198d63dacfc": {
+    "status": "reviewed",
+    "sourceHash": "4ad719739e2cd3d8ebe644f7b7fdf3602a07e46acdc8390c719a4821014be5dc",
+    "draftHash": "46b0000ff4f520c977d68d9d7647020849bf309af8c535427d348dae2d6031d6",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "801c3192-8001-4238-8ecf-0111f490e84c": {
+    "status": "reviewed",
+    "sourceHash": "d3d359b6565e187b0935838a8903243eb558c191d414997cfb8d8da4b657c0a9",
+    "draftHash": "50a71d2660c38c9c14a0eddeda842182ecbf725905c62ae43edc4ba5b34100de",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "a7b8e17f-ee93-4bdc-a144-b1ba5ab32bb5": {
+    "status": "reviewed",
+    "sourceHash": "826b94ef274ee199dcfe9adf1963831df67d65ea3813be2fa317aa233b2142a6",
+    "draftHash": "3af5d3012f47f37da8bbf2ff4d4a36a035b49f774b3f11ddfc0e645362504d9e",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "3c1693fc-f4e6-43b7-a66f-6379c3a26eef": {
+    "status": "reviewed",
+    "sourceHash": "47e692121aaccd3977ae344e495d2239b68ca8df3623932ab72a9f69a3dadaf6",
+    "draftHash": "33174529c62fc7e91e60a745b9a33401c3be36b1aecc4e2052e4fbc748e0a7ad",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "4be77185-992e-4614-9746-de2e73c8a3c3": {
+    "status": "reviewed",
+    "sourceHash": "75623dd5b05c28626c0e29976f706ee7554ab23a43f7b344a0d7df28f072a739",
+    "draftHash": "9db045b21535d71f94a4cdf3f4b3899e48111a19e5c41c88776c89427452baff",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "a65e5646-14b1-4f75-924b-bbf262b242d7": {
+    "status": "reviewed",
+    "sourceHash": "69616503e1455365e022401d9094477dbba03b8d9b4fa3473389d5e2ffe98e27",
+    "draftHash": "7e1ac4cf4abf15fc057837759c4f9f1d0bb3ef270212852ed7889ddbd4bcb0d1",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "948fa40a-492e-4fa1-99f4-b002ae87cd24": {
+    "status": "reviewed",
+    "sourceHash": "4f626313bdbb0101ebbf987e262db6199b13b69127fde56544680a6aa85eefc8",
+    "draftHash": "e890e680482d47f15be8555e40e8b485ff20e2f8df90b39c3e07e47a2cc1404c",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "99167d13-8e2c-4b75-bf93-62b0682dfdd0": {
+    "status": "reviewed",
+    "sourceHash": "5ead9e0ffc3ba7df7067ed7ac3f3cf4bff0ae688cb4576b60c813c5df02f21f2",
+    "draftHash": "6f8bc9ecc551bef97fc0be51fd8eee1a71d38c201728032926d4e75a1c7149eb",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "ca2c489a-e433-4c0f-8248-77d354f0665e": {
+    "status": "reviewed",
+    "sourceHash": "2e52ecb7b4d8b4f82e1c48673ba05f83f5f51613857337403091266e651ab5ea",
+    "draftHash": "cb065cc03e646fab37e9bfaa6920ce37c5eae74cc5b67add57af2af958a04214",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "7277c420-9f3f-4093-a5b2-6331494721e8": {
+    "status": "reviewed",
+    "sourceHash": "6159c309681301068e95c3642f08feaca88c776a181989722e1b394f5ded0050",
+    "draftHash": "cbd47bf4007880785733290ef30e8f788923fe7a02a768c06af6fcd44f4b2c2c",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "57203d7f-380c-4052-b21b-d1ea79fbe231": {
+    "status": "reviewed",
+    "sourceHash": "0b6a0d68c0cab2ae4095e6ecae8bb0c1322a7106fc86603e85294e920c5eae0d",
+    "draftHash": "bb8185c6db95de3b56408cb5a651f047b8adc8a2da622d11e4911e18b340a1a0",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "abb3e465-f10e-43dd-b564-a5de08010478": {
+    "status": "reviewed",
+    "sourceHash": "4ed5181399722c6fb3be0a51a3b902bc6e0ba5e127b7169f865b37fdcc89b024",
+    "draftHash": "8660c190430180921cd3793067f037cf6f8c04787b8381885434e789f906bcbf",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "baccf46a-41c4-4a0f-b90f-37cc35b04a64": {
+    "status": "reviewed",
+    "sourceHash": "0cc011a220acf0e3bbfd26e455aa7445b0637b51041e65710b768516d414e2e4",
+    "draftHash": "311b94cdd3891a6fe9b52f2e49b5b9e6c7c49186cab22515e1ba6578897eca4f",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "f990af2e-d929-48da-a9b3-fdbc706ca4a3": {
+    "status": "reviewed",
+    "sourceHash": "52e0d345a71d1389e79a7bffd5484dc0f5813eb03e9cea5dcd829c3bf0a41420",
+    "draftHash": "57bff925821721aa65ff8a9adad95516ab92989a6707c7678f43b6ce16be9584",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "9d1b6a18-571c-4f25-bfdb-3fe260115c3f": {
+    "status": "reviewed",
+    "sourceHash": "6a686a8afb76723a931ecc9e2b0e126c9100b9a515661f7aa6525d68543dacd2",
+    "draftHash": "77dcc2f7eb65f8858ab47b41c88903e4f97c6f27ddcfe4e04d7ede2ba996e69c",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "4e491c2f-c3c8-487f-8e76-63bd0a811b30": {
+    "status": "reviewed",
+    "sourceHash": "216949fabcfcecb276cdefea66974831a5c53fd12de80d70ba52604cdcf8588d",
+    "draftHash": "32f7378c2dd659327e1f0d6da3782003c9ea3f53370add92bbeb177a6be3c1fb",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "606d0bd8-31d2-4a7a-97ee-341956e7be60": {
+    "status": "reviewed",
+    "sourceHash": "19105bfaea2a20a2b17685013a3ed5b5fa3a9404cfd0f0ab025d303845e1d77f",
+    "draftHash": "b927227a9e60c3d03f2334ea88705d8e200eb9329a2ad55870b9bbe167dff3f4",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "809ad73b-9a8e-436e-9874-f9295b624af0": {
+    "status": "reviewed",
+    "sourceHash": "ca5c48aa6876c918f4917f255aa1ffb963fd59d9a11b6ad9ff60083627619230",
+    "draftHash": "a24ee2915b3a3d262c474b17cda4188f3cbb3428f84b929a3dce89566f5ca778",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "d43a4767-2240-44b7-8d5b-c2acdc689839": {
+    "status": "reviewed",
+    "sourceHash": "348d946de0111a0d7ecab9a3e9fe2173e5ad0658a590c52fcddebddb760545a7",
+    "draftHash": "04a10beb231de8da846a737c580c10c26eec00151d2a57d7a492f5ee36a7a576",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "bf8918b8-a05a-4ccf-bb2e-3f9b81f6bbfc": {
+    "status": "reviewed",
+    "sourceHash": "96f373fbd893ea9cdf2505c5930a9aed11b1cdd03d2dccf8f1cd58c328e4b934",
+    "draftHash": "73bd6c8e1d5581b394a06df86735d4f748b74e8f626cd83321a24d2f01c820e0",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "1f83fccf-7476-464b-8cd4-8a2b4569c7a0": {
+    "status": "reviewed",
+    "sourceHash": "d58a47400d983d068ed2cac6957ebe663effd2f4bbde60f0a888ceb64507bd7e",
+    "draftHash": "67e8198e0a5d56f839dcf3383e4968d608989b3c2db465c9d739bf3f660ad32d",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "5593d522-b820-4c06-bab6-0ab5a0fc1d46": {
+    "status": "reviewed",
+    "sourceHash": "56717228b46c988eb17bcab2ba248ee9475ee6265ccc5ed4b3f9fb40742095ed",
+    "draftHash": "a02f5d86c9f216a602059c2fa41bb722233f2be955e7cb4e43b76c216a4c796f",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "ca4cc6b3-a324-48c0-89c0-bb36c09c4930": {
+    "status": "reviewed",
+    "sourceHash": "f4417024eeeb0150db1ece18ac7c143d87669f37670783d0823ac27bfe859651",
+    "draftHash": "ec3c3ec0105d37bffbc3a1f0e7c443fd0a1c0ac109ecc7ef734fd880167acd3a",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "4af86c76-18b3-4069-be90-6d8cef430bc7": {
+    "status": "reviewed",
+    "sourceHash": "165560b3135fe83bbcd9566567ee06b6cce559eb35a37fe44b0a9470e513d1ab",
+    "draftHash": "85deeedc383583d4933638d4bfb41a2a9160e0c92345bf57dffeb7dbeee2a48d",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "9525f99d-39cb-4d04-8650-263493d223e0": {
+    "status": "reviewed",
+    "sourceHash": "a0e1748bff031cde10e0704609b84bf8a1155617ed5cc132a154638c7f144309",
+    "draftHash": "0579b47ae91de7a8261cd64389fb8b2e42bfab47e5694eb4477eab0389d3f0db",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "7e1be9c9-fa2f-44c2-a6bc-3edcece745fe": {
+    "status": "reviewed",
+    "sourceHash": "ade34234974f12ef9790de2f641fdbe1cb86dabaedc9d05548d7347b85b6fdc1",
+    "draftHash": "4f7f3efa03237d6c1bbb568fd8f814a3be767c004b6550efbc942847d3df3589",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "83e70b6e-ff59-4a3b-8e81-249ab0cda0c3": {
+    "status": "reviewed",
+    "sourceHash": "966b1869a229b086f3fafa25671492bec0f75ac25be6d9add0cd0992b4749907",
+    "draftHash": "e8f1cc89cf677bfd23ea38581b4617b9c291da36747e480a25e2b32dfdee7ec6",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "71999aa1-55dd-4449-81b0-41f04686bf2e": {
+    "status": "reviewed",
+    "sourceHash": "cc4ffa84a6bfe5109b2538b7f3a3ebb0495b1fb99f7c063dcb2e063baaaa5f4b",
+    "draftHash": "99f5cc745d7726acab3feafb8ea23453c660ebdfe91497d39339ebd0b7b54b41",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "22e72306-f41c-4621-a925-83bab7f9d76e": {
+    "status": "reviewed",
+    "sourceHash": "0853cc579fbf6029b3f8736219761d5d38ae3538780b7861c47c0c3bf07e02dd",
+    "draftHash": "ac9905e438ac1e4e0fb345e9b8d85a827fad8f4bf33c0115434b10fc182359f8",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "a68013c8-4630-41c6-a5ee-a658b57f58fe": {
+    "status": "reviewed",
+    "sourceHash": "49ae41c675f03949661c1b04bb9d059e26551dda2741b1753ace5c9d004c3d61",
+    "draftHash": "bfeb1052f1f078f1485f39de6476698e2c4495a8f84e97767f606ead075e6065",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "9f5ded08-4f6f-4641-878e-897904483479": {
+    "status": "reviewed",
+    "sourceHash": "1afefade5d28aa17110b1b83236ba756ffdb25692e7ed8ccb4cb45c6a5f7a48e",
+    "draftHash": "b1b5dfc9d076b042787d6270c61d1c1131d3b431d9afefadea8ef99a346b8690",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "5b3a5651-2a80-4fb1-b1bf-c9fb5ec38905": {
+    "status": "reviewed",
+    "sourceHash": "71dbe3d405502dc99288fa56b06813456a230692077386a746f5bc7c6fd4aa59",
+    "draftHash": "b947d633603e4e8eb274c42d0c2ad63666ffde70d8642a4bbfb0531f7fc88220",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "bb111748-d8f1-4a5e-b618-b70272a7a642": {
+    "status": "reviewed",
+    "sourceHash": "339a811fe825581e7d6e8de3456dff1f3b91f5fa12442fce10e5ea4bf4e43c50",
+    "draftHash": "805c16e6bbe707a81db5a3bc36d36ae5e3d4bb1cbc88545029f691b9ab045e09",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "09788f19-1e11-4394-a543-0edf2cfdcae9": {
+    "status": "reviewed",
+    "sourceHash": "835066414ff798fbac2ed1ab698567570d24abd81d0d6a9a177444694c7ed7e9",
+    "draftHash": "bf8d26008a31835edef769ef70b1e5b184b15e1cabbd74ab84bc37dd9dfc23c3",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "0ed53ef4-30ca-41ac-a629-d778e5cc2bfa": {
+    "status": "reviewed",
+    "sourceHash": "f39b4e92eee7f21f05d9b3da1a4c03ec413d01e403487185cfc9bee288364820",
+    "draftHash": "a994c8106e170f8e471222140b1c56f4f3dcb6ad9bdf1b4c89890830cc45b8b4",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "e117d224-39ca-4eba-a047-0d36ce8b8c26": {
+    "status": "reviewed",
+    "sourceHash": "3f50998e20127fcb13095b63e4a4b4e0bcc5f836646bb9c19927bd2b3d02500c",
+    "draftHash": "6986e2fddc5e2437f43763636cdc48d873f5569e54065298e389cc2ecd6d7816",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "1b6f2389-2d09-4d51-982a-e7efb35113c5": {
+    "status": "reviewed",
+    "sourceHash": "f9477c1460ec4ca1da6e7f585d58f86af1b798596b3ed5e98f01f8760c69291e",
+    "draftHash": "2698a307eeba9a0fb8b274e36c91827cecaf552a6f5748a3d4248fa03d3033e2",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "f93545e7-747e-4d12-a6c8-e484c46b2860": {
+    "status": "reviewed",
+    "sourceHash": "e7f444168f6d85528123d15f4fcbf24ec16d11071d9be5e3c1680822db9fd6f5",
+    "draftHash": "7e1ac4cf4abf15fc057837759c4f9f1d0bb3ef270212852ed7889ddbd4bcb0d1",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "4e92a96d-aa74-4153-8314-b6df22d1e18a": {
+    "status": "reviewed",
+    "sourceHash": "4675d0ed3bf97114f47fea0371ee7e992e099fd70c38e755de83c2381d16e04b",
+    "draftHash": "3d687355f93a6123b98f9917135ac6b3412455fb4fc3062418bf1da9f5590674",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "4bd5be2b-5788-42c0-a300-9d106a73d46e": {
+    "status": "reviewed",
+    "sourceHash": "e788a940f0897262e80fc44660377ea58cdc14193186060d8450a6bff46117e7",
+    "draftHash": "83f7af66d99142237d143dd0e5fd7a0731ea38b2a51dab7f6370d09866b53d42",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "49194c4b-b775-4d21-a506-fc0a2ff308f1": {
+    "status": "reviewed",
+    "sourceHash": "c439226fb684a4f449686a1c2b0496eb21d145704daf4cf8fcae2d896cc306e7",
+    "draftHash": "311b94cdd3891a6fe9b52f2e49b5b9e6c7c49186cab22515e1ba6578897eca4f",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "35319d7e-9cf6-43b0-bfa3-991cf82a49f9": {
+    "status": "reviewed",
+    "sourceHash": "1368a0459bca850ef92e3530d056a4159b9651c7d8dbd5eb19e745673751f952",
+    "draftHash": "42434b13ed7ba5cbb62069c30720908acc5f691d5ba6535119216fe18e7f14f4",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "7ccd9915-51a1-4748-9989-af243036455b": {
+    "status": "reviewed",
+    "sourceHash": "8c3b32f347f6a55d552624a8d5f4987151b48d8b4fefd753c8b8f9811831a31d",
+    "draftHash": "ce5e017ac9ae51d3c36d84e3e9199b2b2d2ea726f5e9753cde30f7ea596f4c17",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "22923091-18da-429d-9ef1-6b367fd74b1a": {
+    "status": "reviewed",
+    "sourceHash": "a942bcbb1d87ad7e43937a62964f609bdb380a64c063e21c0ab4c07547a441d7",
+    "draftHash": "5f62ef34000c5699f2742553a8bfdf7aca96383010e866d76997db006f421d3d",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "aaae5882-9b74-4b45-9bb5-9f773a721119": {
+    "status": "reviewed",
+    "sourceHash": "6ec29f2cbc38d0e379b2e4da68b12ba6487302b4b5312da444dbb2128f8fe217",
+    "draftHash": "90609a065577d5e01a44ca190564a2b73aa8c53a116b1086636bd3d12f8c5d8d",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "d4baf2d1-ea61-4fb3-a284-e889275bdca2": {
+    "status": "reviewed",
+    "sourceHash": "78cf1859951da2b27a6bd133ee2fecf16e6a8e1571ad9d57cb1aa3bc064d9f9a",
+    "draftHash": "33174529c62fc7e91e60a745b9a33401c3be36b1aecc4e2052e4fbc748e0a7ad",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "caa023cf-9f55-450c-9638-1cf5c0223cc1": {
+    "status": "reviewed",
+    "sourceHash": "564611149e651e5112ce453fa4fffd258fe25574741f870f6cae4f3360f90bab",
+    "draftHash": "7c5e4ab1ebf9a88bcd4a5b8191e8fb86cb5e71ebff803241f3cf77acea211492",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "527eba4b-b35c-4d29-99e7-8f40c6f3d5b7": {
+    "status": "reviewed",
+    "sourceHash": "e32cb8b1ec4b29309abc7c67d63c04e024f8384a294e6e816b42c56007a85fc2",
+    "draftHash": "489b153e0a0e2bb4f2ba40561b883673227c80f27c3a7ea7e53a064c5e501d31",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "e12edd83-36cd-4e8a-a630-91874631c51f": {
+    "status": "reviewed",
+    "sourceHash": "42721d176c3f0e5fc057bb4bb4d6cc53a21f7ae93f854af573a6ddb712319a1c",
+    "draftHash": "50a71d2660c38c9c14a0eddeda842182ecbf725905c62ae43edc4ba5b34100de",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "b4f9c5b3-0108-4127-bf3e-73fd207176f3": {
+    "status": "reviewed",
+    "sourceHash": "4e2f1ce05339b750808884abef8d9b644de01ebe1c63e479422df851b5754f0b",
+    "draftHash": "8f531dfec281c1454c73d0661f5f3161b20edd8f42d17c32cb007c9dddadf128",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "4bef9a5e-f4a1-44bd-a78c-cb0fe38ccdff": {
+    "status": "reviewed",
+    "sourceHash": "14893371e6df985031c80c6da9ec93fed014178ecb2733a2a94547913c176ecf",
+    "draftHash": "ac17886457b495ca48dd6e7ac20893cacd1d4311fb9e62fb3ac6a2f0c0d7f73b",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "8d480633-1876-4082-aaca-a7b3a26c04d7": {
+    "status": "reviewed",
+    "sourceHash": "ba00d621c353e17022963f3aa49b4188611033a01fd44a52b5e2678706816731",
+    "draftHash": "7405e63f3d43afa1af45e5fd3eea0f9743090bda641fbf88d5dffd4fb57ac022",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "1352fbf1-2c3d-459c-b4ac-061e0c6befb8": {
+    "status": "reviewed",
+    "sourceHash": "2ed7472be8f225650c366f96f54ed19150e36e59f093016d67eb8d4f48e81962",
+    "draftHash": "ebc0da325399fe423f9520e4a533af55ef27a28d808135585f769cc018c1b406",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "15079155-e95e-4abc-b36e-f6b605848f37": {
+    "status": "reviewed",
+    "sourceHash": "69f48ab7b79048122d35a2e6dbe5fbe213fdd6ddae221fbbbdf468874f5f194c",
+    "draftHash": "addf998da71714e766f204903960d6657c1a5fd5affed5476732266870e58505",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "1f66d2ec-8418-485e-a434-e21a0d439dda": {
+    "status": "reviewed",
+    "sourceHash": "fb91f8bfb0aa248546be3d595c4591cf3760b39eaaa18e39d8d1fe2d446be414",
+    "draftHash": "da24e20215249a337010d205ff1990581c727bdda2fc02f345cacf4ca4d5684e",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "d35f583a-c20c-453c-a886-e13f98b2e4b4": {
+    "status": "reviewed",
+    "sourceHash": "a27608140dff1b71d7d2d3a75d3a400577b7a6974c6ce01796d1ce6ca40c9050",
+    "draftHash": "14661b24809f74ac7a51c54fa0baf04a5a7ae7512adfc51575f1c18b381f4327",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "79e7ec6e-0d6c-4f95-8181-4671c42e1faf": {
+    "status": "reviewed",
+    "sourceHash": "fbb0837bbb55bbbb3976d49d5c2c85777bcf02dfb3b913cb78f25b1adad7b011",
+    "draftHash": "87028eaf73f7c76f9f6b6730656efa5024d44beb6753bd51d653b1451e79ac80",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "fc1bc01d-c281-40fd-9e0d-4c484539e4ae": {
+    "status": "reviewed",
+    "sourceHash": "e068c481ff613f3f49bdd82019512224add0e0acf7294ec799e56b61ba831f12",
+    "draftHash": "66a2dea5c3195b67eb68c779f10ad5157f7df7cedca615ff28db4efdef8daaae",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "63950163-6a10-4e74-af8a-09886e4ef2a8": {
+    "status": "reviewed",
+    "sourceHash": "7a6bd7043ec27fede67a309c11fd29c69a9a4daa8b9a728efdc54fd085c5361c",
+    "draftHash": "fdee882599a57028a9e2766cd1d3afae0bb8083e4a0d338819fbc22cbda1ed8b",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "526d4ecc-e123-4b9d-a213-958bb947593d": {
+    "status": "reviewed",
+    "sourceHash": "6771a609c98ca6d3fddb9da2bc6fcac826ce4c80ac134e92aedb447e05d3e972",
+    "draftHash": "12a176158a5f09e4a6cd5b954a60428d33c635cbf5b2fd3865ca5c9270e92146",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "a2b4fe60-9809-422d-afa7-143a2088f045": {
+    "status": "reviewed",
+    "sourceHash": "8d2862c0242ca7a987bf59d86e0e0187516f771c2bc027f5fba946a6e9898949",
+    "draftHash": "d6f23fbdbd2154175a76adfb216df12f7c8945421960f87a4f7e8266605691c8",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "92dd65da-8301-4c83-b8f3-986b6095c481": {
+    "status": "reviewed",
+    "sourceHash": "61d31d336d3de9c0b9461e96b121970e34f2d2778bbe5f403735203d9436af09",
+    "draftHash": "b964d1248b5d6b7ef38db2eece7883575e5743a5ee8cf079f11c49fd407c7f85",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "67c18ea1-db49-44b5-8b21-6176e4a86416": {
+    "status": "reviewed",
+    "sourceHash": "ca09ec04d1c645c771e857a662df564320556074e8858a137cd78bff0bcc64ae",
+    "draftHash": "65843d71b228568cba236c423fff5c7802016ff5e0aed9c83b921ac21401c273",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  },
+  "aa9f9e4d-aa34-496e-89cf-cfef61efa89d": {
+    "status": "reviewed",
+    "sourceHash": "1708fec973932edca1556e28e8d1019222073d90d9a5f57551e2e751002f5f35",
+    "draftHash": "292a8d7a951dca5c9e015956e89acb4094de5f1881e22e3ef864664d47e72446",
+    "method": "模型辅助逐行自校",
+    "independentExpertReview": false,
+    "checks": [
+      "原文逐行对应",
+      "句义与否定",
+      "典故与语境",
+      "词注位置"
+    ]
+  }
+}

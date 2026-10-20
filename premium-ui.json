@@ -7,6 +7,7 @@
     "assets/knowledge.mjs",
     "assets/research-panel.mjs",
     "assets/atlas.mjs",
+    "assets/poetry-study.mjs",
     "assets/styles.css"
   ],
   "locale": "zh-CN",
@@ -19,7 +20,8 @@
   },
   "evidence": {
     "failurePaths": "tests/browser/reader.spec.mjs",
-    "knowledgeAndMap": "tests/browser/knowledge.spec.mjs"
+    "knowledgeAndMap": "tests/browser/knowledge.spec.mjs",
+    "poetryStudy": "tests/browser/poetry-study.spec.mjs"
   },
   "ownership": {
     "Select/Listbox": "native"

@@ -1,5 +1,10 @@
 "use strict";
 import {
+  studyLine,
+  validateStudy,
+  verifyStudyHashes,
+} from "./poetry-study.mjs";
+import {
   validateCatalog,
   adaptBook,
   findWorks,
@@ -74,6 +79,7 @@ let book = [],
   searchAnchor = null,
   saveTimer;
 const failed = new Set();
+let studyLoadingEpoch = -1;
 const esc = (s) =>
   String(s ?? "").replace(
     /[&<>"']/g,
@@ -96,6 +102,18 @@ function status() {
   $("#loadStatus").innerHTML = failed.size
     ? `${[...failed].map((x) => esc(x.label)).join("、")}加载失败，正文仍可阅读。<button class="btn" id="retryOptional">重试</button>`
     : "";
+  const loadingStudy =
+    studyLoadingEpoch === bookEpoch && activeBook?.kind === "poetry";
+  for (const id of ["notesBtn", "transBtn"])
+    $("#" + id).setAttribute("aria-busy", String(loadingStudy));
+  if (
+    loadingStudy &&
+    view === "reading" &&
+    (prefs.get(LS.notes) === "on" || prefs.get(LS.trans) === "on")
+  )
+    $("#loadStatus").append(
+      document.createTextNode("正在加载唐诗注译，正文可先阅读…"),
+    );
   if (knowledgeLoading && view === "reading")
     $("#loadStatus").append(document.createTextNode(" 正在加载名物资料…"));
   if (knowledgeError && view === "reading") {
@@ -116,6 +134,10 @@ function status() {
 async function loadOptional(items = activeBook?.resources || []) {
   const id = activeBook?.id,
     epoch = bookEpoch;
+  if (items.some((item) => item.type === "poetry-study")) {
+    studyLoadingEpoch = epoch;
+    status();
+  }
   const retry = $("#retryOptional");
   if (retry) {
     retry.disabled = true;
@@ -131,6 +153,12 @@ async function loadOptional(items = activeBook?.resources || []) {
         )
           throw Error("缺少注文");
         if (activeBook?.id !== id || epoch !== bookEpoch) return;
+        if (item.type === "poetry-study") {
+          validateStudy(data, book);
+          await verifyStudyHashes(data);
+          if (activeBook?.id !== id || epoch !== bookEpoch) return;
+          notesData = translationsData = data;
+        }
         if (item.type === "annotations") notesData = data;
         if (item.type === "translations") translationsData = data;
         if (item.type === "liu") liuData = data.notes;
@@ -141,6 +169,7 @@ async function loadOptional(items = activeBook?.resources || []) {
     }),
   );
   if (activeBook?.id !== id || epoch !== bookEpoch) return;
+  studyLoadingEpoch = -1;
   const anchor = capture();
   status();
   if (view === "reading") renderChapter(anchor);
@@ -200,7 +229,13 @@ function setView(next) {
   for (const id of ["minusBtn", "plusBtn", "dirBtn"])
     $("#" + id).hidden = next !== "reading";
   for (const id of ["notesBtn", "transBtn"])
-    $("#" + id).hidden = next !== "reading" || activeBook?.kind !== "prose";
+    $("#" + id).hidden =
+      next !== "reading" ||
+      !activeBook?.resources?.some(
+        (r) =>
+          r.type === "poetry-study" ||
+          r.type === (id === "notesBtn" ? "annotations" : "translations"),
+      );
   $("#loadStatus").hidden = next === "library";
   $("#search").placeholder =
     next === "atlas"
@@ -491,6 +526,7 @@ function bind() {
       const anchor = capture();
       prefs.set(key, prefs.get(key) === "on" ? "off" : "on");
       syncBtns();
+      status();
       if (view === "reading") renderChapter(anchor);
     };
   $("#themeBtn").onclick = () => {
@@ -773,8 +809,12 @@ function renderChapter(anchor) {
       const raw = String(text);
       if (q && !raw.toLowerCase().includes(q)) return "";
       const key = ch.title + ":" + (i + 1),
-        notes = Array.isArray(notesData[key]) ? notesData[key] : [],
-        trans = translationsData[key],
+        poemLine =
+          activeBook.kind === "poetry" ? studyLine(notesData, ch, i) : null,
+        notes =
+          poemLine?.notes ||
+          (Array.isArray(notesData[key]) ? notesData[key] : []),
+        trans = poemLine?.translation || translationsData[key],
         liu = Array.isArray(liuData[key]) ? liuData[key] : [];
       const mentions =
         termsEnabled() && knowledgeData
@@ -842,9 +882,14 @@ function renderChapter(anchor) {
   const heading = poetry
     ? `<p class="poem-collection"><a href="${bookRoute(activeBook.id)}">${esc(activeBook.title)}</a></p><h1 class="chapter-title poem-title">${esc(ch.title)}</h1><div class="meta poem-author">唐 · ${esc(ch.author)}<span>${esc(ch.genre)}</span></div><div class="rule"></div>`
     : `<h1 class="book-title">${esc(activeBook.title)}</h1><div class="meta">${esc(activeBook.byline)}</div><div class="rule"></div><h2 class="chapter-title">${esc(ch.title)} · 第${current + 1}${esc(activeBook.sectionUnit || "篇")}</h2>`;
+  const study = poetry ? notesData.poems?.[ch.id] : null;
+  const studyInfo =
+    study && (showNotes || showTrans)
+      ? `<details class="study-sources"><summary>注译说明与参考资料</summary><p>${esc(study.editorialNote)}</p>${study.remarks ? `<p>${esc(study.remarks)}</p>` : ""}<ul>${study.sources.map((s) => `<li><a href="${esc(s.url)}" target="_blank" rel="noopener noreferrer">${esc(s.title)}</a></li>`).join("")}</ul></details>`
+      : "";
   const pagination = `<nav class="reading-pagination" aria-label="篇目翻页">${current > 0 ? `<a href="${chapterURL(current - 1)}">← 上一${poetry ? "首" : "篇"}</a>` : "<span>已是首篇</span>"}<a href="${bookRoute(activeBook.id)}">返回目录</a>${current < book.length - 1 ? `<a href="${chapterURL(current + 1)}">下一${poetry ? "首" : "篇"} →</a>` : "<span>已是末篇</span>"}</nav>`;
   $("#content").innerHTML =
-    `<article class="paper${poetry ? " poem-paper" : ""}">${heading}${entries || `<div class="empty" role="status">当前篇未找到“${esc(query)}”</div>`}${pagination}</article>`;
+    `<article class="paper${poetry ? " poem-paper" : ""}">${heading}${entries || `<div class="empty" role="status">当前篇未找到“${esc(query)}”</div>`}${studyInfo}${pagination}</article>`;
   restore(anchor);
   $("#knowledgeBtn").setAttribute("aria-pressed", String(termsEnabled()));
   followMention();

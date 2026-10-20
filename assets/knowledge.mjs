@@ -56,8 +56,8 @@ export function mergedSpans(text, notes, mentions) {
   const ranges = [];
   for (const [j, n] of notes.entries()) {
     if (!n.word) continue;
-    const at = text.indexOf(n.word);
-    if (at >= 0)
+    const at = Number.isInteger(n.start) ? n.start : text.indexOf(n.word);
+    if (at >= 0 && text.slice(at, at + n.word.length) === n.word)
       ranges.push({
         start: at,
         end: at + n.word.length,

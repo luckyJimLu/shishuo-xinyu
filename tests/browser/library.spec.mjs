@@ -40,8 +40,8 @@ test("poem search by author, title and verse; line layout and navigation", async
   await expect(page.locator(".poem-title")).toHaveText("静夜思");
   await expect(page.locator(".poem-author")).toContainText("李白");
   await expect(page.locator(".poem-line")).toHaveCount(2);
-  await expect(page.locator("#notesBtn")).toBeHidden();
-  await expect(page.locator("#transBtn")).toBeHidden();
+  await expect(page.locator("#notesBtn")).toBeVisible();
+  await expect(page.locator("#transBtn")).toBeVisible();
   await page.locator("#dirBtn").click();
   await expect(page.locator("#reader")).toHaveClass(/vertical/);
   await expect(page.locator(".poem-title")).toBeVisible();
