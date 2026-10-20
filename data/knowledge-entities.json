@@ -1,0 +1,997 @@
+{
+  "version": 1,
+  "note": "释义为本次整理的简短说明，非馆方释文。资料链接用于核查；Google 仅是进一步搜索入口。",
+  "entities": [
+    {
+      "id": "changan",
+      "name": "长安",
+      "type": "place",
+      "aliases": [
+        "长安"
+      ],
+      "definition": "汉唐都城的通称；汉长安与隋唐长安的城址并不完全重合。",
+      "modernName": "今陕西西安一带",
+      "reviewStatus": "reviewed",
+      "sources": [
+        {
+          "title": "CHGIS 历史地名条目（仅外链核查）",
+          "url": "https://chgis.hudci.org/tgaz/placename/hvd_70626"
+        }
+      ],
+      "searchQuery": "中国 陕西 西安 唐长安城遗址",
+      "locations": [
+        {
+          "id": "changan-reference",
+          "coordinates": [
+            108.89305,
+            34.276971
+          ],
+          "referenceCity": "Xian",
+          "label": "今陕西西安一带",
+          "precision": "区域示意",
+          "basis": "Natural Earth 10m 现代城市参考点；不是古城址、古代疆界或遗址实测位置。",
+          "source": "https://github.com/nvkelso/natural-earth-vector/tree/v5.1.2",
+          "periods": [],
+          "searchQuery": "中国 陕西 西安 唐长安城遗址"
+        }
+      ]
+    },
+    {
+      "id": "luoyang",
+      "name": "洛阳",
+      "type": "place",
+      "aliases": [
+        "洛阳"
+      ],
+      "definition": "历代都会。汉魏洛阳故城与隋唐洛阳城位置有别，不能用今市中心替代古城址。",
+      "modernName": "今河南洛阳一带",
+      "reviewStatus": "reviewed",
+      "sources": [
+        {
+          "title": "CHGIS 历史地名条目（仅外链核查）",
+          "url": "https://chgis.hudci.org/tgaz/placename/hvd_82839"
+        }
+      ],
+      "searchQuery": "中国 河南 洛阳 隋唐洛阳城遗址",
+      "locations": [
+        {
+          "id": "luoyang-reference",
+          "coordinates": [
+            112.444471,
+            34.64377
+          ],
+          "referenceCity": "Luoyang",
+          "label": "今河南洛阳一带",
+          "precision": "区域示意",
+          "basis": "Natural Earth 10m 现代城市参考点；不是古城址、古代疆界或遗址实测位置。",
+          "source": "https://github.com/nvkelso/natural-earth-vector/tree/v5.1.2",
+          "periods": [],
+          "searchQuery": "中国 河南 洛阳 隋唐洛阳城遗址"
+        }
+      ]
+    },
+    {
+      "id": "jinling",
+      "name": "金陵",
+      "type": "place",
+      "aliases": [
+        "金陵"
+      ],
+      "definition": "常用作今南京的古称；但张祜《题金陵渡》中的渡口在镇江，不能一概而论。",
+      "modernName": "今江苏南京一带",
+      "reviewStatus": "reviewed",
+      "sources": [
+        {
+          "title": "CHGIS 历史地名条目（仅外链核查）",
+          "url": "https://chgis.hudci.org/tgaz/placename/hvd_40541"
+        }
+      ],
+      "searchQuery": "中国 江苏 南京",
+      "locations": [
+        {
+          "id": "jinling-reference",
+          "coordinates": [
+            118.778029,
+            32.051965
+          ],
+          "referenceCity": "Nanjing",
+          "label": "今江苏南京一带",
+          "precision": "区域示意",
+          "basis": "Natural Earth 10m 现代城市参考点；不是古城址、古代疆界或遗址实测位置。",
+          "source": "https://github.com/nvkelso/natural-earth-vector/tree/v5.1.2",
+          "periods": [],
+          "searchQuery": "中国 江苏 南京"
+        }
+      ]
+    },
+    {
+      "id": "jiankang",
+      "name": "建康",
+      "type": "place",
+      "aliases": [
+        "建康"
+      ],
+      "definition": "东晋及南朝都城，位于今南京一带。",
+      "modernName": "今江苏南京一带",
+      "reviewStatus": "reviewed",
+      "sources": [
+        {
+          "title": "CHGIS 历史地名条目（仅外链核查）",
+          "url": "https://chgis.hudci.org/tgaz/placename/hvd_40525"
+        }
+      ],
+      "searchQuery": "中国 江苏 南京 建康 台城",
+      "locations": [
+        {
+          "id": "jiankang-reference",
+          "coordinates": [
+            118.778029,
+            32.051965
+          ],
+          "referenceCity": "Nanjing",
+          "label": "今江苏南京一带",
+          "precision": "区域示意",
+          "basis": "Natural Earth 10m 现代城市参考点；不是古城址、古代疆界或遗址实测位置。",
+          "source": "https://github.com/nvkelso/natural-earth-vector/tree/v5.1.2",
+          "periods": [],
+          "searchQuery": "中国 江苏 南京 建康 台城"
+        }
+      ]
+    },
+    {
+      "id": "jiangling",
+      "name": "江陵",
+      "type": "place",
+      "aliases": [
+        "江陵"
+      ],
+      "definition": "古县、郡及府名，多与今荆州古城一带相联系；古今辖境不同。",
+      "modernName": "今湖北荆州一带",
+      "reviewStatus": "reviewed",
+      "sources": [
+        {
+          "title": "CHGIS 历史地名条目（仅外链核查）",
+          "url": "https://chgis.hudci.org/tgaz/placename/hvd_105207"
+        }
+      ],
+      "searchQuery": "中国 湖北 荆州古城",
+      "locations": [
+        {
+          "id": "jiangling-reference",
+          "coordinates": [
+            112.229986,
+            30.320021
+          ],
+          "referenceCity": "Jingzhou",
+          "label": "今湖北荆州一带",
+          "precision": "区域示意",
+          "basis": "Natural Earth 10m 现代城市参考点；不是古城址、古代疆界或遗址实测位置。",
+          "source": "https://github.com/nvkelso/natural-earth-vector/tree/v5.1.2",
+          "periods": [],
+          "searchQuery": "中国 湖北 荆州古城"
+        }
+      ]
+    },
+    {
+      "id": "jingzhou",
+      "name": "荆州",
+      "type": "place",
+      "aliases": [
+        "荆州"
+      ],
+      "definition": "古代州名，历代治所和辖境多有变化；文中也常用来代称任官者。",
+      "modernName": "汉代与魏晋辖区、治所不同；首版不作单一定位",
+      "reviewStatus": "reviewed",
+      "sources": [
+        {
+          "title": "CHGIS 历史地名条目（仅外链核查）",
+          "url": "https://chgis.hudci.org/tgaz/placename/hvd_30255"
+        }
+      ],
+      "searchQuery": "汉代与魏晋辖区、治所不同 荆州 历史遗址",
+      "locations": []
+    },
+    {
+      "id": "kuaiji",
+      "name": "会稽",
+      "type": "place",
+      "aliases": [
+        "会稽"
+      ],
+      "definition": "古郡名。汉末至魏晋常以山阴为治所；会稽王又是封号，须结合语境。",
+      "modernName": "魏晋会稽郡治约在今浙江绍兴",
+      "reviewStatus": "reviewed",
+      "sources": [
+        {
+          "title": "CHGIS 历史地名条目（仅外链核查）",
+          "url": "https://chgis.hudci.org/tgaz/placename/hvd_32280"
+        }
+      ],
+      "searchQuery": "中国 浙江 绍兴 会稽",
+      "locations": [
+        {
+          "id": "kuaiji-reference",
+          "coordinates": [
+            120.5681,
+            30.002323
+          ],
+          "referenceCity": "Shaoxing",
+          "label": "魏晋会稽郡治约在今浙江绍兴",
+          "precision": "区域示意",
+          "basis": "Natural Earth 10m 现代城市参考点；不是古城址、古代疆界或遗址实测位置。",
+          "source": "https://github.com/nvkelso/natural-earth-vector/tree/v5.1.2",
+          "periods": [],
+          "searchQuery": "中国 浙江 绍兴 会稽"
+        }
+      ]
+    },
+    {
+      "id": "shanyin",
+      "name": "山阴",
+      "type": "place",
+      "aliases": [
+        "山阴"
+      ],
+      "definition": "古县名，魏晋会稽郡治所之一，文学中的山阴道与王子猷访戴故事与此相关。",
+      "modernName": "今浙江绍兴一带",
+      "reviewStatus": "reviewed",
+      "sources": [
+        {
+          "title": "CHGIS 历史地名条目（仅外链核查）",
+          "url": "https://chgis.hudci.org/tgaz/placename/hvd_40758"
+        }
+      ],
+      "searchQuery": "中国 浙江 绍兴 山阴",
+      "locations": [
+        {
+          "id": "shanyin-reference",
+          "coordinates": [
+            120.5681,
+            30.002323
+          ],
+          "referenceCity": "Shaoxing",
+          "label": "今浙江绍兴一带",
+          "precision": "区域示意",
+          "basis": "Natural Earth 10m 现代城市参考点；不是古城址、古代疆界或遗址实测位置。",
+          "source": "https://github.com/nvkelso/natural-earth-vector/tree/v5.1.2",
+          "periods": [],
+          "searchQuery": "中国 浙江 绍兴 山阴"
+        }
+      ]
+    },
+    {
+      "id": "yuzhang",
+      "name": "豫章",
+      "type": "place",
+      "aliases": [
+        "豫章"
+      ],
+      "definition": "古郡名，治所在今南昌一带；郡的范围不能等同于今天的南昌市。",
+      "modernName": "今江西南昌及周边",
+      "reviewStatus": "reviewed",
+      "sources": [
+        {
+          "title": "CHGIS 历史地名条目（仅外链核查）",
+          "url": "https://chgis.hudci.org/tgaz/placename/hvd_32583"
+        }
+      ],
+      "searchQuery": "中国 江西 南昌 豫章",
+      "locations": [
+        {
+          "id": "yuzhang-reference",
+          "coordinates": [
+            115.87805,
+            28.681938
+          ],
+          "referenceCity": "Nanchang",
+          "label": "今江西南昌及周边",
+          "precision": "区域示意",
+          "basis": "Natural Earth 10m 现代城市参考点；不是古城址、古代疆界或遗址实测位置。",
+          "source": "https://github.com/nvkelso/natural-earth-vector/tree/v5.1.2",
+          "periods": [],
+          "searchQuery": "中国 江西 南昌 豫章"
+        }
+      ]
+    },
+    {
+      "id": "runan",
+      "name": "汝南",
+      "type": "place",
+      "aliases": [
+        "汝南"
+      ],
+      "definition": "古郡名，地域广、治所随时期变化；既可标籍贯，也可出现在人物官称中。",
+      "modernName": "约今河南中南部；具体词例的治所待考",
+      "reviewStatus": "reviewed",
+      "sources": [
+        {
+          "title": "CHGIS 历史地名条目（仅外链核查）",
+          "url": "https://chgis.hudci.org/tgaz/placename/hvd_115751"
+        }
+      ],
+      "searchQuery": "约今河南中南部 汝南 历史遗址",
+      "locations": []
+    },
+    {
+      "id": "xiangyang",
+      "name": "襄阳",
+      "type": "place",
+      "aliases": [
+        "襄阳"
+      ],
+      "definition": "汉水流域的重要城邑和郡名，不同历史时期的行政范围有别。",
+      "modernName": "今湖北襄阳一带",
+      "reviewStatus": "reviewed",
+      "sources": [
+        {
+          "title": "CHGIS 历史地名条目（仅外链核查）",
+          "url": "https://chgis.hudci.org/tgaz/placename/hvd_34537"
+        }
+      ],
+      "searchQuery": "中国 湖北 襄阳古城",
+      "locations": [
+        {
+          "id": "xiangyang-reference",
+          "coordinates": [
+            112.128098,
+            32.021941
+          ],
+          "referenceCity": "Xiangyang",
+          "label": "今湖北襄阳一带",
+          "precision": "区域示意",
+          "basis": "Natural Earth 10m 现代城市参考点；不是古城址、古代疆界或遗址实测位置。",
+          "source": "https://github.com/nvkelso/natural-earth-vector/tree/v5.1.2",
+          "periods": [],
+          "searchQuery": "中国 湖北 襄阳古城"
+        }
+      ]
+    },
+    {
+      "id": "guangling",
+      "name": "广陵",
+      "type": "place",
+      "aliases": [
+        "广陵"
+      ],
+      "definition": "古城及郡名，唐诗中通常指今扬州一带；《广陵散》为曲名。",
+      "modernName": "今江苏扬州一带",
+      "reviewStatus": "reviewed",
+      "sources": [
+        {
+          "title": "CHGIS 历史地名条目（仅外链核查）",
+          "url": "https://chgis.hudci.org/tgaz/placename/hvd_33409"
+        }
+      ],
+      "searchQuery": "中国 江苏 扬州 广陵",
+      "locations": [
+        {
+          "id": "guangling-reference",
+          "coordinates": [
+            119.430012,
+            32.399998
+          ],
+          "referenceCity": "Yangzhou",
+          "label": "今江苏扬州一带",
+          "precision": "区域示意",
+          "basis": "Natural Earth 10m 现代城市参考点；不是古城址、古代疆界或遗址实测位置。",
+          "source": "https://github.com/nvkelso/natural-earth-vector/tree/v5.1.2",
+          "periods": [],
+          "searchQuery": "中国 江苏 扬州 广陵"
+        }
+      ]
+    },
+    {
+      "id": "yangzhou",
+      "name": "扬州",
+      "type": "place",
+      "aliases": [
+        "扬州"
+      ],
+      "definition": "古州名；魏晋扬州的治所与唐代扬州城并非同一位置。",
+      "modernName": "唐代约今江苏扬州；东晋治所约今南京",
+      "reviewStatus": "reviewed",
+      "sources": [
+        {
+          "title": "CHGIS 历史地名条目（仅外链核查）",
+          "url": "https://chgis.hudci.org/tgaz/placename/hvd_30056"
+        }
+      ],
+      "searchQuery": "中国 江苏 扬州",
+      "locations": [
+        {
+          "id": "yangzhou-reference",
+          "coordinates": [
+            119.430012,
+            32.399998
+          ],
+          "referenceCity": "Yangzhou",
+          "label": "唐代约今江苏扬州；东晋治所约今南京",
+          "precision": "区域示意",
+          "basis": "Natural Earth 10m 现代城市参考点；不是古城址、古代疆界或遗址实测位置。",
+          "source": "https://github.com/nvkelso/natural-earth-vector/tree/v5.1.2",
+          "periods": [],
+          "searchQuery": "中国 江苏 扬州"
+        },
+        {
+          "id": "yangzhou-jin-reference",
+          "coordinates": [
+            118.778029,
+            32.051965
+          ],
+          "referenceCity": "Nanjing",
+          "label": "魏晋扬州治所区域参考：今南京一带",
+          "precision": "区域示意",
+          "basis": "CHGIS 核查东晋扬州治所；坐标独立采用 Natural Earth 南京参考点，不复制 CHGIS 坐标。",
+          "source": "https://github.com/nvkelso/natural-earth-vector/tree/v5.1.2",
+          "periods": [
+            "两晋"
+          ],
+          "searchQuery": "中国 江苏 南京 东晋 扬州治所"
+        }
+      ]
+    },
+    {
+      "id": "lushan",
+      "name": "庐山",
+      "type": "place",
+      "aliases": [
+        "庐山"
+      ],
+      "definition": "江西北部的山地，与九江、鄱阳湖的文学地理相联系。",
+      "modernName": "今江西九江庐山地区",
+      "reviewStatus": "reviewed",
+      "sources": [
+        {
+          "title": "庐山市政府：庐山市简介",
+          "url": "https://www.lushan.gov.cn/yxls/lssjj/t_5217791.html"
+        }
+      ],
+      "searchQuery": "中国 江西 庐山",
+      "locations": [
+        {
+          "id": "lushan-reference",
+          "coordinates": [
+            115.980042,
+            29.72998
+          ],
+          "referenceCity": "Jiujiang",
+          "label": "今江西九江庐山地区",
+          "precision": "区域示意",
+          "basis": "Natural Earth 10m 现代城市参考点；不是古城址、古代疆界或遗址实测位置。",
+          "source": "https://github.com/nvkelso/natural-earth-vector/tree/v5.1.2",
+          "periods": [],
+          "searchQuery": "中国 江西 庐山"
+        }
+      ]
+    },
+    {
+      "id": "dongting",
+      "name": "洞庭",
+      "type": "place",
+      "aliases": [
+        "洞庭"
+      ],
+      "definition": "洞庭湖的省称。古今湖面、水系和岸线均有变化。",
+      "modernName": "今湖南洞庭湖地区，以岳阳为区域参考",
+      "reviewStatus": "reviewed",
+      "sources": [
+        {
+          "title": "岳阳市政府：岳阳楼及相关唐诗",
+          "url": "https://yueyang.gov.cn/mobile/23190/49359/49372/content_51560.html"
+        }
+      ],
+      "searchQuery": "中国 湖南 洞庭湖",
+      "locations": [
+        {
+          "id": "dongting-reference",
+          "coordinates": [
+            113.098065,
+            29.381999
+          ],
+          "referenceCity": "Yueyang",
+          "label": "今湖南洞庭湖地区，以岳阳为区域参考",
+          "precision": "区域示意",
+          "basis": "Natural Earth 10m 现代城市参考点；不是古城址、古代疆界或遗址实测位置。",
+          "source": "https://github.com/nvkelso/natural-earth-vector/tree/v5.1.2",
+          "periods": [],
+          "searchQuery": "中国 湖南 洞庭湖"
+        }
+      ]
+    },
+    {
+      "id": "yueyang",
+      "name": "岳阳",
+      "type": "place",
+      "aliases": [
+        "岳阳"
+      ],
+      "definition": "诗中常指巴陵、岳阳城或岳阳楼一带，不能套用其他同名县的坐标。",
+      "modernName": "今湖南岳阳一带",
+      "reviewStatus": "reviewed",
+      "sources": [
+        {
+          "title": "岳阳市政府：岳阳楼及相关唐诗",
+          "url": "https://yueyang.gov.cn/mobile/23190/49359/49372/content_51560.html"
+        }
+      ],
+      "searchQuery": "中国 湖南 岳阳",
+      "locations": [
+        {
+          "id": "yueyang-reference",
+          "coordinates": [
+            113.098065,
+            29.381999
+          ],
+          "referenceCity": "Yueyang",
+          "label": "今湖南岳阳一带",
+          "precision": "区域示意",
+          "basis": "Natural Earth 10m 现代城市参考点；不是古城址、古代疆界或遗址实测位置。",
+          "source": "https://github.com/nvkelso/natural-earth-vector/tree/v5.1.2",
+          "periods": [],
+          "searchQuery": "中国 湖南 岳阳"
+        }
+      ]
+    },
+    {
+      "id": "huanghelou",
+      "name": "黄鹤楼",
+      "type": "place",
+      "aliases": [
+        "黄鹤楼"
+      ],
+      "definition": "武昌长江岸边的历史名楼；现存建筑与历代旧楼不是同一建筑。",
+      "modernName": "今湖北武汉武昌地区",
+      "reviewStatus": "reviewed",
+      "sources": [
+        {
+          "title": "岳阳市政府：岳阳楼及相关唐诗",
+          "url": "https://yueyang.gov.cn/mobile/23190/49359/49372/content_51560.html"
+        }
+      ],
+      "searchQuery": "中国 湖北 武汉 黄鹤楼",
+      "locations": [
+        {
+          "id": "huanghelou-reference",
+          "coordinates": [
+            114.268071,
+            30.581977
+          ],
+          "referenceCity": "Wuhan",
+          "label": "今湖北武汉武昌地区",
+          "precision": "区域示意",
+          "basis": "Natural Earth 10m 现代城市参考点；不是古城址、古代疆界或遗址实测位置。",
+          "source": "https://github.com/nvkelso/natural-earth-vector/tree/v5.1.2",
+          "periods": [],
+          "searchQuery": "中国 湖北 武汉 黄鹤楼"
+        }
+      ]
+    },
+    {
+      "id": "yumenguan",
+      "name": "玉门关",
+      "type": "place",
+      "aliases": [
+        "玉门关"
+      ],
+      "definition": "河西通往西域的关隘名，汉唐关址有迁移。唐诗用典不必等同今日汉关遗址。",
+      "modernName": "甘肃敦煌、瓜州相关历史关址，首版不定点",
+      "reviewStatus": "reviewed",
+      "sources": [
+        {
+          "title": "甘肃文博：阳关玉门关与历史关址变迁",
+          "url": "https://www.gswbj.gov.cn/a/2026/03/19/27769.html"
+        }
+      ],
+      "searchQuery": "甘肃敦煌、瓜州相关历史关址，首版不定点 玉门关 历史遗址",
+      "locations": []
+    },
+    {
+      "id": "yangguan",
+      "name": "阳关",
+      "type": "place",
+      "aliases": [
+        "阳关"
+      ],
+      "definition": "河西通向西域的重要古关，古诗常借它表现送别与边地。",
+      "modernName": "今甘肃敦煌阳关地区",
+      "reviewStatus": "reviewed",
+      "sources": [
+        {
+          "title": "国家民委：阳关内外，故人不绝",
+          "url": "https://www.neac.gov.cn/seac/c103391/202302/1160537.shtml"
+        }
+      ],
+      "searchQuery": "中国 甘肃 敦煌 阳关遗址",
+      "locations": [
+        {
+          "id": "yangguan-reference",
+          "coordinates": [
+            94.662015,
+            40.142678
+          ],
+          "referenceCity": "Dunhuang",
+          "label": "今甘肃敦煌阳关地区",
+          "precision": "区域示意",
+          "basis": "Natural Earth 10m 现代城市参考点；不是古城址、古代疆界或遗址实测位置。",
+          "source": "https://github.com/nvkelso/natural-earth-vector/tree/v5.1.2",
+          "periods": [],
+          "searchQuery": "中国 甘肃 敦煌 阳关遗址"
+        }
+      ]
+    },
+    {
+      "id": "baidicheng",
+      "name": "白帝城",
+      "type": "place",
+      "aliases": [
+        "白帝城"
+      ],
+      "definition": "长江三峡入口附近的历史城址，与奉节一带的文学记忆相联系。",
+      "modernName": "今重庆奉节一带",
+      "reviewStatus": "reviewed",
+      "sources": [
+        {
+          "title": "CHGIS 历史地名条目（仅外链核查）",
+          "url": "https://chgis.hudci.org/tgaz/placename/hvd_21344"
+        }
+      ],
+      "searchQuery": "中国 重庆 奉节 白帝城",
+      "locations": [
+        {
+          "id": "baidicheng-reference",
+          "coordinates": [
+            109.516664,
+            31.050442
+          ],
+          "referenceCity": "Fengjie",
+          "label": "今重庆奉节一带",
+          "precision": "区域示意",
+          "basis": "Natural Earth 10m 现代城市参考点；不是古城址、古代疆界或遗址实测位置。",
+          "source": "https://github.com/nvkelso/natural-earth-vector/tree/v5.1.2",
+          "periods": [],
+          "searchQuery": "中国 重庆 奉节 白帝城"
+        }
+      ]
+    },
+    {
+      "id": "pipa",
+      "name": "琵琶",
+      "type": "object",
+      "aliases": [
+        "琵琶"
+      ],
+      "definition": "拨弦乐器。古代形制不止一种，唐代图像可见曲项、梨形音箱等样式。",
+      "searchQuery": "古代 唐代 琵琶 文物 博物馆",
+      "reviewStatus": "reviewed",
+      "sources": [
+        {
+          "title": "中国国家博物馆：彩绘弹琵琶陶俑",
+          "url": "https://www.chnmuseum.cn/zp/zpml/kgfjp/202111/t20211111_252114.shtml"
+        }
+      ]
+    },
+    {
+      "id": "qin",
+      "name": "琴",
+      "type": "object",
+      "aliases": [
+        "琴"
+      ],
+      "definition": "此处名物义指古琴一类拨弦乐器；不可把胡琴、琴赋或琴心等词一概当作古琴。",
+      "searchQuery": "唐代 魏晋 古琴 文物",
+      "reviewStatus": "reviewed",
+      "sources": [
+        {
+          "title": "故宫博物院：“大圣遗音”琴",
+          "url": "https://www.dpm.org.cn/collection/music/234738.html"
+        }
+      ]
+    },
+    {
+      "id": "se",
+      "name": "瑟",
+      "type": "object",
+      "aliases": [
+        "瑟"
+      ],
+      "definition": "古代弦乐器，形体较长、弦数较多。正文中的萧瑟为形容词，并非器物。",
+      "searchQuery": "古代 瑟 弦乐器 文物",
+      "reviewStatus": "reviewed",
+      "sources": [
+        {
+          "title": "中国国家博物馆：天地同和——中国古代乐器展",
+          "url": "https://www.chnmuseum.cn/zl/lszl/lswh/202008/t20200805_246805.shtml"
+        }
+      ]
+    },
+    {
+      "id": "sheng",
+      "name": "笙",
+      "type": "object",
+      "aliases": [
+        "笙"
+      ],
+      "definition": "簧管吹奏乐器，由多根管、簧片和笙斗等组成，可奏和音。",
+      "searchQuery": "古代 笙 乐器 文物",
+      "reviewStatus": "reviewed",
+      "sources": [
+        {
+          "title": "故宫博物院：笙",
+          "url": "https://www.dpm.org.cn/collection/music/232798.html"
+        }
+      ]
+    },
+    {
+      "id": "hujia",
+      "name": "胡笳",
+      "type": "object",
+      "aliases": [
+        "胡笳"
+      ],
+      "definition": "古代吹奏乐器名，也常进入琴曲、诗题名称；曲名中的用法不能直接当作吹奏现场。",
+      "searchQuery": "古代 胡笳 吹奏乐器 文物",
+      "reviewStatus": "reviewed",
+      "sources": [
+        {
+          "title": "中国国家博物馆：天地同和——中国古代乐器展",
+          "url": "https://www.chnmuseum.cn/zl/lszl/lswh/202008/t20200805_246805.shtml"
+        }
+      ]
+    },
+    {
+      "id": "qiangdi",
+      "name": "羌笛",
+      "type": "object",
+      "aliases": [
+        "羌笛"
+      ],
+      "definition": "古代笛类吹奏乐器称谓；形制需分时期考察，不据现代乐器图片反推唐代实物。",
+      "searchQuery": "古代 唐代 羌笛 文物",
+      "reviewStatus": "reviewed",
+      "sources": [
+        {
+          "title": "中国国家博物馆：天地同和——中国古代乐器展",
+          "url": "https://www.chnmuseum.cn/zl/lszl/lswh/202008/t20200805_246805.shtml"
+        }
+      ]
+    },
+    {
+      "id": "zhuwei",
+      "name": "麈尾",
+      "type": "object",
+      "aliases": [
+        "麈尾"
+      ],
+      "definition": "魏晋清谈中常见的持握用具，带柄与尾毛等部件，也有玉柄等材质的形象记载。",
+      "searchQuery": "魏晋 麈尾 玉柄 清谈 文物",
+      "reviewStatus": "reviewed",
+      "sources": [
+        {
+          "title": "故宫博物院学刊：古代长啸与麈尾研究",
+          "url": "https://www.dpm.org.cn/Uploads/File/2020/02/16/u5e490eb73ccd7.pdf"
+        }
+      ]
+    },
+    {
+      "id": "ruyi",
+      "name": "如意",
+      "type": "object",
+      "aliases": [
+        "如意"
+      ],
+      "definition": "带柄的持握器具，早有搔背用途，后用于清谈、陈设等；文中铁如意是具体器物。",
+      "searchQuery": "魏晋 如意 器物 文物 博物馆",
+      "reviewStatus": "reviewed",
+      "sources": [
+        {
+          "title": "故宫博物院：清宫珍藏如意展（含六朝用途说明）",
+          "url": "https://www.dpm.org.cn/Uploads/wenhua/E27/E27h.htm"
+        }
+      ]
+    },
+    {
+      "id": "hu",
+      "name": "笏",
+      "type": "object",
+      "aliases": [
+        "笏"
+      ],
+      "definition": "官员持用的狭长手板，可用竹、木、象牙等材料制作；敛笏是收持手板的动作。",
+      "searchQuery": "古代 魏晋 笏 手板 文物",
+      "reviewStatus": "reviewed",
+      "sources": [
+        {
+          "title": "故宫博物院：拄笏释义",
+          "url": "https://www.dpm.org.cn/lemmas/240807.html"
+        }
+      ]
+    },
+    {
+      "id": "ta",
+      "name": "榻",
+      "type": "object",
+      "aliases": [
+        "榻"
+      ],
+      "definition": "可供坐卧的家具，形制与使用方式因时代而异，不等同于现代沙发。",
+      "searchQuery": "魏晋 床榻 家具 文物",
+      "reviewStatus": "reviewed",
+      "sources": [
+        {
+          "title": "中国国家博物馆：魏晋南北朝生活陈设",
+          "url": "https://m.chnmuseum.cn/portals/0/web/zt/gudai/detail5.html"
+        }
+      ]
+    },
+    {
+      "id": "shang",
+      "name": "觞",
+      "type": "object",
+      "aliases": [
+        "觞"
+      ],
+      "definition": "饮酒器的通称，也可借指一杯酒或饮酒；羽觞、耳杯为可比较的实物类型。",
+      "searchQuery": "古代 羽觞 耳杯 酒器 文物",
+      "reviewStatus": "reviewed",
+      "sources": [
+        {
+          "title": "故宫博物院：耳杯",
+          "url": "https://www.dpm.org.cn/lemmas/245282.html"
+        }
+      ]
+    },
+    {
+      "id": "zun",
+      "name": "樽",
+      "type": "object",
+      "aliases": [
+        "樽"
+      ],
+      "definition": "酒器称谓，可指盛酒器，诗中也常泛称酒杯；不能据一个字固定为某件出土器的形状。",
+      "searchQuery": "古代 樽 酒器 文物",
+      "reviewStatus": "reviewed",
+      "sources": [
+        {
+          "title": "中国国家博物馆：三羊铜樽",
+          "url": "https://www.chnmuseum.cn/zp/zpml/csp/202008/t20200826_247427.shtml"
+        }
+      ]
+    },
+    {
+      "id": "zan",
+      "name": "簪",
+      "type": "object",
+      "aliases": [
+        "簪"
+      ],
+      "definition": "用于固定头发、冠等的长形饰物；簪组、华簪还可借指官场身份。",
+      "searchQuery": "唐代 簪 发饰 文物",
+      "reviewStatus": "reviewed",
+      "sources": [
+        {
+          "title": "中国国家博物馆：鎏金银簪钗",
+          "url": "https://www.chnmuseum.cn/zp/zpml/kgfjp/202111/t20211116_252271.shtml"
+        }
+      ]
+    },
+    {
+      "id": "chai",
+      "name": "钗",
+      "type": "object",
+      "aliases": [
+        "钗"
+      ],
+      "definition": "常为双股的发饰，可固定发髻并起装饰作用；与单股簪有别。",
+      "searchQuery": "唐代 金钗 玉钗 发饰 文物",
+      "reviewStatus": "reviewed",
+      "sources": [
+        {
+          "title": "中国国家博物馆：鎏金银簪钗",
+          "url": "https://www.chnmuseum.cn/zp/zpml/kgfjp/202111/t20211116_252271.shtml"
+        }
+      ]
+    },
+    {
+      "id": "pei",
+      "name": "辔",
+      "type": "object",
+      "aliases": [
+        "辔"
+      ],
+      "definition": "驾驭马匹的缰绳。揽辔为执缰动作，在《世说新语》该句中另有赴任理政的引申意味。",
+      "searchQuery": "古代 车马 辔 缰绳 文物",
+      "reviewStatus": "reviewed",
+      "sources": [
+        {
+          "title": "中国国家博物馆：彩绘陶兵马俑（鞍辔）",
+          "url": "https://www.chnmuseum.cn/zp/zpml/kgfjp/202110/t20211027_251893.shtml"
+        }
+      ]
+    },
+    {
+      "id": "qiu",
+      "name": "裘",
+      "type": "object",
+      "aliases": [
+        "裘"
+      ],
+      "definition": "用毛皮制成的衣服，材质、工艺与形制随时期及身份而异。",
+      "searchQuery": "古代 狐裘 皮衣 文物",
+      "reviewStatus": "reviewed",
+      "sources": [
+        {
+          "title": "中国哲学书电子化计划：裘字资料",
+          "url": "https://ctext.org/dictionary.pl?if=gb&char=裘"
+        }
+      ]
+    },
+    {
+      "id": "lv",
+      "name": "履",
+      "type": "object",
+      "aliases": [
+        "履"
+      ],
+      "definition": "名物义为鞋类；履行等动词用法不应加器物链接。",
+      "searchQuery": "魏晋 履 鞋 文物",
+      "reviewStatus": "reviewed",
+      "sources": [
+        {
+          "title": "中国哲学书电子化计划：履字资料",
+          "url": "https://ctext.org/dictionary.pl?if=gb&char=履"
+        }
+      ]
+    },
+    {
+      "id": "pingfeng",
+      "name": "屏风",
+      "type": "object",
+      "aliases": [
+        "屏风"
+      ],
+      "definition": "室内遮挡、分隔或装饰用的陈设；山峰如屏的比喻不按室内器物处理。",
+      "searchQuery": "古代 屏风 家具 文物",
+      "reviewStatus": "reviewed",
+      "sources": [
+        {
+          "title": "中国国家博物馆：魏晋南北朝生活陈设",
+          "url": "https://m.chnmuseum.cn/portals/0/web/zt/gudai/detail5.html"
+        }
+      ]
+    },
+    {
+      "id": "xianglu",
+      "name": "香炉",
+      "type": "object",
+      "aliases": [
+        "香炉"
+      ],
+      "definition": "焚香的器具。现有正文中的香炉瀑布指庐山香炉峰相关景观，故不发布为器物词例。",
+      "searchQuery": "古代 香炉 文物",
+      "reviewStatus": "reviewed",
+      "sources": [
+        {
+          "title": "中国国家博物馆：魏晋南北朝生活陈设",
+          "url": "https://m.chnmuseum.cn/portals/0/web/zt/gudai/detail5.html"
+        }
+      ]
+    },
+    {
+      "id": "yuhu",
+      "name": "玉壶",
+      "type": "object",
+      "aliases": [
+        "玉壶"
+      ],
+      "definition": "玉制或以玉形容的壶。诗中常借玉壶与冰表达清洁品格，不能据诗句确定一件具体文物。",
+      "searchQuery": "古代 玉壶 玉器 文物",
+      "reviewStatus": "reviewed",
+      "sources": [
+        {
+          "title": "中国哲学书电子化计划：玉壶词例检索",
+          "url": "https://ctext.org/dictionary.pl?if=gb&char=壺"
+        }
+      ]
+    }
+  ]
+}

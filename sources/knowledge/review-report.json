@@ -1,0 +1,10 @@
+{
+  "summary": {
+    "reviewed": 240,
+    "excluded": 50,
+    "pending": 15,
+    "candidate": 0
+  },
+  "staleReviewIds": [],
+  "note": "候选或待考词例不在正文加链接；排除记录不进入地图。"
+}

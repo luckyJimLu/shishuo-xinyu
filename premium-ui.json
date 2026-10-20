@@ -1,13 +1,27 @@
 {
   "profile": "product-admin",
-  "sourceRoots": ["index.html", "assets"],
+  "sourceRoots": [
+    "index.html",
+    "assets/reader.js",
+    "assets/library.mjs",
+    "assets/knowledge.mjs",
+    "assets/research-panel.mjs",
+    "assets/atlas.mjs",
+    "assets/styles.css"
+  ],
   "locale": "zh-CN",
-  "requiredCapabilities": [],
+  "requiredCapabilities": ["Scrollbar", "Select/Listbox"],
   "requiredCommands": ["unit", "e2e", "build"],
   "commands": {
     "unit": "npm test",
     "e2e": "npm run test:e2e",
     "build": "npm run build"
   },
-  "evidence": { "failurePaths": "tests/browser/reader.spec.mjs" }
+  "evidence": {
+    "failurePaths": "tests/browser/reader.spec.mjs",
+    "knowledgeAndMap": "tests/browser/knowledge.spec.mjs"
+  },
+  "ownership": {
+    "Select/Listbox": "native"
+  }
 }

@@ -62,22 +62,29 @@ export function readingRoute(id, workId) {
   return bookRoute(id) + "/read/" + encodeURIComponent(workId);
 }
 export function parseRoute(hash) {
-  if (!hash || hash === "#/" || hash === "#") return { view: "library" };
+  const [path, search = ""] = (hash || "").split("?");
+  const params = new URLSearchParams(search);
+  if (!path || path === "#/" || path === "#") return { view: "library" };
+  if (path === "#/atlas")
+    return { view: "atlas", filters: Object.fromEntries(params) };
   try {
-    let m = hash.match(/^#\/chapter\/(.+)$/);
+    let m = path.match(/^#\/chapter\/(.+)$/);
     if (m)
       return {
         view: "legacy",
         bookId: LEGACY_BOOK,
         title: decodeURIComponent(m[1]),
       };
-    m = hash.match(/^#\/book\/([^/]+)(?:\/read\/([^/]+))?$/);
-    if (m)
-      return {
+    m = path.match(/^#\/book\/([^/]+)(?:\/read\/([^/]+))?$/);
+    if (m) {
+      const result = {
         view: m[2] ? "reading" : "book",
         bookId: decodeURIComponent(m[1]),
         workId: m[2] ? decodeURIComponent(m[2]) : null,
       };
+      if (params.has("mention")) result.mentionId = params.get("mention");
+      return result;
+    }
   } catch {}
   return { view: "missing" };
 }

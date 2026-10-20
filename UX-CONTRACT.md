@@ -4,9 +4,24 @@
 
 ## Canonical UI Map
 
-| Capability | Canonical owner            | Source of truth  | Allowed variants                             | Verification                  |
-| ---------- | -------------------------- | ---------------- | -------------------------------------------- | ----------------------------- |
-| Scrollbar  | assets/styles.css 全局样式 | DESIGN.md Layout | 横排纵向 / 竖排横向 / forced-colors 系统颜色 | tests/browser/reader.spec.mjs |
+| Capability     | Canonical owner            | Source of truth  | Allowed variants                             | Verification                     |
+| -------------- | -------------------------- | ---------------- | -------------------------------------------- | -------------------------------- |
+| Scrollbar      | assets/styles.css 全局样式 | DESIGN.md Layout | 横排纵向 / 竖排横向 / forced-colors 系统颜色 | tests/browser/reader.spec.mjs    |
+| Select/Listbox | assets/atlas.mjs 地图筛选  | 本交互约定       | native：接受操作系统弹出层外观与键盘行为     | tests/browser/knowledge.spec.mjs |
+
+## 名物与地图
+
+- assets/knowledge.mjs 统一负责名物筛选、原文范围校验、Google 链接与地图聚合，原文不改写。
+- 名物开关首次关闭，使用 `classics:knowledge` 记忆。地图词例回跳可在本次阅读中临时显示目标，不改写持久偏好。
+- 只有 reviewed 且正文全文、字符范围一致的词例生成触发点；排除、候选和待考词例不加链接。
+- assets/research-panel.mjs 是唯一研读面板实现。桌面非模态侧栏；820px 以下为样式受控的原生 dialog，限制焦点、支持 Escape 关闭并恢复到触发词。
+- Google 搜索仅用户点链后在新标签页访问，不嵌入外部图片或在线地图。复制失败显示可选中的检索词，不使用浏览器警告弹窗。
+- 与原注重叠的名物合并为一个原文触发点；研读卡同时保留词义注。
+- 地图书目和时期筛选使用原生 select，接受平台菜单外观。地图检索、筛选和选中地名持久化到哈希参数。
+- 地图是现代自然地理底图与历史地名参考位置，不是精确历史疆域。区域示意为空心点，未定位记录仅入列表；计数仅含已校读词例。
+- 书目时期不替代词例时期；例如唐诗中的汉代典故单独记为汉，无法确定的语境使用待考。
+- 本地底图或 Leaflet 加载失败时，列表与正文仍可使用并可重试；切换页面后过期请求不修改路由。
+- 地图与名物资料按需加载；Leaflet 仅在地图页加载，地图不请求外部瓦片服务。
 
 ## 行为
 
@@ -21,3 +36,7 @@
 - 跨书加载采用版本检查，旧请求不得覆盖新书或显示上一书的错误。每书可单独重试，缓存失败不阻断其他书。
 - 首页始终为书库，以继续阅读链接恢复最近作品，不自动跳过选书入口。诗集没有注译数据时隐藏注译控件，避免暗示具备尚未提供的内容。
 - 界面为中文，不新增账号、服务端写操作或跨设备存储。
+
+### 静态审计边界
+
+`premium-audit.json` 保留静态扫描原始结果。该扫描器不识别本项目通过 `addEventListener` 绑定的按钮，且 `sourceRoots` 只接受目录，文件列表会回退扫描整个仓库，因此也报告 Leaflet 自身的缩放控件空链接。以上结果须结合浏览器测试判断；不修改第三方代码或添加内联事件来迎合扫描。按钮行为、地图缩放、弹层键盘操作与加载失败恢复由 `tests/browser/knowledge.spec.mjs` 及原阅读回归验证。

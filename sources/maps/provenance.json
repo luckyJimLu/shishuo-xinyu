@@ -1,0 +1,16 @@
+{
+  "repo": "nvkelso/natural-earth-vector",
+  "revision": "f1890d9f152c896d250a77557a5751a93d494776",
+  "license": "public domain",
+  "datasets": [
+    "ne_110m_land",
+    "ne_50m_rivers_lake_centerlines",
+    "ne_10m_populated_places"
+  ],
+  "note": "现代自然地理参考，非历史疆界。仅摘取公开领域的城市参考点；不再分发 CHGIS 数据。",
+  "artifacts": {
+    "data/maps/land.geojson": "1e33f77878f8acb69d37c095fcf6b955df7b934834bc356f36d7d4c3ee009d19",
+    "data/maps/rivers.geojson": "6010334a8ff3c1c24d3331d98a783077384ecd25a9032de923b0f6a23e1359f6",
+    "sources/maps/reference-places.json": "4542a3c1bab73b71b364724e4e71b26fbea3fc125e70c3eefbf28c1388961fce"
+  }
+}

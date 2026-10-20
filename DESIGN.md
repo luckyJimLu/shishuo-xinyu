@@ -9,6 +9,8 @@ colors:
   muted: "#736451"
   line: "#d8cbaa"
   primary: "#8b3b2f"
+  map-water: "#6f9692"
+  map-sea: "#e3e9df"
 typography:
   serif:
     fontFamily: '"Songti SC", "STSong", "Noto Serif CJK SC", "Source Han Serif SC", "SimSun", serif'
@@ -31,6 +33,10 @@ components:
     textColor: "{colors.primary}"
   divider:
     backgroundColor: "{colors.line}"
+  map-water:
+    backgroundColor: "{colors.map-water}"
+  map-sea:
+    backgroundColor: "{colors.map-sea}"
 ---
 
 # 中国古典文学 Design System
@@ -57,6 +63,16 @@ components:
 ## Typography
 
 宋体字体栈覆盖书名与中文正文，system-ui/微软雅黑用于目录辅助信息、筛选与工具控件；默认正文 20px，可调 15–30px，行高 2.05。正文最大行宽 44em；不使用外部字体请求。
+
+## 名物研读与文学地图
+
+原文保留墨色，名物开关默认关闭。地名使用 primary 的虚线，器物使用 muted 的点线，不逐字增加图标。目标词回跳使用 paper2 背景与 primary 轮廓。
+
+研读卡在桌面占右侧约 320px，在手机以最大 70dvh 的底部弹层呈现；卡片依次显示词义、原句、语境、古今地理参考和资料来源。外部检索与站内地图操作共用 research-actions，不让原文变成链接墙。
+
+地图延续纸面和朱色空心地点：map-water 映射 `--map-water` 水系线条，map-sea 映射 `--map-sea` 海面；夜间分别使用 #7ba9a1 与 #1b2825。陆地沿用 paper2，边线沿用 line。Natural Earth 图层只表达现代自然地理，避免纹理图或虚构疆界。
+
+桌面左地图、右侧约 320px 的地名索引和诗文来源；手机提供地图／列表切换。未定位的地名仍可检索但不落点。地图工具和原生筛选控件沿用全站 focus-visible、字体与边线。
 
 ## Layout
 

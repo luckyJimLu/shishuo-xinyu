@@ -1,0 +1,96 @@
+{
+  "source": "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/f1890d9f152c896d250a77557a5751a93d494776/geojson/ne_10m_populated_places.geojson",
+  "features": [
+    {
+      "name": "Jingzhou",
+      "coordinates": [
+        112.229986,
+        30.320021
+      ]
+    },
+    {
+      "name": "Yangzhou",
+      "coordinates": [
+        119.430012,
+        32.399998
+      ]
+    },
+    {
+      "name": "Fengjie",
+      "coordinates": [
+        109.516664,
+        31.050442
+      ]
+    },
+    {
+      "name": "Luoyang",
+      "coordinates": [
+        112.444471,
+        34.64377
+      ]
+    },
+    {
+      "name": "Jiujiang",
+      "coordinates": [
+        115.980042,
+        29.72998
+      ]
+    },
+    {
+      "name": "Shaoxing",
+      "coordinates": [
+        120.5681,
+        30.002323
+      ]
+    },
+    {
+      "name": "Xiangyang",
+      "coordinates": [
+        112.128098,
+        32.021941
+      ]
+    },
+    {
+      "name": "Dunhuang",
+      "coordinates": [
+        94.662015,
+        40.142678
+      ]
+    },
+    {
+      "name": "Yueyang",
+      "coordinates": [
+        113.098065,
+        29.381999
+      ]
+    },
+    {
+      "name": "Xian",
+      "coordinates": [
+        108.89305,
+        34.276971
+      ]
+    },
+    {
+      "name": "Wuhan",
+      "coordinates": [
+        114.268071,
+        30.581977
+      ]
+    },
+    {
+      "name": "Nanchang",
+      "coordinates": [
+        115.87805,
+        28.681938
+      ]
+    },
+    {
+      "name": "Nanjing",
+      "coordinates": [
+        118.778029,
+        32.051965
+      ]
+    }
+  ]
+}

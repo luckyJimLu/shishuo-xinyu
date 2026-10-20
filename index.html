@@ -54,10 +54,25 @@
           ⌂</button
         ><button id="minusBtn" aria-label="缩小字号" class="btn">A−</button
         ><button id="plusBtn" aria-label="放大字号" class="btn">A＋</button
+        ><button
+          id="knowledgeBtn"
+          class="btn"
+          aria-label="名物研读"
+          aria-pressed="false"
+          hidden
+        >
+          名物</button
         ><button id="notesBtn" class="btn" title="显示注释">注</button
         ><button id="transBtn" class="btn" title="显示译文">译</button
         ><button id="dirBtn" aria-label="切换横竖排" class="btn" title="横竖排">
           <span class="txt">竖排</span>↔</button
+        ><a
+          id="atlasLink"
+          class="btn"
+          href="#/atlas"
+          aria-label="文学地图"
+          title="文学地图"
+          >地图</a
         ><button id="themeBtn" aria-label="切换主题" class="btn">☾</button>
       </div>
     </header>
@@ -84,7 +99,18 @@
         <div id="content"><div class="empty">正在打开藏书…</div></div>
         <button id="topBtn" aria-label="返回阅读起点" class="fab">↑</button>
       </main>
+      <aside
+        id="researchPanel"
+        class="research-panel"
+        aria-label="名物研读"
+        hidden
+      ></aside>
     </div>
+    <dialog
+      id="researchDialog"
+      class="research-dialog"
+      aria-label="名物研读"
+    ></dialog>
     <script type="module" src="./assets/reader.js"></script>
   </body>
 </html>

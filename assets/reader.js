@@ -9,6 +9,20 @@ import {
   storageKey,
   LEGACY_BOOK,
 } from "./library.mjs";
+import {
+  loadKnowledge,
+  safeMentions,
+  mergedSpans,
+  atlasRoute,
+} from "./knowledge.mjs";
+import { createResearchPanel } from "./research-panel.mjs";
+let knowledgeData = null,
+  knowledgeLoading = false,
+  knowledgeError = "",
+  forcedMention = null,
+  pendingMention = null,
+  atlasController = null,
+  researchController = null;
 const SITE_TITLE = "中国古典文学";
 let optionalEpoch = -1;
 let catalog = [],
@@ -27,6 +41,7 @@ const LS = {
   dir: "ssxy_dir",
   notes: "ssxy_notes",
   trans: "ssxy_trans",
+  knowledge: "classics:knowledge",
   chapter: "ssxy_chapter",
   pos: "ssxy_pos",
 };
@@ -81,6 +96,20 @@ function status() {
   $("#loadStatus").innerHTML = failed.size
     ? `${[...failed].map((x) => esc(x.label)).join("、")}加载失败，正文仍可阅读。<button class="btn" id="retryOptional">重试</button>`
     : "";
+  if (knowledgeLoading && view === "reading")
+    $("#loadStatus").append(document.createTextNode(" 正在加载名物资料…"));
+  if (knowledgeError && view === "reading") {
+    $("#loadStatus").append(
+      document.createTextNode(" " + knowledgeError + "，正文仍可阅读。"),
+    );
+    const retry = document.createElement("button");
+    retry.type = "button";
+    retry.className = "btn";
+    retry.textContent = "重试名物";
+    retry.id = "retryKnowledge";
+    retry.onclick = () => prepareKnowledge();
+    $("#loadStatus").append(retry);
+  }
   if ($("#retryOptional"))
     $("#retryOptional").onclick = () => loadOptional([...failed]);
 }
@@ -132,6 +161,14 @@ function readPositions(meta) {
   return value;
 }
 async function init() {
+  researchController = createResearchPanel({
+    onLayoutChange() {
+      if (view === "reading") {
+        const anchor = capture();
+        if (anchor) restore(anchor);
+      }
+    },
+  });
   restorePrefs();
   bind();
   try {
@@ -147,6 +184,10 @@ async function init() {
 function setView(next) {
   view = next;
   document.body.dataset.view = next;
+  $(".main").classList.toggle("atlas-view", next === "atlas");
+  $("#knowledgeBtn").hidden = next !== "reading";
+  $("#knowledgeBtn").setAttribute("aria-pressed", String(termsEnabled()));
+  $("#atlasLink").href = atlasRoute(researchContext());
   $(".main").classList.toggle("library-view", next === "library");
   $(".main").classList.toggle(
     "overview-view",
@@ -162,13 +203,15 @@ function setView(next) {
     $("#" + id).hidden = next !== "reading" || activeBook?.kind !== "prose";
   $("#loadStatus").hidden = next === "library";
   $("#search").placeholder =
-    next === "library"
-      ? "检索藏书…"
-      : activeBook?.kind === "poetry"
-        ? "检索诗题、作者、诗句…"
-        : next === "reading"
-          ? "检索当前篇正文…"
-          : "检索篇目与正文…";
+    next === "atlas"
+      ? "检索古今地名…"
+      : next === "library"
+        ? "检索藏书…"
+        : activeBook?.kind === "poetry"
+          ? "检索诗题、作者、诗句…"
+          : next === "reading"
+            ? "检索当前篇正文…"
+            : "检索篇目与正文…";
   $("#search").setAttribute(
     "aria-label",
     $("#search").placeholder.replace("…", ""),
@@ -180,6 +223,11 @@ function chapterURL(i) {
 }
 async function route() {
   savePosition();
+  researchController?.close(false);
+  atlasController?.destroy();
+  atlasController = null;
+  forcedMention = null;
+  pendingMention = null;
   clearTimeout(saveTimer);
   const version = ++routeVersion;
   routeHash = location.hash;
@@ -188,6 +236,31 @@ async function route() {
   listLimit = 40;
   genreFilter = "";
   current = -1;
+  if (destination.view === "atlas") {
+    setView("atlas");
+    toggleSide(false);
+    document.title = "文学地名地图 · " + SITE_TITLE;
+    $("#loadStatus").hidden = true;
+    const { mountAtlas } = await import("./atlas.mjs");
+    if (version !== routeVersion) return;
+    const controller = await mountAtlas($("#content"), {
+      catalog,
+      filters: destination.filters,
+      context: researchContext(),
+      isCurrent: () => version === routeVersion,
+      onURLChange() {
+        routeHash = location.hash;
+      },
+    });
+    if (version !== routeVersion) {
+      controller.destroy();
+      return;
+    }
+    atlasController = controller;
+    $("#search").value = destination.filters.q || "";
+    $("#clearSearch").hidden = !$("#search").value;
+    return;
+  }
   if (destination.view === "library") {
     showHome();
     return;
@@ -252,6 +325,8 @@ async function route() {
         showMissing();
         return;
       }
+      forcedMention = destination.mentionId || null;
+      pendingMention = forcedMention;
       openChapter(i);
     } else renderBookOverview();
     if (optionalEpoch !== bookEpoch) {
@@ -287,6 +362,10 @@ function applySearch() {
   query = $("#search").value.trim();
   $("#clearSearch").hidden = !query;
   listLimit = 40;
+  if (view === "atlas") {
+    atlasController?.search(query);
+    return;
+  }
   if (view === "library") {
     renderLibrary();
     return;
@@ -301,7 +380,97 @@ function applySearch() {
   }
   renderBookOverview();
 }
+function termsEnabled() {
+  return prefs.get(LS.knowledge) === "on" || Boolean(forcedMention);
+}
+function researchContext() {
+  if (activeBook && current >= 0)
+    return { contextBook: activeBook.id, work: book[current].id };
+  try {
+    const recent = JSON.parse(prefs.get("classics:lastRead"));
+    if (recent?.bookId && recent.workId)
+      return { contextBook: recent.bookId, work: recent.workId };
+  } catch {}
+  return {};
+}
+async function prepareKnowledge() {
+  if (knowledgeData) {
+    if (view === "reading") renderChapter(capture());
+    return;
+  }
+  if (knowledgeLoading) return;
+  knowledgeLoading = true;
+  knowledgeError = "";
+  status();
+  try {
+    knowledgeData = await loadKnowledge();
+  } catch {
+    knowledgeError = "名物资料加载失败";
+  } finally {
+    knowledgeLoading = false;
+    status();
+    if (knowledgeData && view === "reading" && termsEnabled())
+      renderChapter(capture());
+  }
+}
+function openResearch(ids, button, notes = []) {
+  if (!knowledgeData || !activeBook || current < 0) return;
+  const mentions = knowledgeData.mentions.mentions.filter(
+    (m) =>
+      ids.includes(m.id) &&
+      m.status === "reviewed" &&
+      m.bookId === activeBook.id &&
+      m.workId === book[current].id,
+  );
+  if (!mentions.length) return;
+  const entity = knowledgeData.entities.entities.find(
+    (e) => e.id === mentions[0].entityId,
+  );
+  if (!entity) return;
+  const anchor = capture();
+  researchController.open(
+    entity,
+    mentions.filter((m) => m.entityId === entity.id),
+    button,
+    { context: researchContext(), notes },
+  );
+  if (anchor) restore(anchor);
+}
+function followMention() {
+  if (!pendingMention || !knowledgeData) return;
+  const id = pendingMention;
+  pendingMention = null;
+  const button = [...document.querySelectorAll("[data-mention-ids]")].find(
+    (b) => b.dataset.mentionIds.split(" ").includes(id),
+  );
+  if (!button) return;
+  button.classList.add("term-target");
+  requestAnimationFrame(() => {
+    if (!button.isConnected) return;
+    const r = $("#reader"),
+      a = button.getBoundingClientRect(),
+      b = r.getBoundingClientRect();
+    r.scrollBy({
+      top: vertical() ? 0 : a.top - b.top - 65,
+      left: vertical() ? a.right - b.right + 50 : 0,
+      behavior: "instant",
+    });
+    openResearch([id], button);
+    button.focus({ preventScroll: true });
+    updateProgress();
+  });
+}
 function bind() {
+  $("#knowledgeBtn").onclick = () => {
+    const anchor = capture();
+    const enable = !termsEnabled();
+    forcedMention = null;
+    pendingMention = null;
+    prefs.set(LS.knowledge, enable ? "on" : "off");
+    researchController.close();
+    if (enable && !knowledgeData) void prepareKnowledge();
+    renderChapter(anchor);
+  };
   $("#menuBtn").onclick = () =>
     toggleSide(!$("#side").classList.contains("open"));
   $("#scrim").onclick = () => toggleSide(false);
@@ -369,6 +538,15 @@ function bind() {
   };
   $("#content").addEventListener("toggle", updateProgress, true);
   $("#content").addEventListener("click", (e) => {
+    const term = e.target.closest("[data-mention-ids]");
+    if (term) {
+      let notes = [];
+      try {
+        notes = JSON.parse(term.dataset.extraNotes || "[]");
+      } catch {}
+      openResearch(term.dataset.mentionIds.split(" "), term, notes);
+      return;
+    }
     const a = e.target.closest(".annotated");
     if (a) {
       const p = document.getElementById(a.getAttribute("aria-controls"));
@@ -598,19 +776,17 @@ function renderChapter(anchor) {
         notes = Array.isArray(notesData[key]) ? notesData[key] : [],
         trans = translationsData[key],
         liu = Array.isArray(liuData[key]) ? liuData[key] : [];
-      // Build markup from raw-text intervals so annotation words can never replace generated HTML.
-      const spans = [];
-      if (showNotes)
-        notes.forEach((n, j) => {
-          const at = raw.indexOf(n.word);
-          if (
-            n.word &&
-            at >= 0 &&
-            !spans.some((s) => at < s.end && at + n.word.length > s.start)
-          )
-            spans.push({ start: at, end: at + n.word.length, n, j });
-        });
-      spans.sort((a, b) => a.start - b.start);
+      const mentions =
+        termsEnabled() && knowledgeData
+          ? safeMentions(
+              knowledgeData.mentions,
+              activeBook.id,
+              ch.id,
+              i + 1,
+              raw,
+            )
+          : [];
+      const spans = mergedSpans(raw, showNotes ? notes : [], mentions);
       const highlight = (text) => {
         if (!q) return esc(text);
         let html = "",
@@ -628,17 +804,34 @@ function renderChapter(anchor) {
       };
       let html = "",
         from = 0;
-      for (const s of spans) {
+      for (const span of spans) {
+        const isTerm = span.mentions.length > 0;
+        const types = [
+          ...new Set(
+            span.mentions.map(
+              (m) =>
+                knowledgeData.entities.entities.find((e) => e.id === m.entityId)
+                  ?.type,
+            ),
+          ),
+        ];
+        const buttonId = isTerm
+          ? "term-" + span.mentions[0].id
+          : `note-trigger-${i}-${span.notes[0].index}`;
+        const attrs = isTerm
+          ? `data-mention-ids="${span.mentions.map((m) => m.id).join(" ")}" data-extra-notes="${esc(JSON.stringify(span.notes))}" aria-controls="${matchMedia("(max-width:820px)").matches ? "researchDialog" : "researchPanel"}" aria-label="${esc(raw.slice(span.start, span.end))}，${types.includes("place") ? "地名" : "器物"}研读"`
+          : `aria-controls="note-${i}-${span.notes[0].index}"`;
         html +=
-          highlight(raw.slice(from, s.start)) +
-          `<button class="annotated" aria-expanded="false" aria-controls="note-${i}-${s.j}">${highlight(raw.slice(s.start, s.end))}<sup>注</sup></button>`;
-        from = s.end;
+          highlight(raw.slice(from, span.start)) +
+          `<button id="${buttonId}" class="annotated ${types.map((t) => "term-" + t).join(" ")}${span.mentions.some((m) => m.id === forcedMention) ? " term-target" : ""}" aria-expanded="false" ${attrs}>${highlight(raw.slice(span.start, span.end))}${!isTerm && span.notes.length ? "<sup>注</sup>" : ""}</button>`;
+        from = span.end;
       }
       html += highlight(raw.slice(from));
       const noteHtml = spans
+        .filter((span) => !span.mentions.length)
         .map(
-          (s) =>
-            `<div id="note-${i}-${s.j}" class="note-pop" hidden><b>${esc(s.n.word)}</b>　${esc(s.n.note)}</div>`,
+          (span) =>
+            `<div id="note-${i}-${span.notes[0].index}" class="note-pop" hidden>${span.notes.map((n) => `<b>${esc(n.word)}</b>　${esc(n.note)}`).join("<br>")}</div>`,
         )
         .join("");
       return `<section class="entry-wrap" data-entry="${i + 1}"><p class="entry${activeBook.kind === "poetry" ? " poem-line" : ""}">${html}</p>${noteHtml}${showNotes && liu.length ? `<details class="liu-note"><summary>刘孝标注（${liu.length}段）</summary>${liu.map((n) => `<p>${esc(n)}</p>`).join("")}</details>` : ""}${showTrans && trans ? `<p class="translation"><span class="tag">译</span>${esc(trans)}</p>` : ""}</section>`;
@@ -653,6 +846,10 @@ function renderChapter(anchor) {
   $("#content").innerHTML =
     `<article class="paper${poetry ? " poem-paper" : ""}">${heading}${entries || `<div class="empty" role="status">当前篇未找到“${esc(query)}”</div>`}${pagination}</article>`;
   restore(anchor);
+  $("#knowledgeBtn").setAttribute("aria-pressed", String(termsEnabled()));
+  followMention();
+  if (termsEnabled() && !knowledgeData && !knowledgeLoading && !knowledgeError)
+    void prepareKnowledge();
 }
 function capture() {
   if (current < 0 || view !== "reading") return null;
