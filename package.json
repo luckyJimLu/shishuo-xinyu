@@ -5,6 +5,7 @@
   "description": "A classical Chinese reader for 世说新语, optimized for GitHub Pages.",
   "scripts": {
     "dev": "python3 -m http.server 4173",
-    "build": "node scripts/build.mjs"
+    "build": "node scripts/build.mjs",
+    "import:liu-notes": "node scripts/import-liuxiaobiao.mjs"
   }
 }
