@@ -1,0 +1,13 @@
+{
+  "profile": "product-admin",
+  "sourceRoots": ["index.html", "assets"],
+  "locale": "zh-CN",
+  "requiredCapabilities": [],
+  "requiredCommands": ["unit", "e2e", "build"],
+  "commands": {
+    "unit": "npm test",
+    "e2e": "npm run test:e2e",
+    "build": "npm run build"
+  },
+  "evidence": { "failurePaths": "tests/browser/reader.spec.mjs" }
+}
