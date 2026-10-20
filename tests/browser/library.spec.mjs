@@ -204,3 +204,40 @@ test("vertical poems and long titles fit within the reading viewport", async ({
     fullPage: true,
   });
 });
+
+test("overview uses one directory and restores reading navigation", async ({
+  page,
+}, info) => {
+  await page.goto("#/book/tang-poems");
+  await expect(page.locator(".work-list")).toBeVisible();
+  await expect(page.locator("#side")).toBeHidden();
+  await expect(page.locator("#menuBtn")).toBeHidden();
+  await page.screenshot({
+    path: `test-results/${info.project.name}-single-directory.png`,
+    fullPage: true,
+  });
+  await page.locator("#startBtn").click();
+  await expect(page.locator(".poem-title")).toBeVisible();
+  await expect(page.locator("#side")).not.toHaveAttribute("hidden", "");
+  if (info.project.name === "mobile") {
+    await expect(page.locator("#menuBtn")).toBeVisible();
+    await page.locator("#menuBtn").click();
+    await expect(page.locator("#side")).toHaveClass(/open/);
+  } else await expect(page.locator("#side")).toBeVisible();
+  await page.locator("#bookNav a").last().click();
+  await expect(page.locator("#side")).toBeHidden();
+  await expect(page.locator("#scrim")).not.toHaveClass(/show/);
+  await page.locator("#search").fill("李白");
+  await expect(page.locator(".work-list li").first()).toContainText("李白");
+  await expect(page.locator("#side")).toBeHidden();
+  await page.locator("#clearSearch").click();
+  await page.goto("#/book/shishuo-xinyu");
+  await expect(page.locator(".work-list")).toBeVisible();
+  await expect(page.locator("#side")).toBeHidden();
+  await page.locator("#startBtn").click();
+  await expect(page.locator(".chapter-title")).toContainText("德行");
+  if (info.project.name === "mobile") {
+    await page.locator("#menuBtn").click();
+    await expect(page.locator("#side")).toHaveClass(/open/);
+  } else await expect(page.locator("#side")).toBeVisible();
+});

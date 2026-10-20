@@ -213,6 +213,14 @@ async function init() {
 function setView(next) {
   view = next;
   document.body.dataset.view = next;
+  const reading = next === "reading";
+  $("#side").hidden = !reading;
+  $("#menuBtn").hidden = !reading;
+  if (!reading) toggleSide(false);
+  else
+    $("#side").inert =
+      matchMedia("(max-width:820px)").matches &&
+      !$("#side").classList.contains("open");
   $(".main").classList.toggle("atlas-view", next === "atlas");
   $("#knowledgeBtn").hidden = next !== "reading";
   $("#knowledgeBtn").setAttribute("aria-pressed", String(termsEnabled()));
@@ -985,10 +993,11 @@ function updateProgress() {
   $("#topBtn").classList.toggle("show", view === "reading" && position > 500);
 }
 function toggleSide(on) {
+  on = on && view === "reading";
   $("#side").classList.toggle("open", on);
   $("#scrim").classList.toggle("show", on);
   $("#menuBtn").setAttribute("aria-expanded", String(on));
   const mobile = matchMedia("(max-width:820px)").matches;
-  $("#side").inert = mobile && !on;
+  $("#side").inert = view !== "reading" || (mobile && !on);
 }
 init();
