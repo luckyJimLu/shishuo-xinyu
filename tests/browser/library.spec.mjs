@@ -7,7 +7,7 @@ async function poems(page) {
 test("library opens both books and supports discovery", async ({ page }) => {
   await page.goto("");
   await expect(page).toHaveTitle("中国古典文学 · 诗文藏书");
-  await expect(page.locator(".book-card")).toHaveCount(2);
+  await expect(page.locator(".book-card")).toHaveCount(3);
   await page.locator("#search").fill("唐诗");
   await expect(page.locator(".book-card")).toHaveCount(1);
   await page.locator(".book-card").click();
@@ -109,7 +109,7 @@ test("failed poetry load can retry while the other book remains accessible", asy
   await page.goto("#/book/does-not-exist");
   await expect(page.locator(".empty")).toContainText("未找到");
   await page.locator("#homeBtn").click();
-  await expect(page.locator(".book-card")).toHaveCount(2);
+  await expect(page.locator(".book-card")).toHaveCount(3);
 });
 test("book-switch races discard stale annotation failures", async ({
   page,
@@ -123,7 +123,7 @@ test("book-switch races discard stale annotation failures", async ({
   await page.goto("#/book/shishuo-xinyu");
   await expect(page.locator("#startBtn")).toBeVisible();
   await page.locator("#homeBtn").click();
-  await page.locator(".book-card.poetry").click();
+  await page.locator('.book-card[href="#/book/tang-poems"]').click();
   await expect(page.locator(".collection-header h1")).toHaveText("唐诗选读");
   release();
   await expect(page.locator("#loadStatus")).toBeEmpty();
@@ -189,7 +189,7 @@ test("a failed catalog has explicit recovery and no silent blank screen", async 
   await expect(page.locator("#retryCatalog")).toBeVisible();
   await page.unroute("**/data/catalog.json");
   await page.locator("#retryCatalog").click();
-  await expect(page.locator(".book-card")).toHaveCount(2);
+  await expect(page.locator(".book-card")).toHaveCount(3);
 });
 test("vertical poems and long titles fit within the reading viewport", async ({
   page,
@@ -268,7 +268,7 @@ test("quiet directory reveals previews for search and offers one resume action",
   await page.locator(".work-link").click();
   await expect(page.locator(".entry").first()).toBeVisible();
   await page.locator("#homeBtn").click();
-  await page.locator(".book-card.poetry").click();
+  await page.locator('.book-card[href="#/book/tang-poems"]').click();
   await expect(page.locator("#startBtn")).toContainText("继续阅读");
   await expect(page.locator(".collection-actions a")).toHaveCount(0);
   await page.locator("#startBtn").click();

@@ -65,7 +65,7 @@ for (const [id, title, works, data, get] of [
 }
 const report = {
   schemaVersion: 1,
-  scope: "两书正文；不含刘孝标注",
+  scope: "唐诗选读与世说新语正文；宋词选集尚无译文，不纳入此报告；不含刘孝标注",
   reviewNote:
     "模型辅助原创整理与逐项自校。自动校验只证明绑定、结构及复核记录一致，不能证明译义准确；未经过独立专家审校。",
   books,

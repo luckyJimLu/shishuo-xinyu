@@ -294,7 +294,9 @@ function setView(next) {
       : next === "library"
         ? "检索藏书…"
         : activeBook?.kind === "poetry"
-          ? "检索诗题、作者、诗句…"
+          ? activeBook.form === "ci"
+            ? "检索词牌、作者、词句…"
+            : "检索诗题、作者、诗句…"
           : next === "reading"
             ? "检索当前篇正文…"
             : "检索篇目与正文…";
@@ -768,7 +770,7 @@ function renderLibrary() {
       resume = `<a class="resume-link" href="${readingRoute(LEGACY_BOOK, `chapter-${String(old + 1).padStart(2, "0")}`)}">接着读 · 世说新语 →</a>`;
   }
   $("#content").innerHTML =
-    `<section class="library-page"><header class="library-intro"><h1>中国古典文学</h1><p class="library-lead">读一首唐诗，品一则世说。</p>${resume}</header><div class="shelf-heading"><h2>案头藏书</h2><span>${books.length} 部可读</span></div><div class="bookshelf">${books.map((b) => `<a class="book-card ${b.kind}" href="${bookRoute(b.id)}"><span class="book-cover" aria-hidden="true"><span class="cover-era">${esc(b.era)}</span><span class="cover-title">${esc(b.title)}</span><span class="cover-seal">${b.kind === "poetry" ? "诗" : "文"}</span></span><span class="book-info"><span class="eyebrow">${esc(b.genre)}</span><h3>${esc(b.title)}</h3><span class="book-byline">${esc(b.byline)}</span><span class="book-description">${esc(b.description)}</span><span class="book-count">${b.count} ${esc(b.unit)} <span>开卷阅读 →</span></span></span></a>`).join("") || '<p class="empty" role="status">未找到相关藏书，换个关键词试试。</p>'}</div></section>`;
+    `<section class="library-page"><header class="library-intro"><h1>中国古典文学</h1><p class="library-lead">读唐诗宋词，品世说风流。</p>${resume}</header><div class="shelf-heading"><h2>案头藏书</h2><span>${books.length} 部可读</span></div><div class="bookshelf">${books.map((b) => `<a class="book-card ${b.kind}" href="${bookRoute(b.id)}"><span class="book-cover" aria-hidden="true"><span class="cover-era">${esc(b.era)}</span><span class="cover-title">${esc(b.title)}</span><span class="cover-seal">${b.form === "ci" ? "词" : b.kind === "poetry" ? "诗" : "文"}</span></span><span class="book-info"><span class="eyebrow">${esc(b.genre)}</span><h3>${esc(b.title)}</h3><span class="book-byline">${esc(b.byline)}</span><span class="book-description">${esc(b.description)}</span><span class="book-count">${b.count} ${esc(b.unit)} <span>开卷阅读 →</span></span></span></a>`).join("") || '<p class="empty" role="status">未找到相关藏书，换个关键词试试。</p>'}</div></section>`;
 }
 function renderBookOverview() {
   setView(current >= 0 ? "search" : "book");
@@ -783,11 +785,14 @@ function renderBookOverview() {
     genres = [...new Set(book.map((ch) => ch.genre).filter(Boolean))];
   const saved = prefs.get(storageKey(meta.id, "chapter")),
     resume = book.findIndex((ch) => ch.id === saved);
-  const controls = poetry
-    ? '<div id="genreFilters" class="genre-filters" role="group" aria-label="按诗体筛选"></div>'
-    : "";
+  const ci = meta.form === "ci";
+  const controls = ci
+    ? '<label class="tune-filter">词牌<select id="tuneFilter" aria-label="按词牌筛选"></select></label>'
+    : poetry
+      ? '<div id="genreFilters" class="genre-filters" role="group" aria-label="按诗体筛选"></div>'
+      : "";
   $("#content").innerHTML =
-    `<section class="collection-page"><header class="collection-header"><p class="eyebrow">${esc(meta.era)} · ${esc(meta.genre)}</p><h1>${esc(meta.title)}</h1><p class="collection-byline">${esc(meta.byline)}</p><p>${esc(meta.description)}</p><div class="collection-actions"><span id="startAction"></span></div></header>${controls}<div class="shelf-heading"><h2>${query ? "检索结果" : "篇目目录"}</h2><span role="status">${matches.length} ${esc(meta.sectionUnit || "篇")}</span></div><ol class="work-list">${shown.map(({ work, index }) => `<li><a class="work-link" href="${chapterURL(index)}"><span class="work-number">${String(index + 1).padStart(2, "0")}</span><span class="work-main"><span class="work-title">${esc(work.title)}</span>${work.author ? `<span class="work-author">${esc(work.author)} · ${esc(work.genre)}</span>` : ""}${query ? `<span class="work-preview">${esc(work.content[0])}</span>` : ""}</span><span aria-hidden="true">→</span></a></li>`).join("")}</ol>${!matches.length ? '<p class="empty" role="status">未找到相关篇目，换个题目、作者或诗句试试。</p>' : ""}<div id="moreAction"></div><details class="source-note"><summary>文本来源与整理说明</summary><p>${esc(meta.sourceNote)}</p><a href="${esc(meta.sourceUrl)}" target="_blank" rel="noopener noreferrer">查看原始来源 ↗</a>${meta.licensePath ? ` · <a href="./data/${esc(meta.licensePath)}">数据许可（MIT）</a>` : ""}</details></section>`;
+    `<section class="collection-page"><header class="collection-header"><p class="eyebrow">${esc(meta.era)} · ${esc(meta.genre)}</p><h1>${esc(meta.title)}</h1><p class="collection-byline">${esc(meta.byline)}</p><p>${esc(meta.description)}</p><div class="collection-actions"><span id="startAction"></span></div></header>${controls}<div class="shelf-heading"><h2>${query ? "检索结果" : "篇目目录"}</h2><span role="status">${matches.length} ${esc(meta.sectionUnit || "篇")}</span></div><ol class="work-list">${shown.map(({ work, index }) => `<li><a class="work-link" href="${chapterURL(index)}"><span class="work-number">${String(index + 1).padStart(2, "0")}</span><span class="work-main"><span class="work-title">${esc(work.title)}</span>${work.author ? `<span class="work-author">${esc(work.author)}${ci ? "" : ` · ${esc(work.genre)}`}</span>` : ""}${query ? `<span class="work-preview">${esc(work.content[0])}</span>` : ""}</span><span aria-hidden="true">→</span></a></li>`).join("")}</ol>${!matches.length ? '<p class="empty" role="status">未找到相关篇目，换个题目、作者或诗句试试。</p>' : ""}<div id="moreAction"></div><details class="source-note"><summary>文本来源与整理说明</summary><p>${esc(meta.sourceNote)}</p><a href="${esc(meta.sourceUrl)}" target="_blank" rel="noopener noreferrer">查看原始来源 ↗</a>${meta.licensePath ? ` · <a href="./data/${esc(meta.licensePath)}">数据许可（MIT）</a>` : ""}</details></section>`;
   const startButton = document.createElement("button");
   startButton.type = "button";
   startButton.className = "primary-btn";
@@ -813,7 +818,23 @@ function renderBookOverview() {
     };
     $("#moreAction").append(moreButton);
   }
-  if (poetry)
+  if (ci) {
+    const select = $("#tuneFilter");
+    for (const genre of ["", ...genres]) {
+      const option = document.createElement("option");
+      option.value = genre;
+      option.textContent = genre || "全部词牌";
+      select.append(option);
+    }
+    select.value = genreFilter;
+    select.onchange = () => {
+      genreFilter = select.value;
+      listLimit = 40;
+      renderBookOverview();
+      $("#tuneFilter").focus({ preventScroll: true });
+    };
+  }
+  if (poetry && !ci)
     for (const genre of ["", ...genres]) {
       const button = document.createElement("button");
       button.type = "button";
@@ -939,7 +960,7 @@ function renderChapter(anchor) {
     .join("");
   const poetry = activeBook.kind === "poetry";
   const heading = poetry
-    ? `<h1 class="chapter-title poem-title">${esc(ch.title)}</h1><div class="meta poem-author">唐 · ${esc(ch.author)}<span>${esc(ch.genre)}</span></div><div class="rule"></div>`
+    ? `<h1 class="chapter-title poem-title">${esc(ch.title)}</h1><div class="meta poem-author">${esc(activeBook.era.replace(/代$/, ""))} · ${esc(ch.author)}${activeBook.form === "ci" ? "" : `<span>${esc(ch.genre)}</span>`}</div><div class="rule"></div>`
     : `<h1 class="book-title">${esc(activeBook.title)}</h1><div class="meta">${esc(activeBook.byline)}</div><div class="rule"></div><h2 class="chapter-title">${esc(ch.title)} · 第${current + 1}${esc(activeBook.sectionUnit || "篇")}</h2>`;
   const study = poetry ? notesData.poems?.[ch.id] : null;
   const proseInfo =
@@ -956,7 +977,7 @@ function renderChapter(anchor) {
     : "";
   const pagination = `<nav class="reading-pagination" aria-label="篇目翻页">${current > 0 ? `<a href="${chapterURL(current - 1)}">← 上一${poetry ? "首" : "篇"}</a>` : "<span>已是首篇</span>"}<a href="${bookRoute(activeBook.id)}">返回目录</a>${current < book.length - 1 ? `<a href="${chapterURL(current + 1)}">下一${poetry ? "首" : "篇"} →</a>` : "<span>已是末篇</span>"}</nav>`;
   $("#content").innerHTML =
-    `<article class="paper${poetry ? " poem-paper" : ""}">${heading}${entries || `<div class="empty" role="status">当前篇未找到“${esc(query)}”</div>`}${contextInfo}${studyInfo}${proseInfo}${pagination}</article>`;
+    `<article class="paper${poetry ? " poem-paper" : ""}${activeBook.form === "ci" ? " ci-paper" : ""}">${heading}${entries || `<div class="empty" role="status">当前篇未找到“${esc(query)}”</div>`}${contextInfo}${studyInfo}${proseInfo}${pagination}</article>`;
   const contextSources = $(".context-sources");
   if (contextSources)
     contextSources.ontoggle = () => {

@@ -30,6 +30,24 @@
       ]
     },
     {
+      "id": "song-ci",
+      "title": "宋词选集",
+      "kind": "poetry",
+      "form": "ci",
+      "era": "宋代",
+      "genre": "词",
+      "byline": "苏轼、李清照、辛弃疾等",
+      "description": "从一阕清歌到千古江山，读宋人的离愁与襟怀。",
+      "path": "song-ci.json",
+      "count": 280,
+      "unit": "首",
+      "sectionUnit": "首",
+      "sourceNote": "据 chinese-poetry 固定版本“宋词三百首”数据整理，实际收录280首，不宣称是完整三百首定本。简体阅读版保留底本分句与异文；以词牌和首句区分同调作品。底本未标上下阕，不据句数推定。当前提供正文，尚未附注译、创作背景及已复核名物词例。",
+      "sourceUrl": "https://github.com/chinese-poetry/chinese-poetry/blob/b8594f81a89752241442f2ce267d6f66f96704ee/宋词/宋词三百首.json",
+      "licensePath": "song-ci.LICENSE",
+      "resources": []
+    },
+    {
       "id": "shishuo-xinyu",
       "title": "世说新语",
       "kind": "prose",

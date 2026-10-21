@@ -17,7 +17,8 @@
     "vendor:leaflet": "node scripts/vendor-leaflet.mjs",
     "build:tang-study": "node scripts/build-tang-study.mjs",
     "build:translations": "node scripts/build-prose-translations.mjs && node scripts/build-tang-study.mjs && node scripts/translation-coverage.mjs --write",
-    "build:poetry-context": "node scripts/build-poetry-context.mjs"
+    "build:poetry-context": "node scripts/build-poetry-context.mjs",
+    "import:song-ci": "node scripts/import-song-ci.mjs"
   },
   "devDependencies": {
     "@playwright/test": "^1.64.1",

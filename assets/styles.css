@@ -1929,3 +1929,39 @@ html.dark {
     margin-block: 10px 8px;
   }
 }
+
+/* Ci use the same paper, with a flowing line measure for unequal phrases. */
+.ci-paper .poem-line {
+  text-align: start;
+  line-height: 2.2;
+  letter-spacing: 0.04em;
+}
+.ci-paper .entry-wrap + .entry-wrap {
+  margin-block-start: 0.4em;
+}
+.reader.vertical .ci-paper .entry-wrap + .entry-wrap {
+  margin-block-start: 0;
+}
+.tune-filter {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-block: 24px;
+  color: var(--muted);
+  font: 13px var(--utility-font);
+}
+.tune-filter select {
+  min-height: 40px;
+  max-width: 100%;
+  padding: 6px 32px 6px 12px;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  background: var(--paper);
+  color: var(--ink);
+  font: inherit;
+  cursor: pointer;
+}
+.tune-filter select:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
