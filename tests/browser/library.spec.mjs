@@ -241,3 +241,40 @@ test("overview uses one directory and restores reading navigation", async ({
     await expect(page.locator("#side")).toHaveClass(/open/);
   } else await expect(page.locator("#side")).toBeVisible();
 });
+
+test("home icon is the sole home entry across collection, reading and atlas", async ({
+  page,
+}) => {
+  for (const hash of [
+    "#/book/tang-poems",
+    "#/book/shishuo-xinyu/read/chapter-01",
+    "#/atlas",
+  ]) {
+    await page.goto(hash);
+    await expect(page.locator("#homeBtn")).toBeVisible();
+    await expect(page.locator('a[href="#/"]')).toHaveCount(0);
+  }
+  await page.locator("#homeBtn").click();
+  await expect(page.locator(".library-intro")).toBeVisible();
+});
+
+test("quiet directory reveals previews for search and offers one resume action", async ({
+  page,
+}) => {
+  await poems(page);
+  await expect(page.locator(".work-preview")).toHaveCount(0);
+  await page.locator("#search").fill("南冠");
+  await expect(page.locator(".work-preview")).toContainText("南冠");
+  await page.locator(".work-link").click();
+  await expect(page.locator(".entry").first()).toBeVisible();
+  await page.locator("#homeBtn").click();
+  await page.locator(".book-card.poetry").click();
+  await expect(page.locator("#startBtn")).toContainText("继续阅读");
+  await expect(page.locator(".collection-actions a")).toHaveCount(0);
+  await page.locator("#startBtn").click();
+  await expect(page.locator(".poem-title")).toHaveText("在岳咏蝉");
+  const bounds = await page.locator(".tools").boundingBox();
+  expect(bounds.x + bounds.width).toBeLessThanOrEqual(
+    page.viewportSize().width,
+  );
+});

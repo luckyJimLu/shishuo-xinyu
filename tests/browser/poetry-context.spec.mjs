@@ -10,7 +10,7 @@ test("background is independently available, collapsed initially and keyboard op
 }) => {
   await page.goto(route(178));
   const panel = page.locator(".poem-context"),
-    summary = panel.locator("summary");
+    summary = panel.locator(":scope > summary");
   await expect(summary).toHaveText("创作背景与诗中情绪");
   await expect(panel).not.toHaveAttribute("open");
   await expect(page.locator(".translation")).toHaveCount(0);
@@ -21,6 +21,14 @@ test("background is independently available, collapsed initially and keyboard op
   await expect(panel).toContainText("815");
   await expect(panel).toContainText("同是天涯沦落人");
   await expect(panel).toContainText("不等于作者真实心理");
+  const sources = panel.locator(".context-sources");
+  await expect(sources).not.toHaveAttribute("open");
+  await sources.locator("summary").focus();
+  await page.keyboard.press("Enter");
+  await expect(sources).toHaveAttribute("open");
+  await expect(sources.locator("a").first()).toBeVisible();
+  await page.keyboard.press("Enter");
+  await summary.focus();
   await expect(panel.locator("a").last()).toHaveAttribute(
     "rel",
     "noopener noreferrer",
@@ -69,10 +77,10 @@ test("late context response cannot contaminate prose and uncertainty stays with 
   release();
   await expect(page.locator(".poem-context")).toHaveCount(0);
   await page.goto(route(33));
-  await page.locator(".poem-context summary").click();
+  await page.locator(".poem-context > summary").click();
   await expect(page.locator(".poem-context")).toContainText("署李商隐");
   await page.goto(route(72));
-  await page.locator(".poem-context summary").click();
+  await page.locator(".poem-context > summary").click();
   await expect(page.locator(".poem-context")).not.toContainText("署李商隐");
 });
 test("expanded background keeps its position through switches and fits vertical dark mobile reading", async ({
@@ -81,7 +89,8 @@ test("expanded background keeps its position through switches and fits vertical 
   await page.goto(route(177));
   await expect(page.locator("#loadStatus")).toBeEmpty();
   const panel = page.locator(".poem-context");
-  await panel.locator("summary").click();
+  await panel.locator(":scope > summary").click();
+  await panel.locator(".context-sources > summary").click();
   await panel.evaluate((el) => {
     const r = document.querySelector("#reader"),
       b = el.getBoundingClientRect(),
@@ -90,6 +99,7 @@ test("expanded background keeps its position through switches and fits vertical 
   });
   await page.locator("#notesBtn").click();
   await expect(panel).toHaveAttribute("open");
+  await expect(panel.locator(".context-sources")).toHaveAttribute("open");
   const offset = () =>
     panel.evaluate(
       (el) =>
@@ -102,10 +112,31 @@ test("expanded background keeps its position through switches and fits vertical 
   await expect(panel).toHaveAttribute("open");
   await page.locator("#themeBtn").click();
   await expect(page.locator("html")).toHaveClass(/dark/);
+  expect(await panel.evaluate((el) => getComputedStyle(el).writingMode)).toBe(
+    "vertical-rl",
+  );
   expect(
-    await panel.evaluate((el) => el.getBoundingClientRect().width),
-  ).toBeLessThanOrEqual(info.project.name === "mobile" ? 390 : 320);
-  await expect(panel.locator("summary")).toBeInViewport();
+    await panel
+      .locator("p")
+      .first()
+      .evaluate((el) => getComputedStyle(el).writingMode),
+  ).toBe("vertical-rl");
+  expect(
+    await panel.evaluate(
+      (el) => el.clientHeight <= document.querySelector("#reader").clientHeight,
+    ),
+  ).toBe(true);
+  expect(
+    await page
+      .locator(".study-sources")
+      .evaluate((el) => getComputedStyle(el).writingMode),
+  ).toBe("vertical-rl");
+  expect(
+    await page
+      .locator(".reading-pagination")
+      .evaluate((el) => getComputedStyle(el).writingMode),
+  ).toBe("vertical-rl");
+  await expect(panel.locator(":scope > summary")).toBeInViewport();
   await page.screenshot({
     path: `/tmp/ssxy-poetry-context-${info.project.name}.png`,
   });

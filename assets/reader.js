@@ -93,6 +93,7 @@ const failed = new Set();
 let studyLoadingEpoch = -1;
 let contextLoadingEpoch = -1;
 const openContexts = new Set();
+const openContextSources = new Set();
 const esc = (s) =>
   String(s ?? "").replace(
     /[&<>"']/g,
@@ -371,7 +372,7 @@ async function route() {
   toggleSide(false);
   $("#navTitle").textContent = meta.title;
   $("#total").textContent = "";
-  $("#bookNav").innerHTML = `<a href="#/">← 藏书首页</a>`;
+  $("#bookNav").innerHTML = ``;
   $("#chapters").innerHTML = "";
   $("#loadStatus").innerHTML = "";
   $("#content").innerHTML =
@@ -422,7 +423,7 @@ async function route() {
   } catch (e) {
     if (version !== routeVersion) return;
     $("#content").innerHTML =
-      `<div class="empty">《${esc(meta.title)}》正文加载失败：${esc(e.message)}<br><button id="retryBook" class="btn">重新加载</button><p><a href="#/">返回藏书首页</a></p></div>`;
+      `<div class="empty">《${esc(meta.title)}》正文加载失败：${esc(e.message)}<br><button id="retryBook" class="btn">重新加载</button></div>`;
     $("#retryBook").onclick = () => route();
   }
 }
@@ -434,8 +435,7 @@ function showMissing() {
   failed.clear();
   $("#loadStatus").innerHTML = "";
   document.title = "篇目未找到 · " + SITE_TITLE;
-  $("#content").innerHTML =
-    '<div class="empty">未找到此书或此篇。<p><a href="#/">返回藏书首页</a></p></div>';
+  $("#content").innerHTML = '<div class="empty">未找到此书或此篇。</div>';
   updateNav();
 }
 function navigate(i) {
@@ -702,7 +702,7 @@ function changeLayout(change) {
 }
 function renderNav() {
   $("#bookNav").innerHTML =
-    `<a href="#/">← 藏书首页</a><a href="${bookRoute(activeBook.id)}">${esc(activeBook.title)} · 全部篇目</a>`;
+    `<a href="${bookRoute(activeBook.id)}">${esc(activeBook.title)} · 全部篇目</a>`;
   $("#chapters").innerHTML = book
     .map(
       (ch, i) =>
@@ -768,7 +768,7 @@ function renderLibrary() {
       resume = `<a class="resume-link" href="${readingRoute(LEGACY_BOOK, `chapter-${String(old + 1).padStart(2, "0")}`)}">接着读 · 世说新语 →</a>`;
   }
   $("#content").innerHTML =
-    `<section class="library-page"><header class="library-intro"><p class="eyebrow">诗文藏书 · 随卷而读</p><h1>中国古典文学</h1><p class="library-lead">读一首唐诗，品一则世说。<br>在字里行间，与古人相逢。</p>${resume}</header><div class="shelf-heading"><h2>案头藏书</h2><span>${books.length} 部可读</span></div><div class="bookshelf">${books.map((b) => `<a class="book-card ${b.kind}" href="${bookRoute(b.id)}"><span class="book-cover" aria-hidden="true"><span class="cover-era">${esc(b.era)}</span><span class="cover-title">${esc(b.title)}</span><span class="cover-seal">${b.kind === "poetry" ? "诗" : "文"}</span></span><span class="book-info"><span class="eyebrow">${esc(b.genre)} · ${esc(b.era)}</span><h3>${esc(b.title)}</h3><span class="book-byline">${esc(b.byline)}</span><span class="book-description">${esc(b.description)}</span><span class="book-count">${b.count} ${esc(b.unit)} <span>开卷阅读 →</span></span></span></a>`).join("") || '<p class="empty" role="status">未找到相关藏书，换个关键词试试。</p>'}</div><footer class="library-footer">正文为先，注译随读。支持横竖排、夜间阅读与本地进度记忆。</footer></section>`;
+    `<section class="library-page"><header class="library-intro"><h1>中国古典文学</h1><p class="library-lead">读一首唐诗，品一则世说。</p>${resume}</header><div class="shelf-heading"><h2>案头藏书</h2><span>${books.length} 部可读</span></div><div class="bookshelf">${books.map((b) => `<a class="book-card ${b.kind}" href="${bookRoute(b.id)}"><span class="book-cover" aria-hidden="true"><span class="cover-era">${esc(b.era)}</span><span class="cover-title">${esc(b.title)}</span><span class="cover-seal">${b.kind === "poetry" ? "诗" : "文"}</span></span><span class="book-info"><span class="eyebrow">${esc(b.genre)}</span><h3>${esc(b.title)}</h3><span class="book-byline">${esc(b.byline)}</span><span class="book-description">${esc(b.description)}</span><span class="book-count">${b.count} ${esc(b.unit)} <span>开卷阅读 →</span></span></span></a>`).join("") || '<p class="empty" role="status">未找到相关藏书，换个关键词试试。</p>'}</div></section>`;
 }
 function renderBookOverview() {
   setView(current >= 0 ? "search" : "book");
@@ -787,13 +787,16 @@ function renderBookOverview() {
     ? '<div id="genreFilters" class="genre-filters" role="group" aria-label="按诗体筛选"></div>'
     : "";
   $("#content").innerHTML =
-    `<section class="collection-page"><a class="back-link" href="#/">← 藏书首页</a><header class="collection-header"><p class="eyebrow">${esc(meta.era)} · ${esc(meta.genre)}</p><h1>${esc(meta.title)}</h1><p class="collection-byline">${esc(meta.byline)}</p><p>${esc(meta.description)}</p><div class="collection-actions"><span id="startAction"></span>${resume >= 0 ? `<a class="text-link" href="${chapterURL(resume)}">继续上次篇目 →</a>` : ""}</div></header>${controls}<div class="shelf-heading"><h2>${query ? "检索结果" : "篇目目录"}</h2><span role="status">${matches.length} ${esc(meta.sectionUnit || "篇")}</span></div><ol class="work-list">${shown.map(({ work, index }) => `<li><a class="work-link" href="${chapterURL(index)}"><span class="work-number">${String(index + 1).padStart(2, "0")}</span><span class="work-main"><span class="work-title">${esc(work.title)}</span>${work.author ? `<span class="work-author">${esc(work.author)} · ${esc(work.genre)}</span>` : ""}<span class="work-preview">${esc(work.content[0])}</span></span><span aria-hidden="true">→</span></a></li>`).join("")}</ol>${!matches.length ? '<p class="empty" role="status">未找到相关篇目，换个题目、作者或诗句试试。</p>' : ""}<div id="moreAction"></div><details class="source-note"><summary>文本来源与整理说明</summary><p>${esc(meta.sourceNote)}</p><a href="${esc(meta.sourceUrl)}" target="_blank" rel="noopener noreferrer">查看原始来源 ↗</a>${meta.licensePath ? ` · <a href="./data/${esc(meta.licensePath)}">数据许可（MIT）</a>` : ""}</details></section>`;
+    `<section class="collection-page"><header class="collection-header"><p class="eyebrow">${esc(meta.era)} · ${esc(meta.genre)}</p><h1>${esc(meta.title)}</h1><p class="collection-byline">${esc(meta.byline)}</p><p>${esc(meta.description)}</p><div class="collection-actions"><span id="startAction"></span></div></header>${controls}<div class="shelf-heading"><h2>${query ? "检索结果" : "篇目目录"}</h2><span role="status">${matches.length} ${esc(meta.sectionUnit || "篇")}</span></div><ol class="work-list">${shown.map(({ work, index }) => `<li><a class="work-link" href="${chapterURL(index)}"><span class="work-number">${String(index + 1).padStart(2, "0")}</span><span class="work-main"><span class="work-title">${esc(work.title)}</span>${work.author ? `<span class="work-author">${esc(work.author)} · ${esc(work.genre)}</span>` : ""}${query ? `<span class="work-preview">${esc(work.content[0])}</span>` : ""}</span><span aria-hidden="true">→</span></a></li>`).join("")}</ol>${!matches.length ? '<p class="empty" role="status">未找到相关篇目，换个题目、作者或诗句试试。</p>' : ""}<div id="moreAction"></div><details class="source-note"><summary>文本来源与整理说明</summary><p>${esc(meta.sourceNote)}</p><a href="${esc(meta.sourceUrl)}" target="_blank" rel="noopener noreferrer">查看原始来源 ↗</a>${meta.licensePath ? ` · <a href="./data/${esc(meta.licensePath)}">数据许可（MIT）</a>` : ""}</details></section>`;
   const startButton = document.createElement("button");
   startButton.type = "button";
   startButton.className = "primary-btn";
   startButton.id = "startBtn";
-  startButton.textContent = "开始阅读 · " + (meta.startLabel || book[0].title);
-  startButton.onclick = () => navigate(0);
+  startButton.textContent =
+    resume >= 0
+      ? "继续阅读 · " + book[resume].title
+      : "开始阅读 · " + (meta.startLabel || book[0].title);
+  startButton.onclick = () => navigate(resume >= 0 ? resume : 0);
   $("#startAction").append(startButton);
   if (matches.length > shown.length) {
     const moreButton = document.createElement("button");
@@ -936,7 +939,7 @@ function renderChapter(anchor) {
     .join("");
   const poetry = activeBook.kind === "poetry";
   const heading = poetry
-    ? `<p class="poem-collection"><a href="${bookRoute(activeBook.id)}">${esc(activeBook.title)}</a></p><h1 class="chapter-title poem-title">${esc(ch.title)}</h1><div class="meta poem-author">唐 · ${esc(ch.author)}<span>${esc(ch.genre)}</span></div><div class="rule"></div>`
+    ? `<h1 class="chapter-title poem-title">${esc(ch.title)}</h1><div class="meta poem-author">唐 · ${esc(ch.author)}<span>${esc(ch.genre)}</span></div><div class="rule"></div>`
     : `<h1 class="book-title">${esc(activeBook.title)}</h1><div class="meta">${esc(activeBook.byline)}</div><div class="rule"></div><h2 class="chapter-title">${esc(ch.title)} · 第${current + 1}${esc(activeBook.sectionUnit || "篇")}</h2>`;
   const study = poetry ? notesData.poems?.[ch.id] : null;
   const proseInfo =
@@ -949,11 +952,17 @@ function renderChapter(anchor) {
       : "";
   const context = poetry ? contextEntry(contextData, ch) : null;
   const contextInfo = context
-    ? `<details class="poem-context"${openContexts.has(ch.id) ? " open" : ""}><summary>创作背景与诗中情绪</summary><h3>创作背景</h3><p>${esc(context.background)}</p><h3>诗中情绪 · 解读</h3><p>${esc(context.mood)}</p><p>原句依据：<q>${esc(context.evidence)}</q></p>${context.remarks ? `<p>${esc(context.remarks)}</p>` : ""}<h3>整理说明与资料</h3><p>${esc(contextData.editorialNote)}</p><ul>${context.sources.map((s) => `<li><a href="${esc(s.url)}" target="_blank" rel="noopener noreferrer">${esc(s.title)}</a></li>`).join("")}</ul></details>`
+    ? `<details class="poem-context"${openContexts.has(ch.id) ? " open" : ""}><summary>创作背景与诗中情绪</summary><h3>创作背景</h3><p>${esc(context.background)}</p><h3>诗中情绪 · 解读</h3><p>${esc(context.mood)}</p><p>原句依据：<q>${esc(context.evidence)}</q></p>${context.remarks ? `<p>${esc(context.remarks)}</p>` : ""}<details class="context-sources"${openContextSources.has(ch.id) ? " open" : ""}><summary>整理说明与资料</summary><p>${esc(contextData.editorialNote)}</p><ul>${context.sources.map((s) => `<li><a href="${esc(s.url)}" target="_blank" rel="noopener noreferrer">${esc(s.title)}</a></li>`).join("")}</ul></details></details>`
     : "";
   const pagination = `<nav class="reading-pagination" aria-label="篇目翻页">${current > 0 ? `<a href="${chapterURL(current - 1)}">← 上一${poetry ? "首" : "篇"}</a>` : "<span>已是首篇</span>"}<a href="${bookRoute(activeBook.id)}">返回目录</a>${current < book.length - 1 ? `<a href="${chapterURL(current + 1)}">下一${poetry ? "首" : "篇"} →</a>` : "<span>已是末篇</span>"}</nav>`;
   $("#content").innerHTML =
     `<article class="paper${poetry ? " poem-paper" : ""}">${heading}${entries || `<div class="empty" role="status">当前篇未找到“${esc(query)}”</div>`}${contextInfo}${studyInfo}${proseInfo}${pagination}</article>`;
+  const contextSources = $(".context-sources");
+  if (contextSources)
+    contextSources.ontoggle = () => {
+      if (contextSources.open) openContextSources.add(ch.id);
+      else openContextSources.delete(ch.id);
+    };
   const contextPanel = $(".poem-context");
   if (contextPanel)
     contextPanel.ontoggle = () => {
@@ -976,17 +985,22 @@ function capture() {
   const contextPanel = $(".poem-context");
   if (contextPanel) {
     const b = contextPanel.getBoundingClientRect();
+    const lastEntry = document.querySelector("[data-entry]:last-of-type");
+    const lastBounds = lastEntry?.getBoundingClientRect();
+    const afterText =
+      lastBounds && (v ? lastBounds.left >= ref : lastBounds.bottom <= ref);
     if (
       v
         ? b.left < ref + 1 && b.right > bounds.left
-        : b.top <= ref + 1 && b.bottom > ref
+        : (b.top <= ref + 1 || (afterText && b.top < bounds.bottom)) &&
+          b.bottom > ref
     )
       return {
         entry: book[current].content.length,
         offset: 1,
         section: "context",
         sectionOffset: Math.max(
-          0,
+          -1,
           Math.min(
             1,
             v
@@ -1051,7 +1065,7 @@ function restore(anchor) {
       const b = el.getBoundingClientRect(),
         bounds = r.getBoundingClientRect(),
         offset = Math.max(
-          0,
+          panel ? -1 : 0,
           Math.min(1, panel ? anchor.sectionOffset : anchor.offset),
         );
       if (panel) panel.scrollTop = Number(anchor.panelScroll) || 0;

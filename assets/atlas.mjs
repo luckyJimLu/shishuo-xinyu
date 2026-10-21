@@ -58,11 +58,8 @@ export async function mountAtlas(
   root.replaceChildren();
   const page = make("section", null, "atlas-page");
   root.append(page);
-  const back = make("a", "← 藏书首页", "back-link");
-  back.href = "#/";
   const head = make("header", null, "atlas-heading");
   head.append(
-    make("p", "循文访地 · 以地读文", "eyebrow"),
     make("h1", "文学地名地图"),
     make(
       "p",
@@ -194,7 +191,7 @@ export async function mountAtlas(
   const mapFailure = make("div", null, "atlas-failure");
   mapFailure.hidden = true;
   mapFailure.setAttribute("role", "status");
-  page.append(back, head, controls, switcher, live, mapFailure, layout);
+  page.append(head, controls, switcher, live, mapFailure, layout);
   const dispose = () => {
     cancelled = true;
     themeObserver?.disconnect();
