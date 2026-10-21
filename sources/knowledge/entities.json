@@ -387,8 +387,8 @@
       "aliases": [
         "扬州"
       ],
-      "definition": "古州名；魏晋扬州的治所与唐代扬州城并非同一位置。",
-      "modernName": "唐代约今江苏扬州；东晋治所约今南京",
+      "definition": "古州名；魏晋扬州的治所与唐宋扬州城并非同一位置。",
+      "modernName": "唐宋扬州约今江苏扬州；东晋治所约今南京",
       "reviewStatus": "reviewed",
       "sources": [
         {
@@ -405,7 +405,7 @@
             32.399998
           ],
           "referenceCity": "Yangzhou",
-          "label": "唐代约今江苏扬州；东晋治所约今南京",
+          "label": "唐宋扬州区域参考：今江苏扬州一带",
           "precision": "区域示意",
           "basis": "Natural Earth 10m 现代城市参考点；不是古城址、古代疆界或遗址实测位置。",
           "source": "https://github.com/nvkelso/natural-earth-vector/tree/v5.1.2",

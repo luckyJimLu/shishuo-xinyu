@@ -1,5 +1,5 @@
 import { readingRoute } from "./library.mjs";
-export const PERIODS = ["汉", "三国", "两晋", "南北朝", "唐", "待考"];
+export const PERIODS = ["汉", "三国", "两晋", "南北朝", "唐", "宋", "待考"];
 export function externalLink(entity, locationId = null) {
   const url = new URL(
     entity.type === "place"
@@ -26,6 +26,7 @@ export function atlasRoute(filters = {}) {
   const params = new URLSearchParams();
   for (const key of [
     "book",
+    "view",
     "period",
     "q",
     "place",
@@ -104,6 +105,23 @@ export function atlasPlaces(entities, data, filters = {}) {
             .toLowerCase()
             .includes(q)),
     );
+}
+export function relatedWorks(mentions = []) {
+  const groups = new Map();
+  for (const m of mentions) {
+    if (m.status !== "reviewed") continue;
+    const key = JSON.stringify([m.bookId, m.workId]);
+    if (!groups.has(key))
+      groups.set(key, {
+        bookId: m.bookId,
+        workId: m.workId,
+        bookTitle: m.bookTitle,
+        title: m.title,
+        mentions: [],
+      });
+    groups.get(key).mentions.push(m);
+  }
+  return [...groups.values()];
 }
 export function markerGroups(places) {
   const groups = new Map();

@@ -1,3 +1,4 @@
+import { annotationResearchLinks } from "./annotation-research.mjs";
 import { externalLink, atlasRoute } from "./knowledge.mjs";
 function node(tag, text, className) {
   const e = document.createElement(tag);
@@ -89,6 +90,19 @@ export function entityDetails(
     actions.append(
       link("在文学地图中查看 →", atlasRoute({ ...context, place: entity.id })),
     );
+  if (entity.type === "place" && atlasLink)
+    actions.append(
+      link(
+        "查看相关古文 →",
+        atlasRoute({ ...context, place: entity.id, view: "list" }),
+      ),
+    );
+  for (const item of annotationResearchLinks(notes).filter(
+    (r) =>
+      entity.type === "place" ||
+      ![entity.name, ...(entity.aliases || [])].includes(r.word),
+  ))
+    actions.append(link(item.label + " ↗", item.url, true));
   const copy = node("button", "复制检索词", "btn");
   copy.type = "button";
   const status = node("p", "", "copy-status");

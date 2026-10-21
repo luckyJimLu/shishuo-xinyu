@@ -4,6 +4,8 @@ export function studyLine(resource, work, index) {
   const line = poem?.lines?.[index];
   if (
     poem?.status !== "reviewed" ||
+    poem.title !== work.title ||
+    poem.author !== work.author ||
     line?.status !== "reviewed" ||
     line.source !== work.content[index] ||
     typeof line.translation !== "string" ||
@@ -28,19 +30,19 @@ export function studyLine(resource, work, index) {
     return null;
   return line;
 }
-export function validateStudy(resource, works) {
+export function validateStudy(resource, works, bookId = "tang-poems") {
   if (
     resource?.schemaVersion !== 1 ||
-    resource.bookId !== "tang-poems" ||
+    resource.bookId !== bookId ||
     !resource.poems
   )
-    throw Error("唐诗注译格式无效");
+    throw Error("诗词注译格式无效");
   const ids = new Set(works.map((w) => w.id));
   if (
     Object.keys(resource.poems).length !== works.length ||
     Object.keys(resource.poems).some((id) => !ids.has(id))
   )
-    throw Error("唐诗注译篇目不完整");
+    throw Error("诗词注译篇目不完整");
   for (const work of works) {
     const p = resource.poems[work.id];
     if (
@@ -50,13 +52,13 @@ export function validateStudy(resource, works) {
       !p.editorialNote ||
       !p.lines.some((l) => l.notes?.length)
     )
-      throw Error("唐诗注译缺漏：" + work.title);
+      throw Error("诗词注译缺漏：" + work.title);
     for (let i = 0; i < work.content.length; i++)
       if (!studyLine(resource, work, i))
-        throw Error("唐诗注译需要复核：" + work.title + " 第" + (i + 1) + "行");
+        throw Error("诗词注译需要复核：" + work.title + " 第" + (i + 1) + "行");
     for (const s of p.sources)
       if (!s.title || !s.url?.startsWith("https://"))
-        throw Error("唐诗参考资料无效");
+        throw Error("诗词参考资料无效");
   }
   return resource;
 }
@@ -74,7 +76,7 @@ export async function verifyStudyHashes(resource) {
           b.toString(16).padStart(2, "0"),
         ).join("");
         if (hash !== line.sourceHash)
-          throw Error("唐诗注译指纹失效，需重新复核");
+          throw Error("诗词注译指纹失效，需重新复核");
       }),
     ),
   );

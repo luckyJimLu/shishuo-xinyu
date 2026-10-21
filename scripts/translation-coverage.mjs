@@ -1,6 +1,7 @@
 import assert from "node:assert/strict";
 import { writeFile } from "node:fs/promises";
 import { read, compileProse, proseWorks } from "./build-prose-translations.mjs";
+import { compileSongStudy } from "./build-song-study.mjs";
 import { compileStudy, digest } from "./build-tang-study.mjs";
 import {
   proseEntry,
@@ -16,6 +17,8 @@ const prose = await read("data/shishuo-translations.json"),
   poems = await read("data/tang-poems-study.json");
 const pw = proseWorks(await read("data/shishuo-xinyu.json")),
   tw = (await read("data/tang-poems.json")).articles;
+const song = await read("data/song-ci-study.json"),
+  sw = (await read("data/song-ci.json")).articles;
 const audit = await read("sources/tang-poems/study/translation-audit.json");
 const counts = () => ({
   total: 0,
@@ -29,6 +32,7 @@ const books = [];
 for (const [id, title, works, data, get] of [
   ["shishuo-xinyu", "世说新语", pw, prose, proseEntry],
   ["tang-poems", "唐诗选读", tw, poems, studyLine],
+  ["song-ci", "宋词选集", sw, song, studyLine],
 ]) {
   const summary = counts(),
     chapters = [];
@@ -37,7 +41,7 @@ for (const [id, title, works, data, get] of [
     w.content.forEach((source, i) => {
       c.total++;
       const e =
-        id === "tang-poems"
+        id !== "shishuo-xinyu"
           ? data.poems?.[w.id]?.lines?.[i]
           : data.entries?.[`${w.id}:${i + 1}`];
       let state;
@@ -65,7 +69,7 @@ for (const [id, title, works, data, get] of [
 }
 const report = {
   schemaVersion: 1,
-  scope: "唐诗选读与世说新语正文；宋词选集尚无译文，不纳入此报告；不含刘孝标注",
+  scope: "唐诗选读、宋词选集与世说新语全部正文；不含刘孝标注",
   reviewNote:
     "模型辅助原创整理与逐项自校。自动校验只证明绑定、结构及复核记录一致，不能证明译义准确；未经过独立专家审校。",
   books,
@@ -101,3 +105,8 @@ assert.deepEqual(
 assert.deepEqual(poems, await compileStudy(), "唐诗资源与原稿不一致");
 assert.equal(Object.keys(audit.entries).length, 1751);
 assert.equal(audit.independentExpertReview, false);
+
+assert.equal(books[2].summary.total, 2562);
+validateStudy(song, sw, "song-ci");
+await verifyStudyHashes(song);
+assert.deepEqual(song, await compileSongStudy(), "宋词资源与原稿不一致");

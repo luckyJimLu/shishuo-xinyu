@@ -23,8 +23,8 @@ test("Song ci shelf, tune filter and full-text discovery share the reader", asyn
   await expect(page.locator(".poem-title")).toHaveText(moon.title);
   await expect(page.locator(".poem-author")).toContainText("宋 · 苏轼");
   await expect(page.locator(".poem-line")).toHaveCount(moon.content.length);
-  await expect(page.locator("#notesBtn")).toBeHidden();
-  await expect(page.locator("#transBtn")).toBeHidden();
+  await expect(page.locator("#notesBtn")).toBeVisible();
+  await expect(page.locator("#transBtn")).toBeVisible();
   await expect(page.locator(".poem-context")).toHaveCount(0);
   await page.locator("#search").fill("千里共婵娟");
   await expect(page.locator(".work-link")).toHaveCount(1);
@@ -65,7 +65,7 @@ test("Song ci errors retry, empty filters recover, and no Tang auxiliary data le
   await page.locator("#startBtn").click();
   await expect(page.locator("#transBtn")).toBeVisible();
   await page.goto(route);
-  await expect(page.locator("#transBtn")).toBeHidden();
+  await expect(page.locator("#transBtn")).toBeVisible();
   await expect(page.locator(".translation")).toHaveCount(0);
   await expect(page.locator(".poem-context")).toHaveCount(0);
   expect(

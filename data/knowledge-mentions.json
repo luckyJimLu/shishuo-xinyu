@@ -6,10 +6,10 @@
     "shishuo-xinyu": "740290fd2fba96af9dc4375bf209ff43af7bfeec1aefb6233c4de2b6c730f2cc"
   },
   "summary": {
-    "reviewed": 240,
-    "excluded": 50,
-    "pending": 15,
-    "candidate": 82
+    "reviewed": 249,
+    "excluded": 51,
+    "pending": 25,
+    "candidate": 62
   },
   "mentions": [
     {
@@ -2400,10 +2400,10 @@
       "entityId": "changan",
       "text": "雪满长安道。",
       "textSha256": "bc933933f912504b82cfb11815e6ff917d4600403ffd3f9f0c10676234fbdf76",
-      "status": "candidate",
+      "status": "pending",
       "period": "待考",
-      "context": "正文或范围变化，等待重新复核。",
-      "reviewer": null,
+      "context": "“长安”在此可能借称汴京、临安或泛指京城，尚不能与西安参考位置绑定；暂不发布地名词例。",
+      "reviewer": "模型辅助逐处语境自校，非独立专家审校",
       "locationId": null
     },
     {
@@ -2476,10 +2476,10 @@
       "entityId": "changan",
       "text": "年年跃马长安市。",
       "textSha256": "ee408b086507f0e4e6c1c64d870a35df04ca158f90b338a3b73209fd328972a8",
-      "status": "candidate",
+      "status": "pending",
       "period": "待考",
-      "context": "正文或范围变化，等待重新复核。",
-      "reviewer": null,
+      "context": "“长安”在此可能借称汴京、临安或泛指京城，尚不能与西安参考位置绑定；暂不发布地名词例。",
+      "reviewer": "模型辅助逐处语境自校，非独立专家审校",
       "locationId": null
     },
     {
@@ -2495,10 +2495,10 @@
       "entityId": "changan",
       "text": "今宵谁念泣孤臣，回首长安远。",
       "textSha256": "42c0a6589e405e43946aa8d17f1fda1498451e2cd680c0a1ef092eb25b3bb7c4",
-      "status": "candidate",
+      "status": "pending",
       "period": "待考",
-      "context": "正文或范围变化，等待重新复核。",
-      "reviewer": null,
+      "context": "“长安”在此可能借称汴京、临安或泛指京城，尚不能与西安参考位置绑定；暂不发布地名词例。",
+      "reviewer": "模型辅助逐处语境自校，非独立专家审校",
       "locationId": null
     },
     {
@@ -2514,11 +2514,11 @@
       "entityId": "yangzhou",
       "text": "四十三年，望中犹记，烽火扬州路。",
       "textSha256": "374ece4e51b8f9480e8fc99b2833c667013dd26fefc378649a0c005352f866fc",
-      "status": "candidate",
-      "period": "待考",
-      "context": "正文或范围变化，等待重新复核。",
-      "reviewer": null,
-      "locationId": null
+      "status": "reviewed",
+      "period": "宋",
+      "context": "追忆宋金战火中的扬州一带，以今扬州为区域参考；不表示精确战场。",
+      "reviewer": "模型辅助逐处语境自校，非独立专家审校",
+      "locationId": "yangzhou-reference"
     },
     {
       "id": "m-39873e586a93c5",
@@ -2628,10 +2628,10 @@
       "entityId": "changan",
       "text": "买花载酒长安市。",
       "textSha256": "4a504bb511b284bfe11aef979c1d9ec21d9abc604270df810352a83ab4fd5626",
-      "status": "candidate",
+      "status": "pending",
       "period": "待考",
-      "context": "正文或范围变化，等待重新复核。",
-      "reviewer": null,
+      "context": "“长安”在此可能借称汴京、临安或泛指京城，尚不能与西安参考位置绑定；暂不发布地名词例。",
+      "reviewer": "模型辅助逐处语境自校，非独立专家审校",
       "locationId": null
     },
     {
@@ -2647,10 +2647,10 @@
       "entityId": "changan",
       "text": "又客长安，叹断襟零袂，尘谁浣。",
       "textSha256": "a3354ede2e046f10c523c90b660b6f382be54075ec06744c625c5dc9597e94e0",
-      "status": "candidate",
+      "status": "pending",
       "period": "待考",
-      "context": "正文或范围变化，等待重新复核。",
-      "reviewer": null,
+      "context": "“长安”在此可能借称汴京、临安或泛指京城，尚不能与西安参考位置绑定；暂不发布地名词例。",
+      "reviewer": "模型辅助逐处语境自校，非独立专家审校",
       "locationId": null
     },
     {
@@ -2685,11 +2685,11 @@
       "entityId": "yangzhou",
       "text": "叙别梦、扬州一觉。",
       "textSha256": "1b650011a837092248f4e3716fa6a483e119dddb4ed879689f33ac36a2e6a4c7",
-      "status": "candidate",
+      "status": "reviewed",
       "period": "待考",
-      "context": "正文或范围变化，等待重新复核。",
-      "reviewer": null,
-      "locationId": null
+      "context": "借扬州旧梦意象追叙离别，含唐人文学用典；不据此认定词人亲历或断定单一时期。",
+      "reviewer": "模型辅助逐处语境自校，非独立专家审校",
+      "locationId": "yangzhou-reference"
     },
     {
       "id": "m-c78087c591bebe",
@@ -2704,10 +2704,10 @@
       "entityId": "changan",
       "text": "向长安，对秋灯，几人老。",
       "textSha256": "7fb0721aaf0f3af1533a84c014b7ba038cf545bd46796e899503c8ed3421fb50",
-      "status": "candidate",
+      "status": "pending",
       "period": "待考",
-      "context": "正文或范围变化，等待重新复核。",
-      "reviewer": null,
+      "context": "“长安”在此可能借称汴京、临安或泛指京城，尚不能与西安参考位置绑定；暂不发布地名词例。",
+      "reviewer": "模型辅助逐处语境自校，非独立专家审校",
       "locationId": null
     },
     {
@@ -2723,10 +2723,10 @@
       "entityId": "changan",
       "text": "韶华正好，应自喜、初识长安蜂蝶。",
       "textSha256": "9d7af3d64f2b8089a8939d66618b4854720cb8975ccd18184b1f3296415dfffb",
-      "status": "candidate",
+      "status": "pending",
       "period": "待考",
-      "context": "正文或范围变化，等待重新复核。",
-      "reviewer": null,
+      "context": "“长安”在此可能借称汴京、临安或泛指京城，尚不能与西安参考位置绑定；暂不发布地名词例。",
+      "reviewer": "模型辅助逐处语境自校，非独立专家审校",
       "locationId": null
     },
     {
@@ -2742,11 +2742,11 @@
       "entityId": "yangzhou",
       "text": "记少年，一梦扬州，二十四桥明月。",
       "textSha256": "c0ce2ffc9849bfe67e9d1ec6aa376e9c7ab2028732e2ca73133ace335c3ef639",
-      "status": "candidate",
+      "status": "reviewed",
       "period": "待考",
-      "context": "正文或范围变化，等待重新复核。",
-      "reviewer": null,
-      "locationId": null
+      "context": "扬州、二十四桥与杜牧诗意交织，兼含旧游追忆；具体所述时段待考。",
+      "reviewer": "模型辅助逐处语境自校，非独立专家审校",
+      "locationId": "yangzhou-reference"
     },
     {
       "id": "m-3d9fd243dc8406",
@@ -2894,11 +2894,11 @@
       "entityId": "jinling",
       "text": "金陵路。",
       "textSha256": "483ca68fb92b24f059cddcfae87c51cef8aa4efc195da88935ba021868b13dbb",
-      "status": "candidate",
-      "period": "待考",
-      "context": "正文或范围变化，等待重新复核。",
-      "reviewer": null,
-      "locationId": null
+      "status": "reviewed",
+      "period": "宋",
+      "context": "金陵为词中行旅地名，参考今南京地区，非精确古城点位。",
+      "reviewer": "模型辅助逐处语境自校，非独立专家审校",
+      "locationId": "jinling-reference"
     },
     {
       "id": "m-6b791fbb046175",
@@ -2951,11 +2951,11 @@
       "entityId": "yangzhou",
       "text": "十里扬州，三生杜牧，前事休说。",
       "textSha256": "a3e30a88f5a007630e7c32daf2d94c1e4cc62476ddee6f233dfb1d90d4809317",
-      "status": "candidate",
-      "period": "待考",
-      "context": "正文或范围变化，等待重新复核。",
-      "reviewer": null,
-      "locationId": null
+      "status": "reviewed",
+      "period": "唐",
+      "context": "明用杜牧扬州诗意表达旧游之思，时期标注针对用典，不代表姜夔行旅年代。",
+      "reviewer": "模型辅助逐处语境自校，非独立专家审校",
+      "locationId": "yangzhou-reference"
     },
     {
       "id": "m-1bea8ad66330fe",
@@ -2970,11 +2970,11 @@
       "entityId": "yangguan",
       "text": "想见西出阳关，故人初别。",
       "textSha256": "de7f1581d263dce272ab46fa2284dab57ddbed3c584c28a4fb4f053c133d8db3",
-      "status": "candidate",
-      "period": "待考",
-      "context": "正文或范围变化，等待重新复核。",
-      "reviewer": null,
-      "locationId": null
+      "status": "reviewed",
+      "period": "唐",
+      "context": "借王维送别诗中西出阳关的意象想象别离，不是词人到过阳关的记录。",
+      "reviewer": "模型辅助逐处语境自校，非独立专家审校",
+      "locationId": "yangguan-reference"
     },
     {
       "id": "m-a416a80b4e79e2",
@@ -3008,10 +3008,10 @@
       "entityId": "changan",
       "text": "长安古道马迟迟。",
       "textSha256": "cab62f88a9e6247c245a47cef7e44dec2329a5836ace986274c64527f5e5d804",
-      "status": "candidate",
+      "status": "pending",
       "period": "待考",
-      "context": "正文或范围变化，等待重新复核。",
-      "reviewer": null,
+      "context": "“长安”在此可能借称汴京、临安或泛指京城，尚不能与西安参考位置绑定；暂不发布地名词例。",
+      "reviewer": "模型辅助逐处语境自校，非独立专家审校",
       "locationId": null
     },
     {
@@ -3103,11 +3103,11 @@
       "entityId": "shanyin",
       "text": "旧游忆著山阴，厚盟遂妨上苑。",
       "textSha256": "3dc15569ad9134459146b4c2589629446af744e900da211ad497b85ddf0f8a55",
-      "status": "candidate",
-      "period": "待考",
-      "context": "正文或范围变化，等待重新复核。",
-      "reviewer": null,
-      "locationId": null
+      "status": "reviewed",
+      "period": "两晋",
+      "context": "借山阴雪夜访戴典故追怀访友，时期针对典故；不是南宋游踪的定位证明。",
+      "reviewer": "模型辅助逐处语境自校，非独立专家审校",
+      "locationId": "shanyin-reference"
     },
     {
       "id": "m-406ca3bcaa2fe8",
@@ -3274,10 +3274,10 @@
       "entityId": "yangguan",
       "text": "明朝，这回去也，千万遍阳关，也即难留。",
       "textSha256": "3aba4193b1e89954acd75872eea60c7e9eded3811deb3c39a2229bd55cabfefa",
-      "status": "candidate",
-      "period": "待考",
-      "context": "正文或范围变化，等待重新复核。",
-      "reviewer": null,
+      "status": "excluded",
+      "period": "宋",
+      "context": "“千万遍阳关”指送别曲《阳关三叠》，不是本句地点，不作地名链接。",
+      "reviewer": "模型辅助逐处语境自校，非独立专家审校",
       "locationId": null
     },
     {
@@ -3331,10 +3331,10 @@
       "entityId": "changan",
       "text": "西北是长安。",
       "textSha256": "5833c61708a967c60169ff6809de5ead1ba0896b724d16d48f1ea21dba6f293f",
-      "status": "candidate",
+      "status": "pending",
       "period": "待考",
-      "context": "正文或范围变化，等待重新复核。",
-      "reviewer": null,
+      "context": "“长安”在此可能借称汴京、临安或泛指京城，尚不能与西安参考位置绑定；暂不发布地名词例。",
+      "reviewer": "模型辅助逐处语境自校，非独立专家审校",
       "locationId": null
     },
     {
@@ -3350,10 +3350,10 @@
       "entityId": "changan",
       "text": "长安故人问我，道寻常、泥酒只依然。",
       "textSha256": "a0a3943c9afd15c8a8d0196f563c26f0bd01bdf227d22056ec25978f128eabf5",
-      "status": "candidate",
+      "status": "pending",
       "period": "待考",
-      "context": "正文或范围变化，等待重新复核。",
-      "reviewer": null,
+      "context": "“长安”在此可能借称汴京、临安或泛指京城，尚不能与西安参考位置绑定；暂不发布地名词例。",
+      "reviewer": "模型辅助逐处语境自校，非独立专家审校",
       "locationId": null
     },
     {
@@ -3597,11 +3597,11 @@
       "entityId": "jiangling",
       "text": "江陵旧事，何曾再问杨琼。",
       "textSha256": "f236b4f176528043f231bc1328c589fb4ae337f562af029c700f98b8699bfde9",
-      "status": "candidate",
+      "status": "reviewed",
       "period": "待考",
-      "context": "正文或范围变化，等待重新复核。",
-      "reviewer": null,
-      "locationId": null
+      "context": "借江陵旧游与歌者故事表达怀人，具体叙述时期待考，地点仅作区域参考。",
+      "reviewer": "模型辅助逐处语境自校，非独立专家审校",
+      "locationId": "jiangling-reference"
     },
     {
       "id": "m-5f1df037565be4",
@@ -3749,11 +3749,11 @@
       "entityId": "dongting",
       "text": "洞庭青草，近中秋、更无一点风色。",
       "textSha256": "b6f6da492572201ea5e361b879fe5ddf776cd10760e2a94ac092f7beabdbc83e",
-      "status": "candidate",
-      "period": "待考",
-      "context": "正文或范围变化，等待重新复核。",
-      "reviewer": null,
-      "locationId": null
+      "status": "reviewed",
+      "period": "宋",
+      "context": "写中秋前后泛舟洞庭湖，今岳阳点仅作湖区示意，不是船行实测位置。",
+      "reviewer": "模型辅助逐处语境自校，非独立专家审校",
+      "locationId": "dongting-reference"
     },
     {
       "id": "m-36778909093ef8",

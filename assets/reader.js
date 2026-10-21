@@ -30,6 +30,7 @@ import {
   mergedSpans,
   atlasRoute,
 } from "./knowledge.mjs";
+import { annotationResearchLinks } from "./annotation-research.mjs";
 import { createResearchPanel } from "./research-panel.mjs";
 let knowledgeData = null,
   knowledgeLoading = false,
@@ -127,7 +128,7 @@ function status() {
     $("#loadStatus").append(
       document.createTextNode(
         activeBook?.kind === "poetry"
-          ? "正在加载唐诗注译，正文可先阅读…"
+          ? `正在加载${activeBook.form === "ci" ? "宋词" : "唐诗"}注译，正文可先阅读…`
           : "正在加载正文译文，正文可先阅读…",
       ),
     );
@@ -183,7 +184,7 @@ async function loadOptional(items = activeBook?.resources || []) {
           throw Error("缺少注文");
         if (activeBook?.id !== id || epoch !== bookEpoch) return;
         if (item.type === "poetry-study") {
-          validateStudy(data, book);
+          validateStudy(data, book, id);
           await verifyStudyHashes(data);
           if (activeBook?.id !== id || epoch !== bookEpoch) return;
           notesData = translationsData = data;
@@ -641,6 +642,12 @@ function bind() {
       const p = document.getElementById(a.getAttribute("aria-controls"));
       p.hidden = !p.hidden;
       a.setAttribute("aria-expanded", String(!p.hidden));
+      if (!p.hidden)
+        p.scrollIntoView({
+          block: "nearest",
+          inline: "nearest",
+          behavior: "instant",
+        });
     }
   });
   window.addEventListener("popstate", () => void route());
@@ -699,8 +706,31 @@ function syncBtns() {
 }
 function changeLayout(change) {
   const anchor = capture();
+  const bounds = $("#reader").getBoundingClientRect();
+  const visibleNote =
+    view === "reading"
+      ? [...document.querySelectorAll(".note-pop:not([hidden])")].find(
+          (note) => {
+            const b = note.getBoundingClientRect();
+            return (
+              b.right > bounds.left + 8 &&
+              b.left < bounds.right - 8 &&
+              b.bottom > bounds.top + 8 &&
+              b.top < bounds.bottom - 8
+            );
+          },
+        )
+      : null;
   change();
-  if (view === "reading") restore(anchor);
+  if (view === "reading") {
+    restore(anchor);
+    if (visibleNote?.isConnected)
+      visibleNote.scrollIntoView({
+        block: "nearest",
+        inline: "nearest",
+        behavior: "instant",
+      });
+  }
 }
 function renderNav() {
   $("#bookNav").innerHTML =
@@ -770,7 +800,7 @@ function renderLibrary() {
       resume = `<a class="resume-link" href="${readingRoute(LEGACY_BOOK, `chapter-${String(old + 1).padStart(2, "0")}`)}">接着读 · 世说新语 →</a>`;
   }
   $("#content").innerHTML =
-    `<section class="library-page"><header class="library-intro"><h1>中国古典文学</h1><p class="library-lead">读唐诗宋词，品世说风流。</p>${resume}</header><div class="shelf-heading"><h2>案头藏书</h2><span>${books.length} 部可读</span></div><div class="bookshelf">${books.map((b) => `<a class="book-card ${b.kind}" href="${bookRoute(b.id)}"><span class="book-cover" aria-hidden="true"><span class="cover-era">${esc(b.era)}</span><span class="cover-title">${esc(b.title)}</span><span class="cover-seal">${b.form === "ci" ? "词" : b.kind === "poetry" ? "诗" : "文"}</span></span><span class="book-info"><span class="eyebrow">${esc(b.genre)}</span><h3>${esc(b.title)}</h3><span class="book-byline">${esc(b.byline)}</span><span class="book-description">${esc(b.description)}</span><span class="book-count">${b.count} ${esc(b.unit)} <span>开卷阅读 →</span></span></span></a>`).join("") || '<p class="empty" role="status">未找到相关藏书，换个关键词试试。</p>'}</div></section>`;
+    `<section class="library-page"><header class="library-intro"><h1>中国古典文学</h1><p class="library-lead">读唐诗宋词，品世说风流。</p>${resume}</header><div class="shelf-heading"><h2>案头藏书</h2><div class="shelf-meta"><span>${books.length} 部可读</span><a href="#/atlas?view=list">地名索引 →</a></div></div><div class="bookshelf">${books.map((b) => `<a class="book-card ${b.kind}" href="${bookRoute(b.id)}"><span class="book-cover" aria-hidden="true"><span class="cover-era">${esc(b.era)}</span><span class="cover-title">${esc(b.title)}</span><span class="cover-seal">${b.form === "ci" ? "词" : b.kind === "poetry" ? "诗" : "文"}</span></span><span class="book-info"><span class="eyebrow">${esc(b.genre)}</span><h3>${esc(b.title)}</h3><span class="book-byline">${esc(b.byline)}</span><span class="book-description">${esc(b.description)}</span><span class="book-count">${b.count} ${esc(b.unit)} <span>开卷阅读 →</span></span></span></a>`).join("") || '<p class="empty" role="status">未找到相关藏书，换个关键词试试。</p>'}</div></section>`;
 }
 function renderBookOverview() {
   setView(current >= 0 ? "search" : "book");
@@ -951,7 +981,14 @@ function renderChapter(anchor) {
         .filter((span) => !span.mentions.length)
         .map(
           (span) =>
-            `<div id="note-${i}-${span.notes[0].index}" class="note-pop" hidden>${span.notes.map((n) => `<b>${esc(n.word)}</b>　${esc(n.note)}`).join("<br>")}</div>`,
+            `<div id="note-${i}-${span.notes[0].index}" class="note-pop" hidden>${span.notes.map((n) => `<b>${esc(n.word)}</b>　${esc(n.note)}`).join("<br>")}${annotationResearchLinks(
+              span.notes,
+            )
+              .map(
+                (r) =>
+                  `<p class="annotation-research"><a href="${esc(r.url)}" target="_blank" rel="noopener noreferrer">${esc(r.label)} ↗</a><small>${esc(r.hint)}</small></p>`,
+              )
+              .join("")}</div>`,
         )
         .join("");
       return `<section class="entry-wrap" data-entry="${i + 1}"><p class="entry${activeBook.kind === "poetry" ? " poem-line" : ""}">${html}</p>${noteHtml}${showNotes && liu.length ? `<details class="liu-note"><summary>刘孝标注（${liu.length}段）</summary>${liu.map((n) => `<p>${esc(n)}</p>`).join("")}</details>` : ""}${showTrans && trans ? `<p class="translation"><span class="tag">译</span>${esc(trans)}</p>${prose?.remarks ? `<details class="study-sources"><summary>本则译文疑义</summary><p>${esc(prose.remarks)}</p></details>` : ""}` : ""}</section>`;

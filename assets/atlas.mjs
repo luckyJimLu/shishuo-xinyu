@@ -1,5 +1,6 @@
 import {
   atlasPlaces,
+  relatedWorks,
   markerGroups,
   atlasRoute,
   mentionRoute,
@@ -39,6 +40,7 @@ export async function mountAtlas(
     q: "",
     place: "",
     scope: "all",
+    view: "map",
     ...filters,
   };
   if (!catalog.some((b) => b.id === state.book)) state.book = "";
@@ -48,6 +50,8 @@ export async function mountAtlas(
   if (!context.work || !catalog.some((b) => b.id === context.contextBook))
     state.scope = "all";
   if (!["all", "current"].includes(state.scope)) state.scope = "all";
+  if (!["map", "list"].includes(state.view)) state.view = "map";
+  let mapStarting = false;
   let cancelled = false,
     map = null,
     L = null,
@@ -137,17 +141,15 @@ export async function mountAtlas(
       "filter-btn",
     );
     b.type = "button";
-    b.setAttribute("aria-pressed", String(mode === "map"));
+    b.setAttribute("aria-pressed", String(mode === state.view));
     b.onclick = () => {
-      page.dataset.mobileView = mode;
-      switcher
-        .querySelectorAll("button")
-        .forEach((x) => x.setAttribute("aria-pressed", String(x === b)));
+      setViewMode(mode);
+      if (mode === "map" && data && !map && !mapStarting) void initMap();
       requestAnimationFrame(() => map?.invalidateSize());
     };
     switcher.append(b);
   }
-  page.dataset.mobileView = "map";
+  page.dataset.mobileView = state.view;
   const live = make("p", "正在整理地名…", "atlas-count");
   live.setAttribute("role", "status");
   const layout = make("div", null, "atlas-layout"),
@@ -198,6 +200,20 @@ export async function mountAtlas(
     map?.remove();
     map = null;
   };
+  function setViewMode(mode) {
+    state.view = mode;
+    page.dataset.mobileView = mode;
+    switcher
+      .querySelectorAll("button")
+      .forEach((button, i) =>
+        button.setAttribute(
+          "aria-pressed",
+          String(i === (mode === "map" ? 0 : 1)),
+        ),
+      );
+    mapStatus.hidden = mode === "list" || !!map;
+    syncURL();
+  }
   function syncURL() {
     const url = atlasRoute({ ...state, ...context });
     history.replaceState(null, "", url);
@@ -225,6 +241,8 @@ export async function mountAtlas(
     );
   }
   async function initMap() {
+    if (mapStarting) return;
+    mapStarting = true;
     themeObserver?.disconnect();
     map?.remove();
     map = null;
@@ -299,17 +317,19 @@ export async function mountAtlas(
       const retry = make("button", "重试地图", "btn");
       retry.type = "button";
       retry.onclick = () => {
-        page.dataset.mobileView = "map";
+        setViewMode("map");
         switcher
           .querySelectorAll("button")
           .forEach((b, i) => b.setAttribute("aria-pressed", String(i === 0)));
         void initMap();
       };
       mapFailure.append(retry);
-      page.dataset.mobileView = "list";
+      setViewMode("list");
       switcher
         .querySelectorAll("button")
         .forEach((b, i) => b.setAttribute("aria-pressed", String(i === 1)));
+    } finally {
+      mapStarting = false;
     }
   }
   function selectPlace(id) {
@@ -321,6 +341,14 @@ export async function mountAtlas(
       .forEach((b) =>
         b.setAttribute("aria-pressed", String(b.dataset.place === id)),
       );
+    if (state.view === "list") focusDetails();
+  }
+  function focusDetails() {
+    const heading = details.querySelector("h2");
+    if (!heading) return;
+    heading.focus({ preventScroll: true });
+    if (matchMedia("(max-width:820px)").matches)
+      details.scrollIntoView({ block: "start", behavior: "instant" });
   }
   function updateDetails() {
     if (!data) return;
@@ -336,23 +364,48 @@ export async function mountAtlas(
       );
       return;
     }
-    details.append(entityDetails(selected.entity, [], { atlasLink: false }));
+    const works = relatedWorks(selected.mentions);
+    const heading = make("h2", selected.entity.name + " · 相关古文");
+    heading.tabIndex = -1;
     details.append(
-      make("h3", "相关诗文 · " + selected.mentions.length + " 处"),
+      heading,
+      make(
+        "p",
+        works.length + " 篇 · " + selected.mentions.length + " 处已复核词例",
+        "research-meta",
+      ),
     );
+    const reselect = make("button", "重选地名 ↑", "btn atlas-reselect");
+    reselect.type = "button";
+    reselect.onclick = () => {
+      list
+        .querySelector(`[data-place="${selected.entity.id}"]`)
+        ?.focus({ preventScroll: true });
+      list.scrollIntoView({ block: "start", behavior: "instant" });
+    };
+    details.append(reselect);
     const citations = make("ol", null, "atlas-citations");
-    for (const m of selected.mentions) {
+    for (const work of works) {
       const li = make("li"),
-        a = make("a", m.bookTitle + " · " + m.title);
-      a.href = mentionRoute(m);
-      li.append(
-        a,
-        make("p", m.text),
-        make("small", m.period + " · " + m.context),
-      );
+        a = make("a", work.bookTitle + " · " + work.title);
+      a.href = mentionRoute(work.mentions[0]);
+      li.append(a);
+      for (const m of work.mentions) {
+        const quote = make("p"),
+          jump = make("a", m.text);
+        jump.href = mentionRoute(m);
+        jump.className = "atlas-quote-link";
+        quote.append(jump);
+        li.append(quote, make("small", m.period + " · " + m.context));
+      }
       citations.append(li);
     }
-    details.append(citations);
+    const geography = make("details", null, "atlas-geography");
+    geography.append(
+      make("summary", "古今位置与资料"),
+      entityDetails(selected.entity, [], { atlasLink: false }),
+    );
+    details.append(citations, geography);
   }
   function updateMarkers() {
     if (!data || !markers) return;
@@ -380,7 +433,7 @@ export async function mountAtlas(
       marker.bindTooltip(tooltip, { direction: "top" });
       const choose = () => {
         if (matchMedia("(max-width:820px)").matches) {
-          page.dataset.mobileView = "list";
+          setViewMode("list");
           switcher
             .querySelectorAll("button")
             .forEach((b, i) => b.setAttribute("aria-pressed", String(i === 1)));
@@ -457,7 +510,14 @@ export async function mountAtlas(
     data = await loadKnowledge();
     if (!cancelled && isCurrent()) {
       update();
-      void initMap();
+      if (state.view === "map") void initMap();
+      else {
+        mapStatus.hidden = true;
+        if (state.place)
+          requestAnimationFrame(() => {
+            if (!cancelled && isCurrent()) focusDetails();
+          });
+      }
     }
   } catch {
     if (!cancelled) {

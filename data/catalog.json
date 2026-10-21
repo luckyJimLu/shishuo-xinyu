@@ -42,10 +42,16 @@
       "count": 280,
       "unit": "首",
       "sectionUnit": "首",
-      "sourceNote": "据 chinese-poetry 固定版本“宋词三百首”数据整理，实际收录280首，不宣称是完整三百首定本。简体阅读版保留底本分句与异文；以词牌和首句区分同调作品。底本未标上下阕，不据句数推定。当前提供正文，尚未附注译、创作背景及已复核名物词例。",
+      "sourceNote": "据 chinese-poetry 固定版本“宋词三百首”数据整理，实际收录280首，不宣称是完整三百首定本。简体阅读版保留底本分句与异文；以词牌和首句区分同调作品。底本未标上下阕，不据句数推定。全280首附模型辅助原创词注、逐行白话译文与自校记录，未经独立专家审校；有疑义处保留说明。尚未附创作背景与已复核名物词例。",
       "sourceUrl": "https://github.com/chinese-poetry/chinese-poetry/blob/b8594f81a89752241442f2ce267d6f66f96704ee/宋词/宋词三百首.json",
       "licensePath": "song-ci.LICENSE",
-      "resources": []
+      "resources": [
+        {
+          "type": "poetry-study",
+          "path": "song-ci-study.json",
+          "label": "宋词注译"
+        }
+      ]
     },
     {
       "id": "shishuo-xinyu",
