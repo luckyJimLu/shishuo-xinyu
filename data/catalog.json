@@ -12,7 +12,7 @@
       "path": "tang-poems.json",
       "count": 366,
       "unit": "首",
-      "sourceNote": "据 chinese-poetry《唐诗三百首》标签集整理，实际收录366篇，非标准三百首定本。正文保留底本题署与异文；附模型辅助原创词注、逐行译文，未经独立专家审校。部分题署年代存在疑点，见各篇注译说明。",
+      "sourceNote": "据 chinese-poetry《唐诗三百首》标签集整理，实际收录366篇，非标准三百首定本。正文保留底本题署与异文；附模型辅助原创词注、逐行译文，未经独立专家审校。部分题署年代存在疑点，见各篇注译说明。 各篇附创作背景与基于原句的情绪解读；未定年月及题署争议保留说明。",
       "sourceUrl": "https://github.com/chinese-poetry/chinese-poetry/tree/b8594f81a89752241442f2ce267d6f66f96704ee/全唐诗",
       "licensePath": "tang-poems.LICENSE",
       "sectionUnit": "首",
@@ -21,6 +21,11 @@
           "type": "poetry-study",
           "path": "tang-poems-study.json",
           "label": "唐诗注译"
+        },
+        {
+          "type": "poetry-context",
+          "path": "tang-poems-context.json",
+          "label": "创作背景"
         }
       ]
     },
@@ -35,7 +40,7 @@
       "path": "shishuo-xinyu.json",
       "count": 1128,
       "unit": "则",
-      "sourceNote": "正文保留原有底本；刘注经自动对齐，待复核条目不显示。词义注与译文仅部分条目具备。",
+      "sourceNote": "正文保留原有底本；全部1128则附模型辅助原创译文与自校记录，未经独立专家审校。词义注仍仅部分条目具备；刘注经自动对齐，待复核条目不显示。",
       "sourceUrl": "https://ctext.org/shi-shuo-xin-yu/zhs",
       "resources": [
         {
@@ -44,9 +49,9 @@
           "type": "annotations"
         },
         {
-          "path": "translations.json",
-          "label": "译文",
-          "type": "translations"
+          "path": "shishuo-translations.json",
+          "label": "正文译文",
+          "type": "prose-translations"
         },
         {
           "path": "liuxiaobiao-notes.json",

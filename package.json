@@ -9,13 +9,15 @@
     "import:liu-notes": "node scripts/import-liuxiaobiao.mjs",
     "test": "node --test tests/*.test.mjs",
     "test:e2e": "playwright test",
-    "check:data": "node scripts/validate-data.mjs && node scripts/validate-library.mjs && node scripts/validate-knowledge.mjs && node scripts/validate-tang-study.mjs",
+    "check:data": "node scripts/validate-data.mjs && node scripts/validate-library.mjs && node scripts/validate-knowledge.mjs && node scripts/validate-tang-study.mjs && node scripts/translation-coverage.mjs && node scripts/validate-poetry-context.mjs",
     "check": "npm run format:check && npm test && npm run check:data && npm run build",
     "format:check": "prettier --check index.html assets scripts tests README.md DESIGN.md UX-CONTRACT.md playwright.config.mjs package.json premium-ui.json .github/workflows/pages.yml",
     "import:tang-poems": "node scripts/import-tang-poems.mjs",
     "build:knowledge": "node scripts/build-knowledge.mjs",
     "vendor:leaflet": "node scripts/vendor-leaflet.mjs",
-    "build:tang-study": "node scripts/build-tang-study.mjs"
+    "build:tang-study": "node scripts/build-tang-study.mjs",
+    "build:translations": "node scripts/build-prose-translations.mjs && node scripts/build-tang-study.mjs && node scripts/translation-coverage.mjs --write",
+    "build:poetry-context": "node scripts/build-poetry-context.mjs"
   },
   "devDependencies": {
     "@playwright/test": "^1.64.1",

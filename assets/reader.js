@@ -1,4 +1,14 @@
-"use strict";
+import {
+  contextEntry,
+  validateContext,
+  verifyContextHashes,
+} from "./poetry-context.mjs";
+import {
+  proseEntry,
+  validateProse,
+  verifyProseHashes,
+} from "./prose-translations.mjs";
+("use strict");
 import {
   studyLine,
   validateStudy,
@@ -73,6 +83,7 @@ let book = [],
   query = "",
   notesData = {},
   translationsData = {},
+  contextData = {},
   liuData = {},
   positions = {},
   restoring = false,
@@ -80,6 +91,8 @@ let book = [],
   saveTimer;
 const failed = new Set();
 let studyLoadingEpoch = -1;
+let contextLoadingEpoch = -1;
+const openContexts = new Set();
 const esc = (s) =>
   String(s ?? "").replace(
     /[&<>"']/g,
@@ -102,8 +115,7 @@ function status() {
   $("#loadStatus").innerHTML = failed.size
     ? `${[...failed].map((x) => esc(x.label)).join("、")}加载失败，正文仍可阅读。<button class="btn" id="retryOptional">重试</button>`
     : "";
-  const loadingStudy =
-    studyLoadingEpoch === bookEpoch && activeBook?.kind === "poetry";
+  const loadingStudy = studyLoadingEpoch === bookEpoch;
   for (const id of ["notesBtn", "transBtn"])
     $("#" + id).setAttribute("aria-busy", String(loadingStudy));
   if (
@@ -112,7 +124,15 @@ function status() {
     (prefs.get(LS.notes) === "on" || prefs.get(LS.trans) === "on")
   )
     $("#loadStatus").append(
-      document.createTextNode("正在加载唐诗注译，正文可先阅读…"),
+      document.createTextNode(
+        activeBook?.kind === "poetry"
+          ? "正在加载唐诗注译，正文可先阅读…"
+          : "正在加载正文译文，正文可先阅读…",
+      ),
+    );
+  if (contextLoadingEpoch === bookEpoch && view === "reading")
+    $("#loadStatus").append(
+      document.createTextNode(" 正在加载创作背景，正文可先阅读…"),
     );
   if (knowledgeLoading && view === "reading")
     $("#loadStatus").append(document.createTextNode(" 正在加载名物资料…"));
@@ -134,8 +154,16 @@ function status() {
 async function loadOptional(items = activeBook?.resources || []) {
   const id = activeBook?.id,
     epoch = bookEpoch;
-  if (items.some((item) => item.type === "poetry-study")) {
+  if (
+    items.some((item) =>
+      ["poetry-study", "prose-translations"].includes(item.type),
+    )
+  ) {
     studyLoadingEpoch = epoch;
+    status();
+  }
+  if (items.some((item) => item.type === "poetry-context")) {
+    contextLoadingEpoch = epoch;
     status();
   }
   const retry = $("#retryOptional");
@@ -159,6 +187,18 @@ async function loadOptional(items = activeBook?.resources || []) {
           if (activeBook?.id !== id || epoch !== bookEpoch) return;
           notesData = translationsData = data;
         }
+        if (item.type === "prose-translations") {
+          validateProse(data, book);
+          await verifyProseHashes(data);
+          if (activeBook?.id !== id || epoch !== bookEpoch) return;
+          translationsData = data;
+        }
+        if (item.type === "poetry-context") {
+          validateContext(data, book);
+          await verifyContextHashes(data);
+          if (activeBook?.id !== id || epoch !== bookEpoch) return;
+          contextData = data;
+        }
         if (item.type === "annotations") notesData = data;
         if (item.type === "translations") translationsData = data;
         if (item.type === "liu") liuData = data.notes;
@@ -170,6 +210,7 @@ async function loadOptional(items = activeBook?.resources || []) {
   );
   if (activeBook?.id !== id || epoch !== bookEpoch) return;
   studyLoadingEpoch = -1;
+  contextLoadingEpoch = -1;
   const anchor = capture();
   status();
   if (view === "reading") renderChapter(anchor);
@@ -242,6 +283,7 @@ function setView(next) {
       !activeBook?.resources?.some(
         (r) =>
           r.type === "poetry-study" ||
+          (id === "transBtn" && r.type === "prose-translations") ||
           r.type === (id === "notesBtn" ? "annotations" : "translations"),
       );
   $("#loadStatus").hidden = next === "library";
@@ -320,6 +362,7 @@ async function route() {
     positions = {};
     notesData = {};
     translationsData = {};
+    contextData = {};
     liuData = {};
     failed.clear();
     bookEpoch++;
@@ -692,6 +735,7 @@ function showHome() {
   failed.clear();
   notesData = {};
   translationsData = {};
+  contextData = {};
   liuData = {};
   clearQuery();
   updateNav();
@@ -822,7 +866,11 @@ function renderChapter(anchor) {
         notes =
           poemLine?.notes ||
           (Array.isArray(notesData[key]) ? notesData[key] : []),
-        trans = poemLine?.translation || translationsData[key],
+        prose = proseEntry(translationsData, ch, i),
+        trans =
+          poemLine?.translation ||
+          prose?.translation ||
+          (!translationsData.schemaVersion ? translationsData[key] : null),
         liu = Array.isArray(liuData[key]) ? liuData[key] : [];
       const mentions =
         termsEnabled() && knowledgeData
@@ -882,7 +930,7 @@ function renderChapter(anchor) {
             `<div id="note-${i}-${span.notes[0].index}" class="note-pop" hidden>${span.notes.map((n) => `<b>${esc(n.word)}</b>　${esc(n.note)}`).join("<br>")}</div>`,
         )
         .join("");
-      return `<section class="entry-wrap" data-entry="${i + 1}"><p class="entry${activeBook.kind === "poetry" ? " poem-line" : ""}">${html}</p>${noteHtml}${showNotes && liu.length ? `<details class="liu-note"><summary>刘孝标注（${liu.length}段）</summary>${liu.map((n) => `<p>${esc(n)}</p>`).join("")}</details>` : ""}${showTrans && trans ? `<p class="translation"><span class="tag">译</span>${esc(trans)}</p>` : ""}</section>`;
+      return `<section class="entry-wrap" data-entry="${i + 1}"><p class="entry${activeBook.kind === "poetry" ? " poem-line" : ""}">${html}</p>${noteHtml}${showNotes && liu.length ? `<details class="liu-note"><summary>刘孝标注（${liu.length}段）</summary>${liu.map((n) => `<p>${esc(n)}</p>`).join("")}</details>` : ""}${showTrans && trans ? `<p class="translation"><span class="tag">译</span>${esc(trans)}</p>${prose?.remarks ? `<details class="study-sources"><summary>本则译文疑义</summary><p>${esc(prose.remarks)}</p></details>` : ""}` : ""}</section>`;
     })
     .filter(Boolean)
     .join("");
@@ -891,13 +939,28 @@ function renderChapter(anchor) {
     ? `<p class="poem-collection"><a href="${bookRoute(activeBook.id)}">${esc(activeBook.title)}</a></p><h1 class="chapter-title poem-title">${esc(ch.title)}</h1><div class="meta poem-author">唐 · ${esc(ch.author)}<span>${esc(ch.genre)}</span></div><div class="rule"></div>`
     : `<h1 class="book-title">${esc(activeBook.title)}</h1><div class="meta">${esc(activeBook.byline)}</div><div class="rule"></div><h2 class="chapter-title">${esc(ch.title)} · 第${current + 1}${esc(activeBook.sectionUnit || "篇")}</h2>`;
   const study = poetry ? notesData.poems?.[ch.id] : null;
+  const proseInfo =
+    !poetry && showTrans && translationsData.editorialNote
+      ? `<details class="study-sources"><summary>译文说明与参考资料</summary><p>${esc(translationsData.editorialNote)}</p><ul>${(proseEntry(translationsData, ch, 0)?.sources || []).map((s) => `<li><a href="${esc(s.url)}" target="_blank" rel="noopener noreferrer">${esc(s.title)}</a></li>`).join("")}</ul></details>`
+      : "";
   const studyInfo =
     study && (showNotes || showTrans)
       ? `<details class="study-sources"><summary>注译说明与参考资料</summary><p>${esc(study.editorialNote)}</p>${study.remarks ? `<p>${esc(study.remarks)}</p>` : ""}<ul>${study.sources.map((s) => `<li><a href="${esc(s.url)}" target="_blank" rel="noopener noreferrer">${esc(s.title)}</a></li>`).join("")}</ul></details>`
       : "";
+  const context = poetry ? contextEntry(contextData, ch) : null;
+  const contextInfo = context
+    ? `<details class="poem-context"${openContexts.has(ch.id) ? " open" : ""}><summary>创作背景与诗中情绪</summary><h3>创作背景</h3><p>${esc(context.background)}</p><h3>诗中情绪 · 解读</h3><p>${esc(context.mood)}</p><p>原句依据：<q>${esc(context.evidence)}</q></p>${context.remarks ? `<p>${esc(context.remarks)}</p>` : ""}<h3>整理说明与资料</h3><p>${esc(contextData.editorialNote)}</p><ul>${context.sources.map((s) => `<li><a href="${esc(s.url)}" target="_blank" rel="noopener noreferrer">${esc(s.title)}</a></li>`).join("")}</ul></details>`
+    : "";
   const pagination = `<nav class="reading-pagination" aria-label="篇目翻页">${current > 0 ? `<a href="${chapterURL(current - 1)}">← 上一${poetry ? "首" : "篇"}</a>` : "<span>已是首篇</span>"}<a href="${bookRoute(activeBook.id)}">返回目录</a>${current < book.length - 1 ? `<a href="${chapterURL(current + 1)}">下一${poetry ? "首" : "篇"} →</a>` : "<span>已是末篇</span>"}</nav>`;
   $("#content").innerHTML =
-    `<article class="paper${poetry ? " poem-paper" : ""}">${heading}${entries || `<div class="empty" role="status">当前篇未找到“${esc(query)}”</div>`}${studyInfo}${pagination}</article>`;
+    `<article class="paper${poetry ? " poem-paper" : ""}">${heading}${entries || `<div class="empty" role="status">当前篇未找到“${esc(query)}”</div>`}${contextInfo}${studyInfo}${proseInfo}${pagination}</article>`;
+  const contextPanel = $(".poem-context");
+  if (contextPanel)
+    contextPanel.ontoggle = () => {
+      if (contextPanel.open) openContexts.add(ch.id);
+      else openContexts.delete(ch.id);
+      updateProgress();
+    };
   restore(anchor);
   $("#knowledgeBtn").setAttribute("aria-pressed", String(termsEnabled()));
   followMention();
@@ -910,6 +973,30 @@ function capture() {
     bounds = r.getBoundingClientRect(),
     v = vertical(),
     ref = v ? bounds.right - 20 : bounds.top + 20;
+  const contextPanel = $(".poem-context");
+  if (contextPanel) {
+    const b = contextPanel.getBoundingClientRect();
+    if (
+      v
+        ? b.left < ref + 1 && b.right > bounds.left
+        : b.top <= ref + 1 && b.bottom > ref
+    )
+      return {
+        entry: book[current].content.length,
+        offset: 1,
+        section: "context",
+        sectionOffset: Math.max(
+          0,
+          Math.min(
+            1,
+            v
+              ? (b.right - ref) / Math.max(1, b.width)
+              : (ref - b.top) / Math.max(1, b.height),
+          ),
+        ),
+        panelScroll: contextPanel.scrollTop,
+      };
+  }
   const entries = [...document.querySelectorAll("[data-entry]")];
   const entry =
     entries.find((el) => {
@@ -957,11 +1044,17 @@ function restore(anchor) {
     Number.isInteger(anchor.entry) &&
     Number.isFinite(anchor.offset)
   ) {
-    const el = document.querySelector(`[data-entry="${anchor.entry}"]`);
+    const panel = anchor.section === "context" ? $(".poem-context") : null;
+    const el =
+      panel || document.querySelector(`[data-entry="${anchor.entry}"]`);
     if (el) {
       const b = el.getBoundingClientRect(),
         bounds = r.getBoundingClientRect(),
-        offset = Math.max(0, Math.min(1, anchor.offset));
+        offset = Math.max(
+          0,
+          Math.min(1, panel ? anchor.sectionOffset : anchor.offset),
+        );
+      if (panel) panel.scrollTop = Number(anchor.panelScroll) || 0;
       r.scrollBy({
         top: vertical() ? 0 : b.top - bounds.top - 20 + offset * b.height,
         left: vertical() ? b.right - (bounds.right - 20) - offset * b.width : 0,

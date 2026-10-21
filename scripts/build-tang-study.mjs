@@ -10,6 +10,7 @@ export async function compileStudy() {
   const book = await read("data/tang-poems.json");
   const manifest = await read(root + "works.json");
   const reviews = await read(root + "reviews.json");
+  const corrections = await read(root + "translation-corrections.json");
   const references = await read(root + "references.json");
   const rows = new Map();
   for (const file of (await readdir(root))
@@ -76,6 +77,21 @@ export async function compileStudy() {
         remarks:
           "与本集其他篇目正文相同，保留本条题署；如有归属差异，请结合底本对读。",
       };
+    }
+    row = structuredClone(row);
+    const correction = corrections[work.id];
+    for (const [line, patch] of Object.entries(correction?.lines || {})) {
+      assert.equal(
+        work.content[Number(line)],
+        patch.source,
+        "修订对应原文已改变",
+      );
+      assert.equal(
+        row.translations[Number(line)],
+        patch.before,
+        "修订前译文已改变",
+      );
+      row.translations[Number(line)] = patch.translation;
     }
     const review = reviews[work.id];
     assert.equal(

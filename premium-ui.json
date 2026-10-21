@@ -21,7 +21,8 @@
   "evidence": {
     "failurePaths": "tests/browser/reader.spec.mjs",
     "knowledgeAndMap": "tests/browser/knowledge.spec.mjs",
-    "poetryStudy": "tests/browser/poetry-study.spec.mjs"
+    "poetryStudy": "tests/browser/poetry-study.spec.mjs",
+    "poetryContext": "tests/browser/poetry-context.spec.mjs"
   },
   "ownership": {
     "Select/Listbox": "native"

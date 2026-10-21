@@ -114,7 +114,11 @@ test("slow study loads cannot replace prose and loading is announced", async ({
   release();
   await expect(page.locator(".translation").first()).toContainText("陈仲举");
   await expect(page.locator("#loadStatus")).toBeEmpty();
-  await expect(page.locator(".study-sources")).toHaveCount(0);
+  await expect(page.locator(".study-sources")).toHaveCount(1);
+  await expect(page.locator(".study-sources summary")).toHaveText(
+    "译文说明与参考资料",
+  );
+  await expect(page.locator(".translation")).toHaveCount(47);
 });
 test("study layout works in both directions, search, dark and narrow views", async ({
   page,

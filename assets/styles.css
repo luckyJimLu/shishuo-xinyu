@@ -1742,7 +1742,7 @@ html.dark {
   }
 }
 
-.study-sources {
+:is(.study-sources, .poem-context) {
   margin-block: 2em;
   padding-block: 1em;
   border-block-start: 1px solid var(--line);
@@ -1750,15 +1750,15 @@ html.dark {
   line-height: 1.9;
   color: var(--muted);
 }
-.study-sources summary {
+:is(.study-sources, .poem-context) summary {
   cursor: pointer;
   color: var(--accent);
 }
-.study-sources summary:hover,
-.study-sources a:hover {
+:is(.study-sources, .poem-context) summary:hover,
+:is(.study-sources, .poem-context) a:hover {
   text-decoration: underline;
 }
-.study-sources a {
+:is(.study-sources, .poem-context) a {
   color: var(--accent);
   overflow-wrap: anywhere;
 }
@@ -1767,7 +1767,7 @@ html.dark {
   line-height: 1.9;
 }
 
-.reader.vertical .study-sources {
+.reader.vertical :is(.study-sources, .poem-context) {
   writing-mode: horizontal-tb;
   direction: ltr;
   min-width: min(300px, 80vw);
@@ -1777,4 +1777,14 @@ html.dark {
   padding: 1em;
   border-block-start: 0;
   border-inline-start: 1px solid var(--line);
+}
+
+.poem-context h3 {
+  font-size: 1em;
+  font-weight: 600;
+  color: var(--ink);
+  margin-block: 1em 0.25em;
+}
+.poem-context p {
+  text-indent: 0;
 }
