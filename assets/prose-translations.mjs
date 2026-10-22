@@ -7,6 +7,18 @@ export function proseEntry(resource, work, index) {
     e.entry !== index + 1 ||
     e.source !== work.content[index] ||
     !e.translation?.trim() ||
+    (e.notes !== undefined &&
+      (!Array.isArray(e.notes) ||
+        e.notes.some(
+          (n) =>
+            !n.word ||
+            !n.note?.trim() ||
+            !Number.isInteger(n.start) ||
+            !Number.isInteger(n.end) ||
+            n.start < 0 ||
+            n.end <= n.start ||
+            e.source.slice(n.start, n.end) !== n.word,
+        ))) ||
     !Array.isArray(e.segments) ||
     !e.segments.length ||
     e.segments.some(
@@ -18,10 +30,10 @@ export function proseEntry(resource, work, index) {
     return null;
   return e;
 }
-export function validateProse(resource, works) {
+export function validateProse(resource, works, bookId = "shishuo-xinyu") {
   if (
     resource?.schemaVersion !== 1 ||
-    resource.bookId !== "shishuo-xinyu" ||
+    resource.bookId !== bookId ||
     !resource.entries
   )
     throw Error("正文译文格式无效");

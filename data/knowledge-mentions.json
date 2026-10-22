@@ -3,13 +3,14 @@
   "bookHashes": {
     "tang-poems": "da05b41ed424d31d795753d8ba4977d9ddc8b20342a9094fb2aceb21e3a5a65b",
     "song-ci": "0551fb1d9ecc3e84221e2508a1e25df7d2c30b70d066c53d13928a392141461a",
-    "shishuo-xinyu": "740290fd2fba96af9dc4375bf209ff43af7bfeec1aefb6233c4de2b6c730f2cc"
+    "shishuo-xinyu": "740290fd2fba96af9dc4375bf209ff43af7bfeec1aefb6233c4de2b6c730f2cc",
+    "daxue": "8a918e158c2129d9ced7ae8e94e1a05c87c5d9dd405a1c67c92aaec2cd22424e"
   },
   "summary": {
     "reviewed": 249,
     "excluded": 51,
     "pending": 25,
-    "candidate": 62
+    "candidate": 64
   },
   "mentions": [
     {
@@ -7364,6 +7365,44 @@
       "context": "此处为地名或籍贯、行政区名称；地图仅给区域参考，不据词语出现推断人物活动路线。",
       "reviewer": "本次语境校读",
       "locationId": "yangzhou-jin-reference"
+    },
+    {
+      "id": "m-e09313b0a20ba2",
+      "bookId": "daxue",
+      "bookTitle": "大学",
+      "workId": "chapter-04",
+      "title": "德行与民心",
+      "entry": 1,
+      "start": 31,
+      "end": 32,
+      "surface": "瑟",
+      "entityId": "se",
+      "text": "《诗》云：「瞻彼淇澳，菉竹猗猗。有斐君子，如切如磋，如琢如磨。瑟兮僩兮，赫兮喧兮。有斐君子，终不可諠兮！」「如切如磋」者，道学也；「如琢如磨」者，自修也；「瑟兮僩兮」者，恂栗也；「赫兮喧兮」者，威仪也；「有斐君子，终不可諠兮」者，道盛德至善，民之不能忘也。《诗》云：「於戏前王不忘！」君子贤其贤而亲其亲，小人乐其乐而利其利，此以没世不忘也。",
+      "textSha256": "4131a26387dc81f56d2dfcbb54ac1bf6e36fd4c625aca03219e7fe2c2c84cee3",
+      "status": "candidate",
+      "period": "待考",
+      "context": "正文或范围变化，等待重新复核。",
+      "reviewer": null,
+      "locationId": null
+    },
+    {
+      "id": "m-4b8e7e14710ee5",
+      "bookId": "daxue",
+      "bookTitle": "大学",
+      "workId": "chapter-04",
+      "title": "德行与民心",
+      "entry": 1,
+      "start": 78,
+      "end": 79,
+      "surface": "瑟",
+      "entityId": "se",
+      "text": "《诗》云：「瞻彼淇澳，菉竹猗猗。有斐君子，如切如磋，如琢如磨。瑟兮僩兮，赫兮喧兮。有斐君子，终不可諠兮！」「如切如磋」者，道学也；「如琢如磨」者，自修也；「瑟兮僩兮」者，恂栗也；「赫兮喧兮」者，威仪也；「有斐君子，终不可諠兮」者，道盛德至善，民之不能忘也。《诗》云：「於戏前王不忘！」君子贤其贤而亲其亲，小人乐其乐而利其利，此以没世不忘也。",
+      "textSha256": "4131a26387dc81f56d2dfcbb54ac1bf6e36fd4c625aca03219e7fe2c2c84cee3",
+      "status": "candidate",
+      "period": "待考",
+      "context": "正文或范围变化，等待重新复核。",
+      "reviewer": null,
+      "locationId": null
     }
   ]
 }

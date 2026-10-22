@@ -7,7 +7,7 @@ async function poems(page) {
 test("library opens both books and supports discovery", async ({ page }) => {
   await page.goto("");
   await expect(page).toHaveTitle("中国古典文学 · 诗文藏书");
-  await expect(page.locator(".book-card")).toHaveCount(3);
+  await expect(page.locator(".book-card")).toHaveCount(4);
   await page.locator("#search").fill("唐诗");
   await expect(page.locator(".book-card")).toHaveCount(1);
   await page.locator(".book-card").click();
@@ -109,7 +109,7 @@ test("failed poetry load can retry while the other book remains accessible", asy
   await page.goto("#/book/does-not-exist");
   await expect(page.locator(".empty")).toContainText("未找到");
   await page.locator("#homeBtn").click();
-  await expect(page.locator(".book-card")).toHaveCount(3);
+  await expect(page.locator(".book-card")).toHaveCount(4);
 });
 test("book-switch races discard stale annotation failures", async ({
   page,
@@ -174,7 +174,7 @@ test("a late book response cannot replace the book chosen afterwards", async ({
   await page.goto("#/book/tang-poems");
   await expect(page.locator("#content")).toContainText("正在打开");
   await page.locator("#homeBtn").click();
-  await page.locator(".book-card.prose").click();
+  await page.locator('.book-card[href="#/book/shishuo-xinyu"]').click();
   await expect(page.locator(".collection-header h1")).toHaveText("世说新语");
   release();
   await page.locator("#startBtn").click();
@@ -189,7 +189,7 @@ test("a failed catalog has explicit recovery and no silent blank screen", async 
   await expect(page.locator("#retryCatalog")).toBeVisible();
   await page.unroute("**/data/catalog.json");
   await page.locator("#retryCatalog").click();
-  await expect(page.locator(".book-card")).toHaveCount(3);
+  await expect(page.locator(".book-card")).toHaveCount(4);
 });
 test("vertical poems and long titles fit within the reading viewport", async ({
   page,

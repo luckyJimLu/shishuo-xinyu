@@ -1,6 +1,7 @@
 import { readFile } from "node:fs/promises";
 import assert from "node:assert/strict";
 import { createHash } from "node:crypto";
+import { compileDaxue } from "./build-daxue.mjs";
 import { compileSongCi } from "./import-song-ci.mjs";
 import { validateCatalog, adaptBook } from "../assets/library.mjs";
 const read = async (path) => JSON.parse(await readFile(path, "utf8"));
@@ -17,6 +18,13 @@ for (const meta of catalog) {
   );
   for (const resource of meta.resources || [])
     assert((await read("data/" + resource.path)) && resource.label);
+  if (meta.id === "daxue") {
+    assert.deepEqual(data, (await compileDaxue()).book);
+    assert.equal(
+      await readFile("data/" + meta.licensePath, "utf8"),
+      await readFile("sources/daxue/LICENSE", "utf8"),
+    );
+  }
   if (meta.id === "song-ci") {
     assert.deepEqual(data, await compileSongCi(), "宋词数据与固定底本不一致");
     assert.equal(

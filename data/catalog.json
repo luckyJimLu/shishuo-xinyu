@@ -85,6 +85,29 @@
       ],
       "sectionUnit": "门",
       "startLabel": "德行第一"
+    },
+    {
+      "id": "daxue",
+      "title": "大学",
+      "kind": "prose",
+      "era": "先秦至秦汉",
+      "genre": "儒家经典",
+      "byline": "《礼记》篇章 · 作者未定",
+      "description": "从明德、诚意到修身与家国，循原文读懂《大学》。",
+      "path": "daxue.json",
+      "count": 16,
+      "unit": "段",
+      "sectionUnit": "段",
+      "sourceNote": "作者未定，成篇时间有争议，此处以先秦至秦汉为宽泛时代参考。据 chinese-poetry 固定版本《礼记·大学》整理，依底本16段顺序，段题为本站自拟。不混入朱熹《大学章句》重排次序及格物补传；亲民、新民等异说见注。全文附模型辅助原创词注、逐段白话译文与自校记录，未经独立专家审校。",
+      "sourceUrl": "https://github.com/chinese-poetry/chinese-poetry/blob/b8594f81a89752241442f2ce267d6f66f96704ee/四书五经/daxue.json",
+      "licensePath": "daxue.LICENSE",
+      "resources": [
+        {
+          "type": "prose-study",
+          "path": "daxue-study.json",
+          "label": "大学注译"
+        }
+      ]
     }
   ]
 }

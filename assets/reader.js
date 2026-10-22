@@ -129,7 +129,9 @@ function status() {
       document.createTextNode(
         activeBook?.kind === "poetry"
           ? `正在加载${activeBook.form === "ci" ? "宋词" : "唐诗"}注译，正文可先阅读…`
-          : "正在加载正文译文，正文可先阅读…",
+          : activeBook?.resources?.some((r) => r.type === "prose-study")
+            ? "正在加载正文注译，正文可先阅读…"
+            : "正在加载正文译文，正文可先阅读…",
       ),
     );
   if (contextLoadingEpoch === bookEpoch && view === "reading")
@@ -158,7 +160,7 @@ async function loadOptional(items = activeBook?.resources || []) {
     epoch = bookEpoch;
   if (
     items.some((item) =>
-      ["poetry-study", "prose-translations"].includes(item.type),
+      ["poetry-study", "prose-translations", "prose-study"].includes(item.type),
     )
   ) {
     studyLoadingEpoch = epoch;
@@ -189,11 +191,12 @@ async function loadOptional(items = activeBook?.resources || []) {
           if (activeBook?.id !== id || epoch !== bookEpoch) return;
           notesData = translationsData = data;
         }
-        if (item.type === "prose-translations") {
-          validateProse(data, book);
+        if (["prose-translations", "prose-study"].includes(item.type)) {
+          validateProse(data, book, id);
           await verifyProseHashes(data);
           if (activeBook?.id !== id || epoch !== bookEpoch) return;
           translationsData = data;
+          if (item.type === "prose-study") notesData = data;
         }
         if (item.type === "poetry-context") {
           validateContext(data, book);
@@ -285,6 +288,7 @@ function setView(next) {
       !activeBook?.resources?.some(
         (r) =>
           r.type === "poetry-study" ||
+          r.type === "prose-study" ||
           (id === "transBtn" && r.type === "prose-translations") ||
           r.type === (id === "notesBtn" ? "annotations" : "translations"),
       );
@@ -800,7 +804,7 @@ function renderLibrary() {
       resume = `<a class="resume-link" href="${readingRoute(LEGACY_BOOK, `chapter-${String(old + 1).padStart(2, "0")}`)}">接着读 · 世说新语 →</a>`;
   }
   $("#content").innerHTML =
-    `<section class="library-page"><header class="library-intro"><h1>中国古典文学</h1><p class="library-lead">读唐诗宋词，品世说风流。</p>${resume}</header><div class="shelf-heading"><h2>案头藏书</h2><div class="shelf-meta"><span>${books.length} 部可读</span><a href="#/atlas?view=list">地名索引 →</a></div></div><div class="bookshelf">${books.map((b) => `<a class="book-card ${b.kind}" href="${bookRoute(b.id)}"><span class="book-cover" aria-hidden="true"><span class="cover-era">${esc(b.era)}</span><span class="cover-title">${esc(b.title)}</span><span class="cover-seal">${b.form === "ci" ? "词" : b.kind === "poetry" ? "诗" : "文"}</span></span><span class="book-info"><span class="eyebrow">${esc(b.genre)}</span><h3>${esc(b.title)}</h3><span class="book-byline">${esc(b.byline)}</span><span class="book-description">${esc(b.description)}</span><span class="book-count">${b.count} ${esc(b.unit)} <span>开卷阅读 →</span></span></span></a>`).join("") || '<p class="empty" role="status">未找到相关藏书，换个关键词试试。</p>'}</div></section>`;
+    `<section class="library-page"><header class="library-intro"><h1>中国古典文学</h1><p class="library-lead">读诗词，品古文。</p>${resume}</header><div class="shelf-heading"><h2>案头藏书</h2><div class="shelf-meta"><span>${books.length} 部可读</span><a href="#/atlas?view=list">地名索引 →</a></div></div><div class="bookshelf">${books.map((b) => `<a class="book-card ${b.kind}" href="${bookRoute(b.id)}"><span class="book-cover" aria-hidden="true"><span class="cover-era">${esc(b.era)}</span><span class="cover-title">${esc(b.title)}</span><span class="cover-seal">${b.form === "ci" ? "词" : b.kind === "poetry" ? "诗" : "文"}</span></span><span class="book-info"><span class="eyebrow">${esc(b.genre)}</span><h3>${esc(b.title)}</h3><span class="book-byline">${esc(b.byline)}</span><span class="book-description">${esc(b.description)}</span><span class="book-count">${b.count} ${esc(b.unit)} <span>开卷阅读 →</span></span></span></a>`).join("") || '<p class="empty" role="status">未找到相关藏书，换个关键词试试。</p>'}</div></section>`;
 }
 function renderBookOverview() {
   setView(current >= 0 ? "search" : "book");
@@ -910,6 +914,9 @@ function renderChapter(anchor) {
     q = query.toLowerCase(),
     showNotes = prefs.get(LS.notes) === "on",
     showTrans = prefs.get(LS.trans) === "on";
+  const jointProse = activeBook.resources?.some(
+    (r) => r.type === "prose-study",
+  );
   const entries = ch.content
     .map((text, i) => {
       const raw = String(text);
@@ -917,8 +924,10 @@ function renderChapter(anchor) {
       const key = ch.title + ":" + (i + 1),
         poemLine =
           activeBook.kind === "poetry" ? studyLine(notesData, ch, i) : null,
+        proseStudy = jointProse ? proseEntry(notesData, ch, i) : null,
         notes =
           poemLine?.notes ||
+          proseStudy?.notes ||
           (Array.isArray(notesData[key]) ? notesData[key] : []),
         prose = proseEntry(translationsData, ch, i),
         trans =
@@ -991,7 +1000,7 @@ function renderChapter(anchor) {
               .join("")}</div>`,
         )
         .join("");
-      return `<section class="entry-wrap" data-entry="${i + 1}"><p class="entry${activeBook.kind === "poetry" ? " poem-line" : ""}">${html}</p>${noteHtml}${showNotes && liu.length ? `<details class="liu-note"><summary>刘孝标注（${liu.length}段）</summary>${liu.map((n) => `<p>${esc(n)}</p>`).join("")}</details>` : ""}${showTrans && trans ? `<p class="translation"><span class="tag">译</span>${esc(trans)}</p>${prose?.remarks ? `<details class="study-sources"><summary>本则译文疑义</summary><p>${esc(prose.remarks)}</p></details>` : ""}` : ""}</section>`;
+      return `<section class="entry-wrap" data-entry="${i + 1}"><p class="entry${activeBook.kind === "poetry" ? " poem-line" : ""}">${html}</p>${noteHtml}${showNotes && liu.length ? `<details class="liu-note"><summary>刘孝标注（${liu.length}段）</summary>${liu.map((n) => `<p>${esc(n)}</p>`).join("")}</details>` : ""}${showTrans && trans ? `<p class="translation"><span class="tag">译</span>${esc(trans)}</p>${!jointProse && prose?.remarks ? `<details class="study-sources"><summary>本则译文疑义</summary><p>${esc(prose.remarks)}</p></details>` : ""}` : ""}</section>`;
     })
     .filter(Boolean)
     .join("");
@@ -1001,8 +1010,10 @@ function renderChapter(anchor) {
     : `<h1 class="book-title">${esc(activeBook.title)}</h1><div class="meta">${esc(activeBook.byline)}</div><div class="rule"></div><h2 class="chapter-title">${esc(ch.title)} · 第${current + 1}${esc(activeBook.sectionUnit || "篇")}</h2>`;
   const study = poetry ? notesData.poems?.[ch.id] : null;
   const proseInfo =
-    !poetry && showTrans && translationsData.editorialNote
-      ? `<details class="study-sources"><summary>译文说明与参考资料</summary><p>${esc(translationsData.editorialNote)}</p><ul>${(proseEntry(translationsData, ch, 0)?.sources || []).map((s) => `<li><a href="${esc(s.url)}" target="_blank" rel="noopener noreferrer">${esc(s.title)}</a></li>`).join("")}</ul></details>`
+    !poetry &&
+    (showTrans || (jointProse && showNotes)) &&
+    translationsData.editorialNote
+      ? `<details class="study-sources"><summary>${jointProse ? "注译说明与参考资料" : "译文说明与参考资料"}</summary><p>${esc(translationsData.editorialNote)}</p>${jointProse && proseEntry(translationsData, ch, 0)?.remarks ? `<p>${esc(proseEntry(translationsData, ch, 0).remarks)}</p>` : ""}<ul>${(proseEntry(translationsData, ch, 0)?.sources || []).map((s) => `<li><a href="${esc(s.url)}" target="_blank" rel="noopener noreferrer">${esc(s.title)}</a></li>`).join("")}</ul></details>`
       : "";
   const studyInfo =
     study && (showNotes || showTrans)

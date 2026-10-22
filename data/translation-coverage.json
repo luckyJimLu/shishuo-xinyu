@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "scope": "唐诗选读、宋词选集与世说新语全部正文；不含刘孝标注",
+  "scope": "唐诗选读、宋词选集、世说新语与大学全部正文；不含刘孝标注",
   "reviewNote": "模型辅助原创整理与逐项自校。自动校验只证明绑定、结构及复核记录一致，不能证明译义准确；未经过独立专家审校。",
   "books": [
     {
@@ -6858,6 +6858,180 @@
           "title": "念奴娇 · 洞庭青草",
           "total": 8,
           "completed": 8,
+          "missing": 0,
+          "empty": 0,
+          "invalid": 0,
+          "pending": 0
+        }
+      ]
+    },
+    {
+      "id": "daxue",
+      "title": "大学",
+      "summary": {
+        "total": 16,
+        "completed": 16,
+        "missing": 0,
+        "empty": 0,
+        "invalid": 0,
+        "pending": 0
+      },
+      "chapters": [
+        {
+          "id": "chapter-01",
+          "title": "明德与知止",
+          "total": 1,
+          "completed": 1,
+          "missing": 0,
+          "empty": 0,
+          "invalid": 0,
+          "pending": 0
+        },
+        {
+          "id": "chapter-02",
+          "title": "修身为本",
+          "total": 1,
+          "completed": 1,
+          "missing": 0,
+          "empty": 0,
+          "invalid": 0,
+          "pending": 0
+        },
+        {
+          "id": "chapter-03",
+          "title": "诚意与慎独",
+          "total": 1,
+          "completed": 1,
+          "missing": 0,
+          "empty": 0,
+          "invalid": 0,
+          "pending": 0
+        },
+        {
+          "id": "chapter-04",
+          "title": "德行与民心",
+          "total": 1,
+          "completed": 1,
+          "missing": 0,
+          "empty": 0,
+          "invalid": 0,
+          "pending": 0
+        },
+        {
+          "id": "chapter-05",
+          "title": "自明其德",
+          "total": 1,
+          "completed": 1,
+          "missing": 0,
+          "empty": 0,
+          "invalid": 0,
+          "pending": 0
+        },
+        {
+          "id": "chapter-06",
+          "title": "日新其德",
+          "total": 1,
+          "completed": 1,
+          "missing": 0,
+          "empty": 0,
+          "invalid": 0,
+          "pending": 0
+        },
+        {
+          "id": "chapter-07",
+          "title": "各止其所",
+          "total": 1,
+          "completed": 1,
+          "missing": 0,
+          "empty": 0,
+          "invalid": 0,
+          "pending": 0
+        },
+        {
+          "id": "chapter-08",
+          "title": "听讼知本",
+          "total": 1,
+          "completed": 1,
+          "missing": 0,
+          "empty": 0,
+          "invalid": 0,
+          "pending": 0
+        },
+        {
+          "id": "chapter-09",
+          "title": "正心与修身",
+          "total": 1,
+          "completed": 1,
+          "missing": 0,
+          "empty": 0,
+          "invalid": 0,
+          "pending": 0
+        },
+        {
+          "id": "chapter-10",
+          "title": "修身与齐家",
+          "total": 1,
+          "completed": 1,
+          "missing": 0,
+          "empty": 0,
+          "invalid": 0,
+          "pending": 0
+        },
+        {
+          "id": "chapter-11",
+          "title": "齐家与治国",
+          "total": 1,
+          "completed": 1,
+          "missing": 0,
+          "empty": 0,
+          "invalid": 0,
+          "pending": 0
+        },
+        {
+          "id": "chapter-12",
+          "title": "絜矩与民好恶",
+          "total": 1,
+          "completed": 1,
+          "missing": 0,
+          "empty": 0,
+          "invalid": 0,
+          "pending": 0
+        },
+        {
+          "id": "chapter-13",
+          "title": "德本财末",
+          "total": 1,
+          "completed": 1,
+          "missing": 0,
+          "empty": 0,
+          "invalid": 0,
+          "pending": 0
+        },
+        {
+          "id": "chapter-14",
+          "title": "容贤与去恶",
+          "total": 1,
+          "completed": 1,
+          "missing": 0,
+          "empty": 0,
+          "invalid": 0,
+          "pending": 0
+        },
+        {
+          "id": "chapter-15",
+          "title": "生财与仁义",
+          "total": 1,
+          "completed": 1,
+          "missing": 0,
+          "empty": 0,
+          "invalid": 0,
+          "pending": 0
+        },
+        {
+          "id": "chapter-16",
+          "title": "以义为利",
+          "total": 1,
+          "completed": 1,
           "missing": 0,
           "empty": 0,
           "invalid": 0,

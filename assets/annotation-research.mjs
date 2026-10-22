@@ -3,6 +3,11 @@ import { externalLink } from "./knowledge.mjs";
 // This is a search aid, not a dictionary or an automatic plant identification.
 const plants = [
   [
+    "菉竹",
+    "绿竹 王刍 萹竹 植物 对比 古籍",
+    "古注对菉竹有不同解释，图片检索不能决定本句物种。",
+  ],
+  [
     "茱萸|紫萸|红萸",
     "重阳 佩茱萸 吴茱萸 植物 叶 果实",
     "古名与今名可能有差别；检索结果仅供观察外观。",
@@ -33,6 +38,11 @@ const plants = [
   ["海棠", "海棠 植物 花"],
 ];
 const objects = [
+  [
+    "盘铭",
+    "古代 盥洗盘 铜盘 铭文 文物",
+    "此为同类器物图像，不代表商汤铭盘有存世实物。",
+  ],
   ["琵琶", "古代 琵琶 乐器 文物"],
   ["琴|古琴", "古琴 七弦琴 古代 乐器 文物"],
   ["瑟|宝瑟", "古代 瑟 乐器 文物"],

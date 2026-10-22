@@ -1,0 +1,242 @@
+{
+  "chapter-01": {
+    "sourceHash": "ca084f6030197bd4a11279c5de05e2cb1452046a44bbd51c5e6e16e539fd0bfe",
+    "draftHash": "c6848ff1d65b3f22a0a64d30900a731efb35770ca8d4b5d37cb5c45d823161c3",
+    "status": "reviewed",
+    "method": "模型辅助原创整理与逐段自校",
+    "independentExpertReview": false,
+    "checks": [
+      "全文段落覆盖",
+      "引文与论证层次",
+      "否定与因果",
+      "多音多义字",
+      "古本与章句本区分",
+      "重点词定位"
+    ]
+  },
+  "chapter-02": {
+    "sourceHash": "8ebebbcd78b1f452b0cfa48e8a50c5fc378e509dc06c230e3e65af43304c6854",
+    "draftHash": "4eb43150a03d2f34c0d991a596773c82051e0a0b7739b7cd00eb12adaa4715cf",
+    "status": "reviewed",
+    "method": "模型辅助原创整理与逐段自校",
+    "independentExpertReview": false,
+    "checks": [
+      "全文段落覆盖",
+      "引文与论证层次",
+      "否定与因果",
+      "多音多义字",
+      "古本与章句本区分",
+      "重点词定位"
+    ]
+  },
+  "chapter-03": {
+    "sourceHash": "0141e8aefcd2c3fe1e56a8154d7da111f9ebe721248aea4a6285e84c60dc0400",
+    "draftHash": "6b4b0541c42e219b17540313ff63ffac48eb1488a30eb85e6c520ddc4f67257e",
+    "status": "reviewed",
+    "method": "模型辅助原创整理与逐段自校",
+    "independentExpertReview": false,
+    "checks": [
+      "全文段落覆盖",
+      "引文与论证层次",
+      "否定与因果",
+      "多音多义字",
+      "古本与章句本区分",
+      "重点词定位"
+    ]
+  },
+  "chapter-04": {
+    "sourceHash": "b2810ce02cab337b5bebf2c026ae306089036e33582f23ccb82d7e84ef24ac8d",
+    "draftHash": "5c48b2a6b8b44284f811a39fa94cfa0df80b79b75e1dde73e420d0e009d40f44",
+    "status": "reviewed",
+    "method": "模型辅助原创整理与逐段自校",
+    "independentExpertReview": false,
+    "checks": [
+      "全文段落覆盖",
+      "引文与论证层次",
+      "否定与因果",
+      "多音多义字",
+      "古本与章句本区分",
+      "重点词定位"
+    ]
+  },
+  "chapter-05": {
+    "sourceHash": "ba69c3c3ebcdfeaafe13db4393662c3deb15943969c8ffa5e38030fd9803924f",
+    "draftHash": "21df31b737bb510b9fd5d36e23640c64b9cc55bd4a3dcf152167e6e79f2a706f",
+    "status": "reviewed",
+    "method": "模型辅助原创整理与逐段自校",
+    "independentExpertReview": false,
+    "checks": [
+      "全文段落覆盖",
+      "引文与论证层次",
+      "否定与因果",
+      "多音多义字",
+      "古本与章句本区分",
+      "重点词定位"
+    ]
+  },
+  "chapter-06": {
+    "sourceHash": "4947f011b6b1e9043aaa6c60f641c028902e86c384f6e2ec0f807bed787e342d",
+    "draftHash": "85bad216af8ce2dbbf74448e93c423ffbbfcdc6067dda29c00dda9b16c37cebd",
+    "status": "reviewed",
+    "method": "模型辅助原创整理与逐段自校",
+    "independentExpertReview": false,
+    "checks": [
+      "全文段落覆盖",
+      "引文与论证层次",
+      "否定与因果",
+      "多音多义字",
+      "古本与章句本区分",
+      "重点词定位"
+    ]
+  },
+  "chapter-07": {
+    "sourceHash": "93b8a0adabe5b9213228ac7447d94a342b713df5fd02b189a5c697df1dc03668",
+    "draftHash": "a081bb4572e95a07892df8009215accd50c0f217a3f884f4e49ad9930173f4ee",
+    "status": "reviewed",
+    "method": "模型辅助原创整理与逐段自校",
+    "independentExpertReview": false,
+    "checks": [
+      "全文段落覆盖",
+      "引文与论证层次",
+      "否定与因果",
+      "多音多义字",
+      "古本与章句本区分",
+      "重点词定位"
+    ]
+  },
+  "chapter-08": {
+    "sourceHash": "7ac0ce9859141859bda5844563139354790e963115e28db149a6c03aa952619c",
+    "draftHash": "6402f719267aa22c843250be72e1daad4f7b3ad340611e0ca477cb2571f5952a",
+    "status": "reviewed",
+    "method": "模型辅助原创整理与逐段自校",
+    "independentExpertReview": false,
+    "checks": [
+      "全文段落覆盖",
+      "引文与论证层次",
+      "否定与因果",
+      "多音多义字",
+      "古本与章句本区分",
+      "重点词定位"
+    ]
+  },
+  "chapter-09": {
+    "sourceHash": "77390591237194ed0a107416fd1d302698f3035c6b7c0f45f1f0c7d39b05d744",
+    "draftHash": "d4480936b7db0fa30ae7c4ac4c480e840e23627158087103b8e6b400c6b4ab7f",
+    "status": "reviewed",
+    "method": "模型辅助原创整理与逐段自校",
+    "independentExpertReview": false,
+    "checks": [
+      "全文段落覆盖",
+      "引文与论证层次",
+      "否定与因果",
+      "多音多义字",
+      "古本与章句本区分",
+      "重点词定位"
+    ]
+  },
+  "chapter-10": {
+    "sourceHash": "6a9880f308f27c036b712c62806e37911990e508b28523ab7cb50afeb5389d98",
+    "draftHash": "002ba65fdeb8857910c1a39d258dc2ea886dc0f511c4bb801ab9b35b2639a647",
+    "status": "reviewed",
+    "method": "模型辅助原创整理与逐段自校",
+    "independentExpertReview": false,
+    "checks": [
+      "全文段落覆盖",
+      "引文与论证层次",
+      "否定与因果",
+      "多音多义字",
+      "古本与章句本区分",
+      "重点词定位"
+    ]
+  },
+  "chapter-11": {
+    "sourceHash": "4a881cb478114b969498697c398e9c806e44189333da60b23fe7dbb965e69bc9",
+    "draftHash": "0800b3e1611f51013c4b99ca43ed1a0b6686acf8ebc44438e15c3956c2d74a44",
+    "status": "reviewed",
+    "method": "模型辅助原创整理与逐段自校",
+    "independentExpertReview": false,
+    "checks": [
+      "全文段落覆盖",
+      "引文与论证层次",
+      "否定与因果",
+      "多音多义字",
+      "古本与章句本区分",
+      "重点词定位"
+    ]
+  },
+  "chapter-12": {
+    "sourceHash": "adbddb60e069b2e41fff66678ae60fbb9fbb1be7dbe9e2ec7e306b82d157b6c9",
+    "draftHash": "0aa88d92f856e469f01c154777126bf1ccd40a4d34fa45db92ade1feeb8adfd1",
+    "status": "reviewed",
+    "method": "模型辅助原创整理与逐段自校",
+    "independentExpertReview": false,
+    "checks": [
+      "全文段落覆盖",
+      "引文与论证层次",
+      "否定与因果",
+      "多音多义字",
+      "古本与章句本区分",
+      "重点词定位"
+    ]
+  },
+  "chapter-13": {
+    "sourceHash": "6f672abbdb0a11e43d43eb4733ee0ab4bdffcd004d5b82f11b632254dddea2aa",
+    "draftHash": "fad7da399c84685bc2ab31dd67a3cb9db11bbf20ee4fe71e3ecfa4468dfb1207",
+    "status": "reviewed",
+    "method": "模型辅助原创整理与逐段自校",
+    "independentExpertReview": false,
+    "checks": [
+      "全文段落覆盖",
+      "引文与论证层次",
+      "否定与因果",
+      "多音多义字",
+      "古本与章句本区分",
+      "重点词定位"
+    ]
+  },
+  "chapter-14": {
+    "sourceHash": "564249be505f0f48e6f66be2e06ebea308a7cb36247b5a6896ef0288d1eaa785",
+    "draftHash": "6c0b2e3fbde83f8263839ad7e5c9cddb52167f336d226d1e48fa315b673a1169",
+    "status": "reviewed",
+    "method": "模型辅助原创整理与逐段自校",
+    "independentExpertReview": false,
+    "checks": [
+      "全文段落覆盖",
+      "引文与论证层次",
+      "否定与因果",
+      "多音多义字",
+      "古本与章句本区分",
+      "重点词定位"
+    ]
+  },
+  "chapter-15": {
+    "sourceHash": "adcb54e398beb5654b7395a59c0f3bf63e937e1fd34b8a8400a912f400253eba",
+    "draftHash": "64ea3df2227f64dbdb0d90cac34d75c68b239ade50646fe4d0b91622b46ed8c9",
+    "status": "reviewed",
+    "method": "模型辅助原创整理与逐段自校",
+    "independentExpertReview": false,
+    "checks": [
+      "全文段落覆盖",
+      "引文与论证层次",
+      "否定与因果",
+      "多音多义字",
+      "古本与章句本区分",
+      "重点词定位"
+    ]
+  },
+  "chapter-16": {
+    "sourceHash": "483bd8774ed0f9f8b951ff5c870effc72e38e12523fc879f8bb7985987fb102b",
+    "draftHash": "e0f5f234b5ed5a39556594333f462c5ac5715e728dfb086a29ae2aebf95b4c03",
+    "status": "reviewed",
+    "method": "模型辅助原创整理与逐段自校",
+    "independentExpertReview": false,
+    "checks": [
+      "全文段落覆盖",
+      "引文与论证层次",
+      "否定与因果",
+      "多音多义字",
+      "古本与章句本区分",
+      "重点词定位"
+    ]
+  }
+}
